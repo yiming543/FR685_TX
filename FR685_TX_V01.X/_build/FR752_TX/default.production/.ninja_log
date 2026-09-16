@@ -1,0 +1,11 @@
+# ninja log v7
+120	5431	8094099003074756	CMakeFiles/FR752_TX_default_default_XC8_compile.dir/D_/yiming/00work/FR752_TX.X/mcc_generated_files/device_config.c.p1	1a8db89ed675de16
+47	5482	8094099002332482	CMakeFiles/FR752_TX_default_default_XC8_compile.dir/D_/yiming/00work/FR752_TX.X/mcc_generated_files/LINDrivers/lin_app.c.p1	b731bc58252a9c30
+342	6254	8094099005281675	CMakeFiles/FR752_TX_default_default_XC8_compile.dir/D_/yiming/00work/FR752_TX.X/mcc_generated_files/pin_manager.c.p1	b420e8206b8d2723
+83	6343	8094099002698212	CMakeFiles/FR752_TX_default_default_XC8_compile.dir/D_/yiming/00work/FR752_TX.X/mcc_generated_files/LINDrivers/lin_master.c.p1	484841cf6a65a21
+168	6388	8094099003536145	CMakeFiles/FR752_TX_default_default_XC8_compile.dir/D_/yiming/00work/FR752_TX.X/mcc_generated_files/eusart.c.p1	177e51c6904ea360
+400	6415	8094099005862198	CMakeFiles/FR752_TX_default_default_XC8_compile.dir/D_/yiming/00work/FR752_TX.X/mcc_generated_files/tmr0.c.p1	5f5afd8075472f98
+276	6440	8094099004631907	CMakeFiles/FR752_TX_default_default_XC8_compile.dir/D_/yiming/00work/FR752_TX.X/mcc_generated_files/mcc.c.p1	7c11cadde8b6cc61
+17	6470	8094099002026697	CMakeFiles/FR752_TX_default_default_XC8_compile.dir/D_/yiming/00work/FR752_TX.X/main.c.p1	135f0cb207d7f912
+213	6558	8094099004007924	CMakeFiles/FR752_TX_default_default_XC8_compile.dir/D_/yiming/00work/FR752_TX.X/mcc_generated_files/interrupt_manager.c.p1	eef57a33bc8000da
+6558	11164	8094099067437391	D:/yiming/00work/FR752_TX.X/out/FR752_TX/production/default-production.elf	b95c6cd959c5bd50
