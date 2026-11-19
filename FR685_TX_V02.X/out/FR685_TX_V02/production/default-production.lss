@@ -1,0 +1,3594 @@
+
+default-production.elf:	file format elf32-pic
+
+Sections:
+Idx Name                       Size     VMA      Type
+  0                            00000000 00000000 
+  1 text8                      00000006 00000f77 TEXT
+  2 text9                      00000006 00000f74 TEXT
+  3 text10                     00000006 00000f71 TEXT
+  4 text11                     00000006 00000f6e TEXT
+  5 text12                     00000006 00000f6b TEXT
+  6 text13                     00000006 00000f68 TEXT
+  7 text16                     0000000e 00000fe8 TEXT
+  8 text17                     0000000e 00000fe1 TEXT
+  9 text18                     0000000e 00000fda TEXT
+ 10 text19                     0000000e 00000fd3 TEXT
+ 11 text20                     0000000e 00000fcc TEXT
+ 12 text21                     0000000e 00000fc5 TEXT
+ 13 text30                     00000002 00000f64 TEXT
+ 14 text31                     00000002 00000f63 TEXT
+ 15 text32                     00000002 00000f62 TEXT
+ 16 text33                     00000002 00000f61 TEXT
+ 17 text34                     00000002 00000f60 TEXT
+ 18 text35                     00000002 00000f5f TEXT
+ 19 text36                     00000002 00000f5e TEXT
+ 20 text44                     00000008 00000f82 TEXT
+ 21 text46                     0000000c 00000fb3 TEXT
+ 22 text48                     0000000c 00000fad TEXT
+ 23 text49                     0000000c 00000fa7 TEXT
+ 24 text50                     0000000c 00000fa1 TEXT
+ 25 text51                     0000000c 00000f9b TEXT
+ 26 text52                     0000000c 00000f95 TEXT
+ 27 text56                     000002e4 0000068e TEXT
+ 28 text59                     0000000a 00000f90 TEXT
+ 29 text61                     00000006 00000f65 TEXT
+ 30 text66                     0000000a 00000f8b TEXT
+ 31 text67                     0000000a 00000f86 TEXT
+ 32 text68                     00000012 00000ff7 TEXT
+ 33 text71                     00000186 0000057d TEXT
+ 34 idataBANK2                 00000038 00000640 DATA
+ 35 text40                     00000034 0000065c TEXT
+ 36 text72                     00000002 00000f5d TEXT
+ 37 text83                     00000008 00000f7e TEXT
+ 38 text84                     00000002 00000f5c TEXT
+ 39 text85                     00000008 00000f7a TEXT
+ 40 cstackCOMMON               0000000d 00000070 BSS
+ 41 inittext                   0000000c 00000fbf TEXT
+ 42 stringtext1                00000048 00000559 DATA
+ 43 stringtext2                00000030 00000676 DATA
+ 44 intentry                   0000006e 00000004 TEXT
+ 45 end_init                   00000004 0000003b DATA
+ 46 cinit                      00000a38 0000003d TEXT
+ 47 reset_vec                  00000004 00000000 DATA
+ 48 text29                     00000002 00000002 TEXT
+ 49 bssBANK0                   0000004c 00000020 BSS
+ 50 bssBANK1                   0000004f 000000a0 BSS
+ 51 idataBANK0                 00000002 00000003 DATA
+ 52 idataBANK1                 00000010 00000fef DATA
+ 53 dataBANK2                  0000001c 00000120 BSS
+ 54 clrtext                    0000000c 00000fb9 TEXT
+ 55 dabs$0                     00000002 0000007e BSS
+ 56 _stray_data_0_             00000008 00008000 DATA
+ 57 _stray_data_1_             00000004 00008007 DATA
+ 58 .strtab                    00001d2a 00000000 
+ 59 .symtab                    00001cd0 00000000 
+ 60 .debug_abbrev              00000189 00000000 DEBUG
+ 61 .debug_info                00002fb4 00000000 DEBUG
+ 62 .debug_line                00000cbe 00000000 DEBUG
+ 63 .debug_ranges              000000f8 00000000 DEBUG
+ 64 .debug_pubnames            000009de 00000000 DEBUG
+ 65 .debug_aranges             000004e0 00000000 DEBUG
+ 66 .note.microchip.deviceinfo 00000020 00000000 
+ 67 .shstrtab                  00000252 00000000 
+
+Disassembly of section text8:
+
+00000f77 <__ptext8>:
+; _SW_TURN_LEFT_IS_ON():
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:72
+;   return sw_states.turnLeft;
+     f77: 20 00        	movlb	0x0
+     f78: 24 08        	movf	0x24, w
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:73
+; }
+     f79: 08 00        	return
+
+Disassembly of section text9:
+
+00000f74 <__ptext9>:
+; __ptext9():
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:68
+;   return sw_states.hiBeam;
+     f74: 20 00        	movlb	0x0
+     f75: 23 08        	movf	0x23, w
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:69
+; }
+     f76: 08 00        	return
+
+Disassembly of section text10:
+
+00000f71 <__ptext10>:
+; __ptext10():
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:64
+;   return sw_states.loBeam;
+     f71: 20 00        	movlb	0x0
+     f72: 22 08        	movf	0x22, w
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:65
+; }
+     f73: 08 00        	return
+
+Disassembly of section text11:
+
+00000f6e <__ptext11>:
+; _SW_DRL_IS_ON():
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:60
+;   return sw_states.drl;
+     f6e: 20 00        	movlb	0x0
+     f6f: 21 08        	movf	0x21, w
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:61
+; }
+     f70: 08 00        	return
+
+Disassembly of section text12:
+
+00000f6b <__ptext12>:
+; _SW_POS_IS_ON():
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:56
+;   return sw_states.pos;
+     f6b: 20 00        	movlb	0x0
+     f6c: 20 08        	movf	0x20, w
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:57
+; }
+     f6d: 08 00        	return
+
+Disassembly of section text13:
+
+00000f68 <__ptext13>:
+; __ptext13():
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:76
+;   return sw_states.turnRight;
+     f68: 20 00        	movlb	0x0
+     f69: 25 08        	movf	0x25, w
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:77
+; }
+     f6a: 08 00        	return
+
+Disassembly of section text16:
+
+00000fe8 <__ptext16>:
+; __end_of_SW_HI_BEAM_GET():
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:48
+;   return (uint8_t)(!!(SW5_GetValue() == OFF));
+     fe8: 03 10        	bcf	0x3, 0x0
+     fe9: 20 00        	movlb	0x0
+     fea: 0c 1e        	btfss	0xc, 0x4
+     feb: 03 14        	bsf	0x3, 0x0
+     fec: 00 30        	movlw	0x0
+     fed: 09 3d        	addwfc	0x9, w
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:49
+; }
+     fee: 08 00        	return
+
+Disassembly of section text17:
+
+00000fe1 <__ptext17>:
+; __end_of_SW_LO_BEAM_GET():
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:44
+;   return (uint8_t)(!!(SW4_GetValue() == OFF));
+     fe1: 03 10        	bcf	0x3, 0x0
+     fe2: 20 00        	movlb	0x0
+     fe3: 8c 1d        	btfss	0xc, 0x3
+     fe4: 03 14        	bsf	0x3, 0x0
+     fe5: 00 30        	movlw	0x0
+     fe6: 09 3d        	addwfc	0x9, w
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:45
+; }
+     fe7: 08 00        	return
+
+Disassembly of section text18:
+
+00000fda <__ptext18>:
+; _SW_LO_BEAM_GET():
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:40
+;   return (uint8_t)(!!(SW3_GetValue() == OFF));
+     fda: 03 10        	bcf	0x3, 0x0
+     fdb: 20 00        	movlb	0x0
+     fdc: 0c 1d        	btfss	0xc, 0x2
+     fdd: 03 14        	bsf	0x3, 0x0
+     fde: 00 30        	movlw	0x0
+     fdf: 09 3d        	addwfc	0x9, w
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:41
+; }
+     fe0: 08 00        	return
+
+Disassembly of section text19:
+
+00000fd3 <__ptext19>:
+; __end_of_SW_POS_GET():
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:36
+;   return (uint8_t)(!!(SW2_GetValue() == OFF));
+     fd3: 03 10        	bcf	0x3, 0x0
+     fd4: 20 00        	movlb	0x0
+     fd5: 8c 1c        	btfss	0xc, 0x1
+     fd6: 03 14        	bsf	0x3, 0x0
+     fd7: 00 30        	movlw	0x0
+     fd8: 09 3d        	addwfc	0x9, w
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:37
+; }
+     fd9: 08 00        	return
+
+Disassembly of section text20:
+
+00000fcc <__ptext20>:
+; _SW_POS_GET():
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:32
+;   return (uint8_t)(!!(SW1_GetValue() == OFF));
+     fcc: 03 10        	bcf	0x3, 0x0
+     fcd: 20 00        	movlb	0x0
+     fce: 0c 1c        	btfss	0xc, 0x0
+     fcf: 03 14        	bsf	0x3, 0x0
+     fd0: 00 30        	movlw	0x0
+     fd1: 09 3d        	addwfc	0x9, w
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:33
+; }
+     fd2: 08 00        	return
+
+Disassembly of section text21:
+
+00000fc5 <__ptext21>:
+; __ptext21():
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:52
+;   return (uint8_t)(!!(SW6_GetValue() == OFF));
+     fc5: 03 10        	bcf	0x3, 0x0
+     fc6: 20 00        	movlb	0x0
+     fc7: 8e 1d        	btfss	0xe, 0x3
+     fc8: 03 14        	bsf	0x3, 0x0
+     fc9: 00 30        	movlw	0x0
+     fca: 09 3d        	addwfc	0x9, w
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:53
+; }
+     fcb: 08 00        	return
+
+Disassembly of section text30:
+
+00000f64 <__ptext30>:
+; __ptext30():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/pin_manager.c:101
+; }
+     f64: 08 00        	return
+
+Disassembly of section text31:
+
+00000f63 <__ptext31>:
+; __ptext31():
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:100
+; }
+     f63: 08 00        	return
+
+Disassembly of section text32:
+
+00000f62 <__ptext32>:
+; __ptext32():
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:82
+; }
+     f62: 08 00        	return
+
+Disassembly of section text33:
+
+00000f61 <__ptext33>:
+; __ptext33():
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:64
+; }
+     f61: 08 00        	return
+
+Disassembly of section text34:
+
+00000f60 <__ptext34>:
+; __ptext34():
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:46
+; }
+     f60: 08 00        	return
+
+Disassembly of section text35:
+
+00000f5f <__ptext35>:
+; _LED_POS_IS_ON():
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:28
+; }
+     f5f: 08 00        	return
+
+Disassembly of section text36:
+
+00000f5e <__ptext36>:
+; _LED_TURN_RIGHT_IS_ON():
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:118
+; }
+     f5e: 08 00        	return
+
+Disassembly of section text44:
+
+00000f82 <__ptext44>:
+; _LIN_startPeriod():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:307
+;   LIN_enablePeriodTx = true;
+     f82: 01 30        	movlw	0x1
+     f83: 20 00        	movlb	0x0
+     f84: ca 00        	movwf	0x4a
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:308
+; }
+     f85: 08 00        	return
+
+Disassembly of section text46:
+
+00000fb3 <__ptext46>:
+; __end_of_EUSART_SetTxInterruptHandler():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/tmr0.c:126
+;     TMR0_InterruptHandler = InterruptHandler;
+     fb3: 20 00        	movlb	0x0
+     fb4: 56 08        	movf	0x56, w
+     fb5: ad 00        	movwf	0x2d
+     fb6: 55 08        	movf	0x55, w
+     fb7: ac 00        	movwf	0x2c
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/tmr0.c:127
+; }
+     fb8: 08 00        	return
+
+Disassembly of section text48:
+
+00000fad <__ptext48>:
+; __end_of_EUSART_SetRxInterruptHandler():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:277
+;     EUSART_TxDefaultInterruptHandler = interruptHandler;
+     fad: 20 00        	movlb	0x0
+     fae: 56 08        	movf	0x56, w
+     faf: b7 00        	movwf	0x37
+     fb0: 55 08        	movf	0x55, w
+     fb1: b6 00        	movwf	0x36
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:278
+; }
+     fb2: 08 00        	return
+
+Disassembly of section text49:
+
+00000fa7 <__ptext49>:
+; _EUSART_SetRxInterruptHandler():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:281
+;     EUSART_RxDefaultInterruptHandler = interruptHandler;
+     fa7: 20 00        	movlb	0x0
+     fa8: 56 08        	movf	0x56, w
+     fa9: b5 00        	movwf	0x35
+     faa: 55 08        	movf	0x55, w
+     fab: b4 00        	movwf	0x34
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:282
+; }
+     fac: 08 00        	return
+
+Disassembly of section text50:
+
+00000fa1 <__ptext50>:
+; _EUSART_SetOverrunErrorHandler():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:269
+;     EUSART_OverrunErrorHandler = interruptHandler;
+     fa1: 20 00        	movlb	0x0
+     fa2: 56 08        	movf	0x56, w
+     fa3: b1 00        	movwf	0x31
+     fa4: 55 08        	movf	0x55, w
+     fa5: b0 00        	movwf	0x30
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:270
+; }
+     fa6: 08 00        	return
+
+Disassembly of section text51:
+
+00000f9b <__ptext51>:
+; _EUSART_SetFramingErrorHandler():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:265
+;     EUSART_FramingErrorHandler = interruptHandler;
+     f9b: 20 00        	movlb	0x0
+     f9c: 56 08        	movf	0x56, w
+     f9d: b3 00        	movwf	0x33
+     f9e: 55 08        	movf	0x55, w
+     f9f: b2 00        	movwf	0x32
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:266
+; }
+     fa0: 08 00        	return
+
+Disassembly of section text52:
+
+00000f95 <__ptext52>:
+; __end_of_TMR0_WriteTimer():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:273
+;     EUSART_ErrorHandler = interruptHandler;
+     f95: 20 00        	movlb	0x0
+     f96: 56 08        	movf	0x56, w
+     f97: af 00        	movwf	0x2f
+     f98: 55 08        	movf	0x55, w
+     f99: ae 00        	movwf	0x2e
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:274
+; }
+     f9a: 08 00        	return
+
+Disassembly of section text56:
+
+0000068e <_memset>:
+; __ptext56():
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memset.c:5
+; 	unsigned char * p = dest;
+     68e: 20 00        	movlb	0x0
+     68f: 55 08        	movf	0x55, w
+     690: db 00        	movwf	0x5b
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memset.c:6
+; 	while (n--) {
+     691: 99 2e        	goto	0x699
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memset.c:7
+; 		*p++ = (unsigned char)c;
+     692: 5b 08        	movf	0x5b, w
+     693: 86 00        	movwf	0x6
+     694: 87 01        	clrf	0x7
+     695: 57 08        	movf	0x57, w
+     696: 81 00        	movwf	0x1
+     697: 01 30        	movlw	0x1
+     698: db 07        	addwf	0x5b, f
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memset.c:6
+; 	while (n--) {
+     699: 01 30        	movlw	0x1
+     69a: d9 02        	subwf	0x59, f
+     69b: 00 30        	movlw	0x0
+     69c: da 3b        	<unknown>
+     69d: 59 0a        	incf	0x59, w
+     69e: 03 1d        	btfss	0x3, 0x2
+     69f: a4 2e        	goto	0x6a4
+     6a0: 5a 0a        	incf	0x5a, w
+     6a1: 03 1d        	btfss	0x3, 0x2
+     6a2: a4 2e        	goto	0x6a4
+     6a3: a5 2e        	goto	0x6a5
+     6a4: 92 2e        	goto	0x692
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memset.c:10
+; }
+     6a5: 08 00        	return
+
+000006a6 <i1_memset>:
+; __ptext77():
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memset.c:5
+; 	unsigned char * p = dest;
+     6a6: 70 08        	movf	0x70, w
+     6a7: f6 00        	movwf	0x76
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memset.c:6
+; 	while (n--) {
+     6a8: b0 2e        	goto	0x6b0
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memset.c:7
+; 		*p++ = (unsigned char)c;
+     6a9: 76 08        	movf	0x76, w
+     6aa: 86 00        	movwf	0x6
+     6ab: 87 01        	clrf	0x7
+     6ac: 72 08        	movf	0x72, w
+     6ad: 81 00        	movwf	0x1
+     6ae: 01 30        	movlw	0x1
+     6af: f6 07        	addwf	0x76, f
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memset.c:6
+; 	while (n--) {
+     6b0: 01 30        	movlw	0x1
+     6b1: f4 02        	subwf	0x74, f
+     6b2: 00 30        	movlw	0x0
+     6b3: f5 3b        	<unknown>
+     6b4: 74 0a        	incf	0x74, w
+     6b5: 03 1d        	btfss	0x3, 0x2
+     6b6: bb 2e        	goto	0x6bb
+     6b7: 75 0a        	incf	0x75, w
+     6b8: 03 1d        	btfss	0x3, 0x2
+     6b9: bb 2e        	goto	0x6bb
+     6ba: bc 2e        	goto	0x6bc
+     6bb: a9 2e        	goto	0x6a9
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memset.c:10
+; }
+     6bc: 08 00        	return
+
+000006bd <__ptext86>:
+; __ptext86():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:242
+;     eusartRxBuffer[eusartRxHead++] = RCREG;
+     6bd: 20 00        	movlb	0x0
+     6be: 42 08        	movf	0x42, w
+     6bf: a8 3e        	addlw	0x28, f
+     6c0: 86 00        	movwf	0x6
+     6c1: 87 01        	clrf	0x7
+     6c2: 23 00        	movlb	0x3
+     6c3: 19 08        	movf	0x19, w
+     6c4: 81 00        	movwf	0x1
+     6c5: 01 30        	movlw	0x1
+     6c6: 20 00        	movlb	0x0
+     6c7: c2 07        	addwf	0x42, f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:243
+;     if(sizeof(eusartRxBuffer) <= eusartRxHead)
+     6c8: 08 30        	movlw	0x8
+     6c9: 42 02        	subwf	0x42, w
+     6ca: 03 1c        	btfss	0x3, 0x0
+     6cb: cd 2e        	goto	0x6cd
+     6cc: ce 2e        	goto	0x6ce
+     6cd: cf 2e        	goto	0x6cf
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:245
+;         eusartRxHead = 0;
+     6ce: c2 01        	clrf	0x42
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:247
+;     eusartRxCount++;
+     6cf: 01 30        	movlw	0x1
+     6d0: c0 07        	addwf	0x40, f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:248
+; }
+     6d1: 08 00        	return
+
+000006d2 <__ptext39>:
+; __end_of_EUSART_RxDataHandler():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/tmr0.c:69
+;     OPTION_REG = (uint8_t)((OPTION_REG & 0xC0) | (0xD4 & 0x3F)); 
+     6d2: 21 00        	movlb	0x1
+     6d3: 15 08        	movf	0x15, w
+     6d4: c0 39        	andlw	0xc0
+     6d5: 14 38        	iorlw	0x14
+     6d6: 95 00        	movwf	0x15
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/tmr0.c:72
+;     TMR0 = 0x06;
+     6d7: 06 30        	movlw	0x6
+     6d8: 20 00        	movlb	0x0
+     6d9: 95 00        	movwf	0x15
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/tmr0.c:75
+;     timer0ReloadVal= 6;
+     6da: 06 30        	movlw	0x6
+     6db: be 00        	movwf	0x3e
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/tmr0.c:78
+;     INTCONbits.TMR0IF = 0;
+     6dc: 0b 11        	bcf	0xb, 0x2
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/tmr0.c:81
+;     INTCONbits.TMR0IE = 1;
+     6dd: 8b 16        	bsf	0xb, 0x5
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/tmr0.c:84
+;     TMR0_SetInterruptHandler(TMR0_DefaultInterruptHandler);
+     6de: 5d 30        	movlw	0x5d
+     6df: d5 00        	movwf	0x55
+     6e0: 0f 30        	movlw	0xf
+     6e1: d6 00        	movwf	0x56
+     6e2: 8f 31        	movlp	0xf
+     6e3: b3 27        	call	0x7b3
+     6e4: 86 31        	movlp	0x6
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/tmr0.c:85
+; }
+     6e5: 08 00        	return
+
+000006e6 <__ptext37>:
+; __end_of_TMR0_Initialize():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/mcc.c:53
+;     PIN_MANAGER_Initialize();
+     6e6: 86 31        	movlp	0x6
+     6e7: 5c 26        	call	0x65c
+     6e8: 86 31        	movlp	0x6
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/mcc.c:54
+;     OSCILLATOR_Initialize();
+     6e9: 87 31        	movlp	0x7
+     6ea: 85 27        	call	0x785
+     6eb: 86 31        	movlp	0x6
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/mcc.c:55
+;     WDT_Initialize();
+     6ec: 87 31        	movlp	0x7
+     6ed: fc 27        	call	0x7fc
+     6ee: 86 31        	movlp	0x6
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/mcc.c:56
+;     TMR0_Initialize();
+     6ef: 86 31        	movlp	0x6
+     6f0: d2 26        	call	0x6d2
+     6f1: 86 31        	movlp	0x6
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/mcc.c:57
+;     EUSART_Initialize();
+     6f2: 83 31        	movlp	0x3
+     6f3: 58 23        	call	0x358
+     6f4: 86 31        	movlp	0x6
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/mcc.c:58
+;     LIN_Master_Initialize();
+     6f5: 87 31        	movlp	0x7
+     6f6: 91 27        	call	0x791
+     6f7: 86 31        	movlp	0x6
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/mcc.c:59
+; }
+     6f8: 08 00        	return
+
+000006f9 <__ptext43>:
+; __ptext43():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:61
+; void LIN_init(uint8_t tableLength, const lin_cmd_packet_t *const table, void (*processData)(void)) {
+     6f9: 20 00        	movlb	0x0
+     6fa: da 00        	movwf	0x5a
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:62
+;   schedule = table;
+     6fb: 57 08        	movf	0x57, w
+     6fc: cf 00        	movwf	0x4f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:63
+;   scheduleLength = tableLength;
+     6fd: 5a 08        	movf	0x5a, w
+     6fe: ce 00        	movwf	0x4e
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:64
+;   LIN_processData = processData;
+     6ff: 59 08        	movf	0x59, w
+     700: b9 00        	movwf	0x39
+     701: 58 08        	movf	0x58, w
+     702: b8 00        	movwf	0x38
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:68
+;   LIN_timerCallBack = 0;
+     703: c9 01        	clrf	0x49
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:69
+;   LIN_timerRunning = false;
+     704: cb 01        	clrf	0x4b
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:70
+;   LIN_setTimerHandler();
+     705: 87 31        	movlp	0x7
+     706: f3 27        	call	0x7f3
+     707: 86 31        	movlp	0x6
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:72
+;   LIN_startPeriod();
+     708: 8f 31        	movlp	0xf
+     709: 82 27        	call	0x782
+     70a: 86 31        	movlp	0x6
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:73
+; }
+     70b: 08 00        	return
+
+0000070c <__ptext75>:
+; __ptext75():
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/Umul8.c:4
+; __bmul(unsigned char multiplier, unsigned char multiplicand)
+     70c: f2 00        	movwf	0x72
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/Umul8.c:6
+; 	unsigned char product = 0;
+     70d: f1 01        	clrf	0x71
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/Umul8.c:43
+; 		if(multiplier & 1)
+     70e: 72 1c        	btfss	0x72, 0x0
+     70f: 11 2f        	goto	0x711
+     710: 12 2f        	goto	0x712
+     711: 14 2f        	goto	0x714
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/Umul8.c:44
+; 			product += multiplicand;
+     712: 70 08        	movf	0x70, w
+     713: f1 07        	addwf	0x71, f
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/Umul8.c:45
+; 		multiplicand <<= 1;
+     714: 03 10        	bcf	0x3, 0x0
+     715: f0 0d        	rlf	0x70, f
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/Umul8.c:46
+; 		multiplier >>= 1;
+     716: 03 10        	bcf	0x3, 0x0
+     717: f2 0c        	rrf	0x72, f
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/Umul8.c:47
+; 	} while(multiplier != 0);
+     718: 72 08        	movf	0x72, w
+     719: 03 1d        	btfss	0x3, 0x2
+     71a: 1c 2f        	goto	0x71c
+     71b: 1d 2f        	goto	0x71d
+     71c: 0e 2f        	goto	0x70e
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/Umul8.c:50
+; 	return product;
+     71d: 71 08        	movf	0x71, w
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/Umul8.c:51
+; }
+     71e: 08 00        	return
+
+0000071f <__ptext70>:
+; __ptext70():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/tmr0.c:112
+;     INTCONbits.TMR0IF = 0;
+     71f: 0b 11        	bcf	0xb, 0x2
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/tmr0.c:114
+;     TMR0 = timer0ReloadVal;
+     720: 20 00        	movlb	0x0
+     721: 3e 08        	movf	0x3e, w
+     722: 95 00        	movwf	0x15
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/tmr0.c:116
+;     if(TMR0_InterruptHandler)
+     723: 2c 08        	movf	0x2c, w
+     724: 2d 04        	iorwf	0x2d, w
+     725: 03 19        	btfsc	0x3, 0x2
+     726: 28 2f        	goto	0x728
+     727: 29 2f        	goto	0x729
+     728: 2e 2f        	goto	0x72e
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/tmr0.c:118
+;         TMR0_InterruptHandler();
+     729: 2d 08        	movf	0x2d, w
+     72a: 8a 00        	movwf	0xa
+     72b: 2c 08        	movf	0x2c, w
+     72c: 0a 00        	callw
+     72d: 87 31        	movlp	0x7
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/tmr0.c:122
+; }
+     72e: 08 00        	return
+
+0000072f <__ptext58>:
+; __end_of_TMR0_ISR():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:269
+; void LIN_startTimer(uint8_t timeout) {
+     72f: 20 00        	movlb	0x0
+     730: d6 00        	movwf	0x56
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:270
+;   LIN_timerRunning = false;
+     731: cb 01        	clrf	0x4b
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:271
+;   LIN_timerCallBack = 0;
+     732: c9 01        	clrf	0x49
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:272
+;   LIN_timeout = timeout;
+     733: 56 08        	movf	0x56, w
+     734: eb 00        	movwf	0x6b
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:274
+;   TMR0_WriteTimer(0);
+     735: 00 30        	movlw	0x0
+     736: 8f 31        	movlp	0xf
+     737: 90 27        	call	0x790
+     738: 87 31        	movlp	0x7
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:275
+;   LIN_timerRunning = true;
+     739: 01 30        	movlw	0x1
+     73a: 20 00        	movlb	0x0
+     73b: cb 00        	movwf	0x4b
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:276
+; }
+     73c: 08 00        	return
+
+0000073d <__ptext2>:
+; __ptext2():
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:85
+;   if (led_states[TURN_LEFT] == LED_OFF) {
+     73d: 20 00        	movlb	0x0
+     73e: 2a 08        	movf	0x2a, w
+     73f: 03 1d        	btfss	0x3, 0x2
+     740: 42 2f        	goto	0x742
+     741: 43 2f        	goto	0x743
+     742: 48 2f        	goto	0x748
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:86
+;     LED5_SetHigh();
+     743: 22 00        	movlb	0x2
+     744: 8d 14        	bsf	0xd, 0x1
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:87
+;     led_states[TURN_LEFT] = LED_ON;
+     745: 01 30        	movlw	0x1
+     746: 20 00        	movlb	0x0
+     747: aa 00        	movwf	0x2a
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:89
+; }
+     748: 08 00        	return
+
+00000749 <__ptext3>:
+; _HI_BEAM_ON():
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:67
+;   if (led_states[HI_BEAM] == LED_OFF) {
+     749: 20 00        	movlb	0x0
+     74a: 29 08        	movf	0x29, w
+     74b: 03 1d        	btfss	0x3, 0x2
+     74c: 4e 2f        	goto	0x74e
+     74d: 4f 2f        	goto	0x74f
+     74e: 54 2f        	goto	0x754
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:68
+;     LED4_SetHigh();
+     74f: 22 00        	movlb	0x2
+     750: 0d 15        	bsf	0xd, 0x2
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:69
+;     led_states[HI_BEAM] = LED_ON;
+     751: 01 30        	movlw	0x1
+     752: 20 00        	movlb	0x0
+     753: a9 00        	movwf	0x29
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:71
+; }
+     754: 08 00        	return
+
+00000755 <__ptext4>:
+; __ptext4():
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:49
+;   if (led_states[LO_BEAM] == LED_OFF) {
+     755: 20 00        	movlb	0x0
+     756: 28 08        	movf	0x28, w
+     757: 03 1d        	btfss	0x3, 0x2
+     758: 5a 2f        	goto	0x75a
+     759: 5b 2f        	goto	0x75b
+     75a: 60 2f        	goto	0x760
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:50
+;     LED3_SetHigh();
+     75b: 22 00        	movlb	0x2
+     75c: 8d 15        	bsf	0xd, 0x3
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:51
+;     led_states[LO_BEAM] = LED_ON;
+     75d: 01 30        	movlw	0x1
+     75e: 20 00        	movlb	0x0
+     75f: a8 00        	movwf	0x28
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:53
+; }
+     760: 08 00        	return
+
+00000761 <__ptext5>:
+; __end_of_LO_BEAM_ON():
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:31
+;   if (led_states[DRL] == LED_OFF) {
+     761: 20 00        	movlb	0x0
+     762: 27 08        	movf	0x27, w
+     763: 03 1d        	btfss	0x3, 0x2
+     764: 66 2f        	goto	0x766
+     765: 67 2f        	goto	0x767
+     766: 6c 2f        	goto	0x76c
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:32
+;     LED2_SetHigh();
+     767: 22 00        	movlb	0x2
+     768: 0d 16        	bsf	0xd, 0x4
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:33
+;     led_states[DRL] = LED_ON;
+     769: 01 30        	movlw	0x1
+     76a: 20 00        	movlb	0x0
+     76b: a7 00        	movwf	0x27
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:35
+; }
+     76c: 08 00        	return
+
+0000076d <__ptext6>:
+; __end_of_DRL_ON():
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:13
+;   if (led_states[POS] == LED_OFF) {
+     76d: 20 00        	movlb	0x0
+     76e: 26 08        	movf	0x26, w
+     76f: 03 1d        	btfss	0x3, 0x2
+     770: 72 2f        	goto	0x772
+     771: 73 2f        	goto	0x773
+     772: 78 2f        	goto	0x778
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:14
+;     LED1_SetHigh();
+     773: 22 00        	movlb	0x2
+     774: 8d 16        	bsf	0xd, 0x5
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:15
+;     led_states[POS] = LED_ON;
+     775: 01 30        	movlw	0x1
+     776: 20 00        	movlb	0x0
+     777: a6 00        	movwf	0x26
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:17
+; }
+     778: 08 00        	return
+
+00000779 <__ptext7>:
+; _TURN_RIGHT_ON():
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:103
+;   if (led_states[TURN_RIGHT] == LED_OFF) {
+     779: 20 00        	movlb	0x0
+     77a: 2b 08        	movf	0x2b, w
+     77b: 03 1d        	btfss	0x3, 0x2
+     77c: 7e 2f        	goto	0x77e
+     77d: 7f 2f        	goto	0x77f
+     77e: 84 2f        	goto	0x784
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:104
+;     LED6_SetHigh();
+     77f: 22 00        	movlb	0x2
+     780: 0d 14        	bsf	0xd, 0x0
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:105
+;     led_states[TURN_RIGHT] = LED_ON;
+     781: 01 30        	movlw	0x1
+     782: 20 00        	movlb	0x0
+     783: ab 00        	movwf	0x2b
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:107
+; }
+     784: 08 00        	return
+
+00000785 <__ptext41>:
+; _OSCILLATOR_Initialize():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/mcc.c:64
+;     OSCCON = 0x70;
+     785: 70 30        	movlw	0x70
+     786: 21 00        	movlb	0x1
+     787: 99 00        	movwf	0x19
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/mcc.c:66
+;     OSCTUNE = 0x00;
+     788: 98 01        	clrf	0x18
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/mcc.c:68
+;     BORCON = 0x00;
+     789: 22 00        	movlb	0x2
+     78a: 96 01        	clrf	0x16
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/mcc.c:72
+;     }
+     78b: 21 00        	movlb	0x1
+     78c: 1a 1f        	btfss	0x1a, 0x6
+     78d: 8f 2f        	goto	0x78f
+     78e: 90 2f        	goto	0x790
+     78f: 8b 2f        	goto	0x78b
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/mcc.c:73
+; }
+     790: 08 00        	return
+
+00000791 <__ptext42>:
+; __end_of_OSCILLATOR_Initialize():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.c:48
+;   LIN_init(TABLE_SIZE, scheduleTable, processLIN);
+     791: 20 30        	movlw	0x20
+     792: 20 00        	movlb	0x0
+     793: d7 00        	movwf	0x57
+     794: a0 30        	movlw	0xa0
+     795: d8 00        	movwf	0x58
+     796: 05 30        	movlw	0x5
+     797: d9 00        	movwf	0x59
+     798: 04 30        	movlw	0x4
+     799: 86 31        	movlp	0x6
+     79a: f9 26        	call	0x6f9
+     79b: 87 31        	movlp	0x7
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.c:49
+; }
+     79c: 08 00        	return
+
+0000079d <__ptext23>:
+; __end_of_LIN_Master_Initialize():
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:92
+;   if (led_states[TURN_LEFT] != LED_OFF) {
+     79d: 20 00        	movlb	0x0
+     79e: 2a 08        	movf	0x2a, w
+     79f: 03 19        	btfsc	0x3, 0x2
+     7a0: a2 2f        	goto	0x7a2
+     7a1: a3 2f        	goto	0x7a3
+     7a2: a7 2f        	goto	0x7a7
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:93
+;     LED5_SetLow();
+     7a3: 22 00        	movlb	0x2
+     7a4: 8d 10        	bcf	0xd, 0x1
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:94
+;     led_states[TURN_LEFT] = LED_OFF;
+     7a5: 20 00        	movlb	0x0
+     7a6: aa 01        	clrf	0x2a
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:96
+; }
+     7a7: 08 00        	return
+
+000007a8 <__ptext24>:
+; _HI_BEAM_OFF():
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:74
+;   if (led_states[HI_BEAM] != LED_OFF) {
+     7a8: 20 00        	movlb	0x0
+     7a9: 29 08        	movf	0x29, w
+     7aa: 03 19        	btfsc	0x3, 0x2
+     7ab: ad 2f        	goto	0x7ad
+     7ac: ae 2f        	goto	0x7ae
+     7ad: b2 2f        	goto	0x7b2
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:75
+;     LED4_SetLow();
+     7ae: 22 00        	movlb	0x2
+     7af: 0d 11        	bcf	0xd, 0x2
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:76
+;     led_states[HI_BEAM] = LED_OFF;
+     7b0: 20 00        	movlb	0x0
+     7b1: a9 01        	clrf	0x29
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:78
+; }
+     7b2: 08 00        	return
+
+000007b3 <__ptext25>:
+; _LO_BEAM_OFF():
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:56
+;   if (led_states[LO_BEAM] != LED_OFF) {
+     7b3: 20 00        	movlb	0x0
+     7b4: 28 08        	movf	0x28, w
+     7b5: 03 19        	btfsc	0x3, 0x2
+     7b6: b8 2f        	goto	0x7b8
+     7b7: b9 2f        	goto	0x7b9
+     7b8: bd 2f        	goto	0x7bd
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:57
+;     LED3_SetLow();
+     7b9: 22 00        	movlb	0x2
+     7ba: 8d 11        	bcf	0xd, 0x3
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:58
+;     led_states[LO_BEAM] = LED_OFF;
+     7bb: 20 00        	movlb	0x0
+     7bc: a8 01        	clrf	0x28
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:60
+; }
+     7bd: 08 00        	return
+
+000007be <__ptext26>:
+; __ptext26():
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:38
+;   if (led_states[DRL] != LED_OFF) {
+     7be: 20 00        	movlb	0x0
+     7bf: 27 08        	movf	0x27, w
+     7c0: 03 19        	btfsc	0x3, 0x2
+     7c1: c3 2f        	goto	0x7c3
+     7c2: c4 2f        	goto	0x7c4
+     7c3: c8 2f        	goto	0x7c8
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:39
+;     LED2_SetLow();
+     7c4: 22 00        	movlb	0x2
+     7c5: 0d 12        	bcf	0xd, 0x4
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:40
+;     led_states[DRL] = LED_OFF;
+     7c6: 20 00        	movlb	0x0
+     7c7: a7 01        	clrf	0x27
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:42
+; }
+     7c8: 08 00        	return
+
+000007c9 <__ptext27>:
+; _POS_OFF():
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:20
+;   if (led_states[POS] != LED_OFF) {
+     7c9: 20 00        	movlb	0x0
+     7ca: 26 08        	movf	0x26, w
+     7cb: 03 19        	btfsc	0x3, 0x2
+     7cc: ce 2f        	goto	0x7ce
+     7cd: cf 2f        	goto	0x7cf
+     7ce: d3 2f        	goto	0x7d3
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:21
+;     LED1_SetLow();
+     7cf: 22 00        	movlb	0x2
+     7d0: 8d 12        	bcf	0xd, 0x5
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:22
+;     led_states[POS] = LED_OFF;
+     7d1: 20 00        	movlb	0x0
+     7d2: a6 01        	clrf	0x26
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:24
+; }
+     7d3: 08 00        	return
+
+000007d4 <__ptext28>:
+; __ptext28():
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:110
+;   if (led_states[TURN_RIGHT] != LED_OFF) {
+     7d4: 20 00        	movlb	0x0
+     7d5: 2b 08        	movf	0x2b, w
+     7d6: 03 19        	btfsc	0x3, 0x2
+     7d7: d9 2f        	goto	0x7d9
+     7d8: da 2f        	goto	0x7da
+     7d9: de 2f        	goto	0x7de
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:111
+;     LED6_SetLow();
+     7da: 22 00        	movlb	0x2
+     7db: 0d 10        	bcf	0xd, 0x0
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:112
+;     led_states[TURN_RIGHT] = LED_OFF;
+     7dc: 20 00        	movlb	0x0
+     7dd: ab 01        	clrf	0x2b
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:114
+; }
+     7de: 08 00        	return
+
+000007df <_board_init>:
+; __end_of_TURN_RIGHT_OFF():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:26
+;     LED_Init();
+     7df: 84 31        	movlp	0x4
+     7e0: 4c 24        	call	0x44c
+     7e1: 87 31        	movlp	0x7
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:27
+;     Clear_No_Call_Warning();
+     7e2: 80 31        	movlp	0x0
+     7e3: 02 20        	call	0x2
+     7e4: 87 31        	movlp	0x7
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:28
+;     swState_update();
+     7e5: 83 31        	movlp	0x3
+     7e6: 15 23        	call	0x315
+     7e7: 87 31        	movlp	0x7
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:29
+; }
+     7e8: 08 00        	return
+
+000007e9 <__ptext73>:
+; __ptext73():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:298
+;   if (LIN_timerRunning == false) {
+     7e9: 20 00        	movlb	0x0
+     7ea: 4b 08        	movf	0x4b, w
+     7eb: 03 1d        	btfss	0x3, 0x2
+     7ec: ee 2f        	goto	0x7ee
+     7ed: ef 2f        	goto	0x7ef
+     7ee: f0 2f        	goto	0x7f0
+     7ef: f2 2f        	goto	0x7f2
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:302
+;   LIN_timerCallBack = 0;
+     7f0: c9 01        	clrf	0x49
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:303
+;   LIN_timerRunning = false;
+     7f1: cb 01        	clrf	0x4b
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:304
+; }
+     7f2: 08 00        	return
+
+000007f3 <__ptext45>:
+; _LIN_setTimerHandler():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:294
+;   TMR0_SetInterruptHandler(LIN_timerHandler);
+     7f3: 7d 30        	movlw	0x7d
+     7f4: 20 00        	movlb	0x0
+     7f5: d5 00        	movwf	0x55
+     7f6: 05 30        	movlw	0x5
+     7f7: d6 00        	movwf	0x56
+     7f8: 8f 31        	movlp	0xf
+     7f9: b3 27        	call	0x7b3
+     7fa: 87 31        	movlp	0x7
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:295
+; }
+     7fb: 08 00        	return
+
+000007fc <__ptext38>:
+; _WDT_Initialize():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/mcc.c:78
+;     WDTCON = 0x16;
+     7fc: 16 30        	movlw	0x16
+     7fd: 21 00        	movlb	0x1
+     7fe: 97 00        	movwf	0x17
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/mcc.c:79
+; }
+     7ff: 08 00        	return
+
+Disassembly of section text59:
+
+00000f90 <__ptext59>:
+; _TMR0_WriteTimer():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/tmr0.c:96
+; void TMR0_WriteTimer(uint8_t timerVal)
+     f90: 20 00        	movlb	0x0
+     f91: d5 00        	movwf	0x55
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/tmr0.c:99
+;     TMR0 = timerVal;
+     f92: 55 08        	movf	0x55, w
+     f93: 95 00        	movwf	0x15
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/tmr0.c:100
+; }
+     f94: 08 00        	return
+
+Disassembly of section text61:
+
+00000f65 <__ptext61>:
+; __ptext61():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:327
+;   TXSTAbits.SENDB = 1;
+     f65: 23 00        	movlb	0x3
+     f66: 9e 15        	bsf	0x1e, 0x3
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:328
+; }
+     f67: 08 00        	return
+
+Disassembly of section text66:
+
+00000f8b <__ptext66>:
+; __end_of_LIN_disableRx():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:317
+;   RCSTAbits.CREN = 1;
+     f8b: 23 00        	movlb	0x3
+     f8c: 1d 16        	bsf	0x1d, 0x4
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:318
+;   PIE1bits.RCIE = 1;
+     f8d: 21 00        	movlb	0x1
+     f8e: 91 16        	bsf	0x11, 0x5
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:319
+; }
+     f8f: 08 00        	return
+
+Disassembly of section text67:
+
+00000f86 <__ptext67>:
+; __ptext67():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:322
+;   RCSTAbits.CREN = 0;
+     f86: 23 00        	movlb	0x3
+     f87: 1d 12        	bcf	0x1d, 0x4
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:323
+;   PIE1bits.RCIE = 0;
+     f88: 21 00        	movlb	0x1
+     f89: 91 12        	bcf	0x11, 0x5
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:324
+; }
+     f8a: 08 00        	return
+
+Disassembly of section text68:
+
+00000ff7 <__ptext68>:
+; __ptext68():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:139
+;     return (eusartRxCount ? true : false);
+     ff7: 20 00        	movlb	0x0
+     ff8: 40 08        	movf	0x40, w
+     ff9: 03 1d        	btfss	0x3, 0x2
+     ffa: fc 2f        	goto	0x7fc
+     ffb: fe 2f        	goto	0x7fe
+     ffc: 01 30        	movlw	0x1
+     ffd: ff 2f        	goto	0x7ff
+     ffe: 00 30        	movlw	0x0
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:140
+; }
+     fff: 08 00        	return
+
+Disassembly of section text71:
+
+0000057d <__ptext71>:
+; _LIN_timerHandler():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:280
+;   if (LIN_timerRunning == true) {
+     57d: 20 00        	movlb	0x0
+     57e: 4b 03        	decf	0x4b, w
+     57f: 03 1d        	btfss	0x3, 0x2
+     580: 82 2d        	goto	0x582
+     581: 83 2d        	goto	0x583
+     582: 8e 2d        	goto	0x58e
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:281
+;     if (++LIN_timerCallBack >= LIN_timeout) {
+     583: 01 30        	movlw	0x1
+     584: c9 07        	addwf	0x49, f
+     585: 6b 08        	movf	0x6b, w
+     586: 49 02        	subwf	0x49, w
+     587: 03 1c        	btfss	0x3, 0x0
+     588: 8a 2d        	goto	0x58a
+     589: 8b 2d        	goto	0x58b
+     58a: 8e 2d        	goto	0x58e
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:283
+;       LIN_stopTimer();
+     58b: 87 31        	movlp	0x7
+     58c: e9 27        	call	0x7e9
+     58d: 85 31        	movlp	0x5
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:286
+;   if (LIN_enablePeriodTx == true) {
+     58e: 20 00        	movlb	0x0
+     58f: 4a 03        	decf	0x4a, w
+     590: 03 1d        	btfss	0x3, 0x2
+     591: 93 2d        	goto	0x593
+     592: 94 2d        	goto	0x594
+     593: 9f 2d        	goto	0x59f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:287
+;     if (++LIN_periodCallBack >= LIN_period) {
+     594: 01 30        	movlw	0x1
+     595: c8 07        	addwf	0x48, f
+     596: 4c 08        	movf	0x4c, w
+     597: 48 02        	subwf	0x48, w
+     598: 03 1c        	btfss	0x3, 0x0
+     599: 9b 2d        	goto	0x59b
+     59a: 9c 2d        	goto	0x59c
+     59b: 9f 2d        	goto	0x59f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:288
+;       LIN_sendPeriodicTx();
+     59c: 82 31        	movlp	0x2
+     59d: cc 22        	call	0x2cc
+     59e: 85 31        	movlp	0x5
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:291
+; }
+     59f: 08 00        	return
+
+000005a0 <_processLIN>:
+; __ptext54():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.c:55
+;   cmd = LIN_getPacket(tempRxData);
+     5a0: 60 30        	movlw	0x60
+     5a1: 20 00        	movlb	0x0
+     5a2: de 00        	movwf	0x5e
+     5a3: 85 31        	movlp	0x5
+     5a4: 0f 25        	call	0x50f
+     5a5: 85 31        	movlp	0x5
+     5a6: 20 00        	movlb	0x0
+     5a7: e8 00        	movwf	0x68
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.c:56
+;   switch (cmd) {
+     5a8: b3 2d        	goto	0x5b3
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.c:60
+;     Lcount = 4000U;
+     5a9: a0 30        	movlw	0xa0
+     5aa: ba 00        	movwf	0x3a
+     5ab: 0f 30        	movlw	0xf
+     5ac: bb 00        	movwf	0x3b
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.c:61
+;     break;
+     5ad: c1 2d        	goto	0x5c1
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.c:65
+;     Rcount = 4000U;
+     5ae: a0 30        	movlw	0xa0
+     5af: bc 00        	movwf	0x3c
+     5b0: 0f 30        	movlw	0xf
+     5b1: bd 00        	movwf	0x3d
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.c:66
+;     break;
+     5b2: c1 2d        	goto	0x5c1
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.c:69
+;   }
+     5b3: 68 08        	movf	0x68, w
+     5b4: 00 3a        	xorlw	0x0
+     5b5: 03 19        	btfsc	0x3, 0x2
+     5b6: c1 2d        	goto	0x5c1
+     5b7: 01 3a        	xorlw	0x1
+     5b8: 03 19        	btfsc	0x3, 0x2
+     5b9: c1 2d        	goto	0x5c1
+     5ba: 11 3a        	xorlw	0x11
+     5bb: 03 19        	btfsc	0x3, 0x2
+     5bc: a9 2d        	goto	0x5a9
+     5bd: 08 3a        	xorlw	0x8
+     5be: 03 19        	btfsc	0x3, 0x2
+     5bf: ae 2d        	goto	0x5ae
+     5c0: c1 2d        	goto	0x5c1
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.c:70
+; }
+     5c1: 08 00        	return
+
+000005c2 <_memcpy>:
+; __ptext57():
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memcpy.c:11
+; 	s = s1;
+     5c2: 20 00        	movlb	0x0
+     5c3: 57 08        	movf	0x57, w
+     5c4: dd 00        	movwf	0x5d
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memcpy.c:12
+; 	d = d1;
+     5c5: 55 08        	movf	0x55, w
+     5c6: dc 00        	movwf	0x5c
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memcpy.c:13
+; 	while(n--) {
+     5c7: d6 2d        	goto	0x5d6
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memcpy.c:14
+; 		tmp = *s++;
+     5c8: 5d 08        	movf	0x5d, w
+     5c9: 86 00        	movwf	0x6
+     5ca: 87 01        	clrf	0x7
+     5cb: 01 08        	movf	0x1, w
+     5cc: db 00        	movwf	0x5b
+     5cd: 01 30        	movlw	0x1
+     5ce: dd 07        	addwf	0x5d, f
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memcpy.c:15
+; 		*d++ = tmp;
+     5cf: 5c 08        	movf	0x5c, w
+     5d0: 86 00        	movwf	0x6
+     5d1: 87 01        	clrf	0x7
+     5d2: 5b 08        	movf	0x5b, w
+     5d3: 81 00        	movwf	0x1
+     5d4: 01 30        	movlw	0x1
+     5d5: dc 07        	addwf	0x5c, f
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memcpy.c:16
+; 	}
+     5d6: 01 30        	movlw	0x1
+     5d7: d9 02        	subwf	0x59, f
+     5d8: 00 30        	movlw	0x0
+     5d9: da 3b        	<unknown>
+     5da: 59 0a        	incf	0x59, w
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memcpy.c:13
+; 	while(n--) {
+     5db: 03 1d        	btfss	0x3, 0x2
+     5dc: e1 2d        	goto	0x5e1
+     5dd: 5a 0a        	incf	0x5a, w
+     5de: 03 1d        	btfss	0x3, 0x2
+     5df: e1 2d        	goto	0x5e1
+     5e0: e2 2d        	goto	0x5e2
+     5e1: c8 2d        	goto	0x5c8
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memcpy.c:18
+; }
+     5e2: 08 00        	return
+
+000005e3 <i1_memcpy>:
+; __ptext78():
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memcpy.c:11
+; 	s = s1;
+     5e3: 72 08        	movf	0x72, w
+     5e4: f8 00        	movwf	0x78
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memcpy.c:12
+; 	d = d1;
+     5e5: 70 08        	movf	0x70, w
+     5e6: f7 00        	movwf	0x77
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memcpy.c:13
+; 	while(n--) {
+     5e7: f6 2d        	goto	0x5f6
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memcpy.c:14
+; 		tmp = *s++;
+     5e8: 78 08        	movf	0x78, w
+     5e9: 86 00        	movwf	0x6
+     5ea: 87 01        	clrf	0x7
+     5eb: 01 08        	movf	0x1, w
+     5ec: f6 00        	movwf	0x76
+     5ed: 01 30        	movlw	0x1
+     5ee: f8 07        	addwf	0x78, f
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memcpy.c:15
+; 		*d++ = tmp;
+     5ef: 77 08        	movf	0x77, w
+     5f0: 86 00        	movwf	0x6
+     5f1: 87 01        	clrf	0x7
+     5f2: 76 08        	movf	0x76, w
+     5f3: 81 00        	movwf	0x1
+     5f4: 01 30        	movlw	0x1
+     5f5: f7 07        	addwf	0x77, f
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memcpy.c:16
+; 	}
+     5f6: 01 30        	movlw	0x1
+     5f7: f4 02        	subwf	0x74, f
+     5f8: 00 30        	movlw	0x0
+     5f9: f5 3b        	<unknown>
+     5fa: 74 0a        	incf	0x74, w
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memcpy.c:13
+; 	while(n--) {
+     5fb: 03 1d        	btfss	0x3, 0x2
+     5fc: 01 2e        	goto	0x601
+     5fd: 75 0a        	incf	0x75, w
+     5fe: 03 1d        	btfss	0x3, 0x2
+     5ff: 01 2e        	goto	0x601
+     600: 02 2e        	goto	0x602
+     601: e8 2d        	goto	0x5e8
+; c:\PROGRA~1\MICROC~1\xc8\v3.10\pic\sources\c99\common/memcpy.c:18
+; }
+     602: 08 00        	return
+
+00000603 <_main>:
+; __pmaintext():
+; D:\yiming\00work\FR685_TX_V02.X/main.c:376
+;   SYSTEM_Initialize();
+     603: 86 31        	movlp	0x6
+     604: e6 26        	call	0x6e6
+     605: 86 31        	movlp	0x6
+; D:\yiming\00work\FR685_TX_V02.X/main.c:377
+;   board_init();
+     606: 87 31        	movlp	0x7
+     607: df 27        	call	0x7df
+     608: 86 31        	movlp	0x6
+; D:\yiming\00work\FR685_TX_V02.X/main.c:380
+;   INTERRUPT_GlobalInterruptEnable();
+     609: 8b 17        	bsf	0xb, 0x7
+; D:\yiming\00work\FR685_TX_V02.X/main.c:382
+;   INTERRUPT_PeripheralInterruptEnable();
+     60a: 0b 17        	bsf	0xb, 0x6
+; D:\yiming\00work\FR685_TX_V02.X/main.c:385
+;   fKey.Byte = 0;
+     60b: 20 00        	movlb	0x0
+     60c: d1 01        	clrf	0x51
+; D:\yiming\00work\FR685_TX_V02.X/main.c:386
+;   LED7_OFF();
+     60d: 22 00        	movlb	0x2
+     60e: 0e 12        	bcf	0xe, 0x4
+; D:\yiming\00work\FR685_TX_V02.X/main.c:387
+;   LED8_OFF();
+     60f: 8e 12        	bcf	0xe, 0x5
+; D:\yiming\00work\FR685_TX_V02.X/main.c:388
+;   Rcount = 0;
+     610: 20 00        	movlb	0x0
+     611: bc 01        	clrf	0x3c
+     612: bd 01        	clrf	0x3d
+; D:\yiming\00work\FR685_TX_V02.X/main.c:389
+;   Lcount = 0;
+     613: ba 01        	clrf	0x3a
+     614: bb 01        	clrf	0x3b
+; D:\yiming\00work\FR685_TX_V02.X/main.c:392
+;     CLRWDT();
+     615: 64 00        	tris	0x4
+; D:\yiming\00work\FR685_TX_V02.X/main.c:393
+;     swState_update();
+     616: 83 31        	movlp	0x3
+     617: 15 23        	call	0x315
+     618: 86 31        	movlp	0x6
+; D:\yiming\00work\FR685_TX_V02.X/main.c:394
+;     LIN_handler();
+     619: 82 31        	movlp	0x2
+     61a: 52 22        	call	0x252
+     61b: 86 31        	movlp	0x6
+; D:\yiming\00work\FR685_TX_V02.X/main.c:395
+;     swSetLED();
+     61c: 80 31        	movlp	0x0
+     61d: 6d 20        	call	0x6d
+     61e: 86 31        	movlp	0x6
+     61f: 15 2e        	goto	0x615
+     620: 80 31        	movlp	0x0
+     621: 3b 28        	goto	0x3b
+
+00000622 <__ptext81>:
+; _EUSART_Transmit_ISR():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:201
+;     if(sizeof(eusartTxBuffer) > eusartTxBufferRemaining)
+     622: 08 30        	movlw	0x8
+     623: 20 00        	movlb	0x0
+     624: 43 02        	subwf	0x43, w
+     625: 03 18        	btfsc	0x3, 0x0
+     626: 28 2e        	goto	0x628
+     627: 29 2e        	goto	0x629
+     628: 3d 2e        	goto	0x63d
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:203
+;         TXREG = eusartTxBuffer[eusartTxTail++];
+     629: 44 08        	movf	0x44, w
+     62a: b0 3e        	addlw	0x30, f
+     62b: 86 00        	movwf	0x6
+     62c: 87 01        	clrf	0x7
+     62d: 01 08        	movf	0x1, w
+     62e: 23 00        	movlb	0x3
+     62f: 9a 00        	movwf	0x1a
+     630: 01 30        	movlw	0x1
+     631: 20 00        	movlb	0x0
+     632: c4 07        	addwf	0x44, f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:204
+;         if(sizeof(eusartTxBuffer) <= eusartTxTail)
+     633: 08 30        	movlw	0x8
+     634: 44 02        	subwf	0x44, w
+     635: 03 1c        	btfss	0x3, 0x0
+     636: 38 2e        	goto	0x638
+     637: 39 2e        	goto	0x639
+     638: 3a 2e        	goto	0x63a
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:206
+;             eusartTxTail = 0;
+     639: c4 01        	clrf	0x44
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:208
+;         eusartTxBufferRemaining++;
+     63a: 01 30        	movlw	0x1
+     63b: c3 07        	addwf	0x43, f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:209
+;     }
+     63c: 3f 2e        	goto	0x63f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:212
+;         PIE1bits.TXIE = 0;
+     63d: 21 00        	movlb	0x1
+     63e: 11 12        	bcf	0x11, 0x4
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:214
+; }
+     63f: 08 00        	return
+
+Disassembly of section text40:
+
+0000065c <__ptext40>:
+; __ptext40():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/pin_manager.c:60
+;     LATE = 0x00;
+     65c: 22 00        	movlb	0x2
+     65d: 90 01        	clrf	0x10
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/pin_manager.c:61
+;     LATA = 0x00;
+     65e: 8c 01        	clrf	0xc
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/pin_manager.c:62
+;     LATB = 0x00;
+     65f: 8d 01        	clrf	0xd
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/pin_manager.c:63
+;     LATC = 0x00;
+     660: 8e 01        	clrf	0xe
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/pin_manager.c:68
+;     TRISE = 0x08;
+     661: 08 30        	movlw	0x8
+     662: 21 00        	movlb	0x1
+     663: 90 00        	movwf	0x10
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/pin_manager.c:69
+;     TRISA = 0xFF;
+     664: ff 30        	movlw	0xff
+     665: 8c 00        	movwf	0xc
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/pin_manager.c:70
+;     TRISB = 0x40;
+     666: 40 30        	movlw	0x40
+     667: 8d 00        	movwf	0xd
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/pin_manager.c:71
+;     TRISC = 0x8F;
+     668: 8f 30        	movlw	0x8f
+     669: 8e 00        	movwf	0xe
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/pin_manager.c:76
+;     ANSELB = 0x00;
+     66a: 23 00        	movlb	0x3
+     66b: 8d 01        	clrf	0xd
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/pin_manager.c:77
+;     ANSELA = 0x20;
+     66c: 20 30        	movlw	0x20
+     66d: 8c 00        	movwf	0xc
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/pin_manager.c:82
+;     WPUE = 0x00;
+     66e: 24 00        	movlb	0x4
+     66f: 90 01        	clrf	0x10
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/pin_manager.c:83
+;     WPUB = 0x00;
+     670: 8d 01        	clrf	0xd
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/pin_manager.c:84
+;     OPTION_REGbits.nWPUEN = 1;
+     671: 21 00        	movlb	0x1
+     672: 95 17        	bsf	0x15, 0x7
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/pin_manager.c:90
+;     APFCON = 0x00;
+     673: 22 00        	movlb	0x2
+     674: 9d 01        	clrf	0x1d
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/pin_manager.c:97
+; }
+     675: 08 00        	return
+
+Disassembly of section text72:
+
+00000f5d <__ptext72>:
+; __ptext72():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/tmr0.c:132
+; }
+     f5d: 08 00        	return
+
+Disassembly of section text83:
+
+00000f7e <__ptext83>:
+; __ptext83():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:255
+;     RCSTAbits.CREN = 0;
+     f7e: 23 00        	movlb	0x3
+     f7f: 1d 12        	bcf	0x1d, 0x4
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:256
+;     RCSTAbits.CREN = 1;
+     f80: 1d 16        	bsf	0x1d, 0x4
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:258
+; }
+     f81: 08 00        	return
+
+Disassembly of section text84:
+
+00000f5c <__ptext84>:
+; __ptext84():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:250
+; void EUSART_DefaultFramingErrorHandler(void){}
+     f5c: 08 00        	return
+
+Disassembly of section text85:
+
+00000f7a <__ptext85>:
+; __end_of_SW_TURN_LEFT_IS_ON():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:261
+;     EUSART_RxDataHandler();
+     f7a: 86 31        	movlp	0x6
+     f7b: bd 26        	call	0x6bd
+     f7c: 8f 31        	movlp	0xf
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:262
+; }
+     f7d: 08 00        	return
+
+Disassembly of section inittext:
+
+00000fbf <init_ram>:
+; init_ram():
+     fbf: fe 00        	movwf	0x7e
+     fc0: 12 00        	moviw	FSR0++
+     fc1: 1e 00        	movwi	FSR1++
+     fc2: fe 0b        	decfsz	0x7e, f
+     fc3: c0 2f        	goto	0x7c0
+     fc4: 00 34        	retlw	0x0
+
+Disassembly of section intentry:
+
+00000004 <__pintentry>:
+; __pintentry():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/interrupt_manager.c:52
+; void __interrupt() INTERRUPT_InterruptManager (void)
+       4: 7e 14        	bsf	0x7e, 0x0
+       5: 80 31        	movlp	0x0
+       6: 00 30        	movlw	0x0
+       7: 86 00        	movwf	0x6
+       8: 00 30        	movlw	0x0
+       9: 87 00        	movwf	0x7
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/interrupt_manager.c:55
+;     if(INTCONbits.TMR0IE == 1 && INTCONbits.TMR0IF == 1)
+       a: 8b 1e        	btfss	0xb, 0x5
+       b: 0d 28        	goto	0xd
+       c: 0e 28        	goto	0xe
+       d: 16 28        	goto	0x16
+       e: 0b 1d        	btfss	0xb, 0x2
+       f: 11 28        	goto	0x11
+      10: 12 28        	goto	0x12
+      11: 16 28        	goto	0x16
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/interrupt_manager.c:57
+;         TMR0_ISR();
+      12: 87 31        	movlp	0x7
+      13: 1f 27        	call	0x71f
+      14: 80 31        	movlp	0x0
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/interrupt_manager.c:58
+;     }
+      15: 39 28        	goto	0x39
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/interrupt_manager.c:59
+;     else if(INTCONbits.PEIE == 1)
+      16: 0b 1f        	btfss	0xb, 0x6
+      17: 19 28        	goto	0x19
+      18: 1a 28        	goto	0x1a
+      19: 39 28        	goto	0x39
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/interrupt_manager.c:61
+;         if(PIE1bits.TXIE == 1 && PIR1bits.TXIF == 1)
+      1a: 21 00        	movlb	0x1
+      1b: 11 1e        	btfss	0x11, 0x4
+      1c: 1e 28        	goto	0x1e
+      1d: 1f 28        	goto	0x1f
+      1e: 2a 28        	goto	0x2a
+      1f: 20 00        	movlb	0x0
+; __pbssBANK0():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/interrupt_manager.c:61
+      20: 11 1e        	btfss	0x11, 0x4
+      21: 23 28        	goto	0x23
+      22: 24 28        	goto	0x24
+      23: 2a 28        	goto	0x2a
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/interrupt_manager.c:63
+;             EUSART_TxDefaultInterruptHandler();
+      24: 37 08        	movf	0x37, w
+      25: 8a 00        	movwf	0xa
+; _led_states():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/interrupt_manager.c:63
+      26: 36 08        	movf	0x36, w
+      27: 0a 00        	callw
+      28: 80 31        	movlp	0x0
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/interrupt_manager.c:64
+;         } 
+      29: 39 28        	goto	0x39
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/interrupt_manager.c:65
+;         else if(PIE1bits.RCIE == 1 && PIR1bits.RCIF == 1)
+      2a: 21 00        	movlb	0x1
+      2b: 91 1e        	btfss	0x11, 0x5
+; _TMR0_InterruptHandler():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/interrupt_manager.c:65
+      2c: 2e 28        	goto	0x2e
+      2d: 2f 28        	goto	0x2f
+; _EUSART_ErrorHandler():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/interrupt_manager.c:65
+      2e: 39 28        	goto	0x39
+      2f: 20 00        	movlb	0x0
+; _EUSART_OverrunErrorHandler():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/interrupt_manager.c:65
+      30: 91 1e        	btfss	0x11, 0x5
+      31: 33 28        	goto	0x33
+; _EUSART_FramingErrorHandler():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/interrupt_manager.c:65
+      32: 34 28        	goto	0x34
+      33: 39 28        	goto	0x39
+; _EUSART_RxDefaultInterruptHandler():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/interrupt_manager.c:67
+;             EUSART_RxDefaultInterruptHandler();
+      34: 35 08        	movf	0x35, w
+      35: 8a 00        	movwf	0xa
+; _EUSART_TxDefaultInterruptHandler():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/interrupt_manager.c:67
+      36: 34 08        	movf	0x34, w
+      37: 0a 00        	callw
+; _LIN_processData():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/interrupt_manager.c:67
+      38: 80 31        	movlp	0x0
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/interrupt_manager.c:78
+; }
+      39: 7e 10        	bcf	0x7e, 0x0
+; _Lcount():
+      3a: 09 00        	retfie
+
+Disassembly of section cinit:
+
+0000003d <start_initialization>:
+; __initialization():
+      3d: 80 31        	movlp	0x0
+; _timer0ReloadVal():
+      3e: 03 20        	call	0x3
+; _eusartRxLastError():
+      3f: 80 31        	movlp	0x0
+; _eusartRxCount():
+      40: eb 00        	movwf	0x6b
+; _eusartRxTail():
+      41: ef 30        	movlw	0xef
+; _eusartRxHead():
+      42: 84 00        	movwf	0x4
+; _eusartTxBufferRemaining():
+      43: 8f 30        	movlw	0x8f
+; _eusartTxTail():
+      44: 85 00        	movwf	0x5
+; _eusartTxHead():
+      45: e7 30        	movlw	0xe7
+; LIN_sendPeriodicTx@scheduleIndex():
+      46: 86 00        	movwf	0x6
+; LIN_handler@LIN_state():
+      47: 00 30        	movlw	0x0
+; _LIN_periodCallBack():
+      48: 87 00        	movwf	0x7
+; _LIN_timerCallBack():
+      49: 08 30        	movlw	0x8
+; _LIN_enablePeriodTx():
+      4a: 8f 31        	movlp	0xf
+; _LIN_timerRunning():
+      4b: bf 27        	call	0x7bf
+; _LIN_period():
+      4c: 80 31        	movlp	0x0
+; _rxIndex():
+      4d: 40 30        	movlw	0x40
+; _scheduleLength():
+      4e: 84 00        	movwf	0x4
+; _schedule():
+      4f: 86 30        	movlw	0x86
+; _LIN_txReady():
+      50: 85 00        	movwf	0x5
+; _fKey():
+      51: 20 30        	movlw	0x20
+; __pcstackBANK0():
+      52: 86 00        	movwf	0x6
+; LIN_queuePacket@i():
+      53: 01 30        	movlw	0x1
+; LIN_queuePacket@tempSchedule():
+      54: 87 00        	movwf	0x7
+; EUSART_Write@txData():
+      55: 1c 30        	movlw	0x1c
+; LIN_getChecksum_receive@data():
+      56: 8f 31        	movlp	0xf
+; LIN_init@table():
+      57: bf 27        	call	0x7bf
+; LIN_init@processData():
+      58: 80 31        	movlp	0x0
+; memset@n():
+      59: 20 30        	movlw	0x20
+; LIN_init@tableLength():
+      5a: 84 00        	movwf	0x4
+; LIN_getChecksum_receive@i():
+      5b: 00 30        	movlw	0x0
+; LIN_getChecksum_receive@checksum():
+      5c: 85 00        	movwf	0x5
+; memcpy@s():
+      5d: 32 30        	movlw	0x32
+; LIN_getPacket@data():
+      5e: 8f 31        	movlp	0xf
+; LIN_getPacket@cmd():
+      5f: b9 27        	call	0x7b9
+; processLIN@tempRxData():
+      60: 80 31        	movlp	0x0
+      61: a0 30        	movlw	0xa0
+      62: 84 00        	movwf	0x4
+      63: 00 30        	movlw	0x0
+      64: 85 00        	movwf	0x5
+      65: 47 30        	movlw	0x47
+      66: 8f 31        	movlp	0xf
+      67: b9 27        	call	0x7b9
+; processLIN@cmd():
+      68: 80 31        	movlp	0x0
+
+00000069 <end_of_initialization>:
+; __end_of__initialization():
+      69: 7e 10        	bcf	0x7e, 0x0
+      6a: 20 00        	movlb	0x0
+; __pdataBANK0():
+      6b: 86 31        	movlp	0x6
+      6c: 03 2e        	goto	0x603
+
+0000006d <_swSetLED>:
+; _swSetLED():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:33
+;     if (sw.pos.is_on() == ON) {
+      6d: 78 30        	movlw	0x78
+      6e: 84 00        	movwf	0x4
+      6f: 86 30        	movlw	0x86
+; LIN_getChecksum@pid():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:33
+      70: 85 00        	movwf	0x5
+; ___bmul@product():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:33
+      71: 01 3f        	moviw	1[FSR0]
+; i1memcpy@s1():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:33
+      72: 8a 00        	movwf	0xa
+      73: 00 3f        	moviw	0[FSR0]
+; i1memset@n():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:33
+      74: 0a 00        	callw
+; LIN_getChecksum@length():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:33
+      75: 80 31        	movlp	0x0
+; LIN_getChecksum@i():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:33
+      76: 01 3a        	xorlw	0x1
+; LIN_getChecksum@checksum():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:33
+      77: 03 1d        	btfss	0x3, 0x2
+; i1memcpy@s():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:33
+      78: 7a 28        	goto	0x7a
+; LIN_queuePacket@data():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:33
+      79: 7b 28        	goto	0x7b
+      7a: 85 28        	goto	0x85
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:34
+;         led.pos.on();
+      7b: 59 30        	movlw	0x59
+; LIN_sendPeriodicTx@periodicTx():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:34
+      7c: 84 00        	movwf	0x4
+      7d: 85 30        	movlw	0x85
+      7e: 85 00        	movwf	0x5
+      7f: 01 3f        	moviw	1[FSR0]
+      80: 8a 00        	movwf	0xa
+      81: 00 3f        	moviw	0[FSR0]
+      82: 0a 00        	callw
+      83: 80 31        	movlp	0x0
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:35
+;     } else {
+      84: 8e 28        	goto	0x8e
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:36
+;         led.pos.off();
+      85: 5b 30        	movlw	0x5b
+      86: 84 00        	movwf	0x4
+      87: 85 30        	movlw	0x85
+      88: 85 00        	movwf	0x5
+      89: 01 3f        	moviw	1[FSR0]
+      8a: 8a 00        	movwf	0xa
+      8b: 00 3f        	moviw	0[FSR0]
+      8c: 0a 00        	callw
+      8d: 80 31        	movlp	0x0
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:39
+;     if (sw.drl.is_on() == ON) {
+      8e: 7c 30        	movlw	0x7c
+      8f: 84 00        	movwf	0x4
+      90: 86 30        	movlw	0x86
+      91: 85 00        	movwf	0x5
+      92: 01 3f        	moviw	1[FSR0]
+      93: 8a 00        	movwf	0xa
+      94: 00 3f        	moviw	0[FSR0]
+      95: 0a 00        	callw
+      96: 80 31        	movlp	0x0
+      97: 01 3a        	xorlw	0x1
+      98: 03 1d        	btfss	0x3, 0x2
+      99: 9b 28        	goto	0x9b
+      9a: 9c 28        	goto	0x9c
+      9b: a6 28        	goto	0xa6
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:40
+;         led.drl.on();
+      9c: 5f 30        	movlw	0x5f
+      9d: 84 00        	movwf	0x4
+      9e: 85 30        	movlw	0x85
+      9f: 85 00        	movwf	0x5
+; __pbssBANK1():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:40
+      a0: 01 3f        	moviw	1[FSR0]
+      a1: 8a 00        	movwf	0xa
+      a2: 00 3f        	moviw	0[FSR0]
+      a3: 0a 00        	callw
+      a4: 80 31        	movlp	0x0
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:41
+;     } else {
+      a5: af 28        	goto	0xaf
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:42
+;         led.drl.off();
+      a6: 61 30        	movlw	0x61
+      a7: 84 00        	movwf	0x4
+; _eusartRxBuffer():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:42
+      a8: 85 30        	movlw	0x85
+      a9: 85 00        	movwf	0x5
+      aa: 01 3f        	moviw	1[FSR0]
+      ab: 8a 00        	movwf	0xa
+      ac: 00 3f        	moviw	0[FSR0]
+      ad: 0a 00        	callw
+      ae: 80 31        	movlp	0x0
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:44
+;     if (sw.loBeam.is_on() == ON) {
+      af: 80 30        	movlw	0x80
+; _eusartTxBuffer():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:44
+      b0: 84 00        	movwf	0x4
+      b1: 86 30        	movlw	0x86
+      b2: 85 00        	movwf	0x5
+      b3: 01 3f        	moviw	1[FSR0]
+      b4: 8a 00        	movwf	0xa
+      b5: 00 3f        	moviw	0[FSR0]
+      b6: 0a 00        	callw
+      b7: 80 31        	movlp	0x0
+; _LIN_rxPacket():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:44
+      b8: 01 3a        	xorlw	0x1
+      b9: 03 1d        	btfss	0x3, 0x2
+      ba: bc 28        	goto	0xbc
+      bb: bd 28        	goto	0xbd
+      bc: c7 28        	goto	0xc7
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:45
+;         led.loBeam.on();
+      bd: 65 30        	movlw	0x65
+      be: 84 00        	movwf	0x4
+      bf: 85 30        	movlw	0x85
+      c0: 85 00        	movwf	0x5
+      c1: 01 3f        	moviw	1[FSR0]
+      c2: 8a 00        	movwf	0xa
+      c3: 00 3f        	moviw	0[FSR0]
+; _LIN_packet():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:45
+      c4: 0a 00        	callw
+      c5: 80 31        	movlp	0x0
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:46
+;     } else {
+      c6: d0 28        	goto	0xd0
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:47
+;         led.loBeam.off();
+      c7: 67 30        	movlw	0x67
+      c8: 84 00        	movwf	0x4
+      c9: 85 30        	movlw	0x85
+      ca: 85 00        	movwf	0x5
+      cb: 01 3f        	moviw	1[FSR0]
+      cc: 8a 00        	movwf	0xa
+      cd: 00 3f        	moviw	0[FSR0]
+      ce: 0a 00        	callw
+; _ID_18_Data():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:47
+      cf: 80 31        	movlp	0x0
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:49
+;     if (sw.hiBeam.is_on() == ON) {
+      d0: 84 30        	movlw	0x84
+      d1: 84 00        	movwf	0x4
+      d2: 86 30        	movlw	0x86
+      d3: 85 00        	movwf	0x5
+      d4: 01 3f        	moviw	1[FSR0]
+      d5: 8a 00        	movwf	0xa
+      d6: 00 3f        	moviw	0[FSR0]
+; _ID_01_Data():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:49
+      d7: 0a 00        	callw
+      d8: 80 31        	movlp	0x0
+      d9: 01 3a        	xorlw	0x1
+      da: 03 1d        	btfss	0x3, 0x2
+      db: dd 28        	goto	0xdd
+      dc: de 28        	goto	0xde
+      dd: e8 28        	goto	0xe8
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:50
+;         led.hiBeam.on();
+      de: 6b 30        	movlw	0x6b
+; _ID_10_Data():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:50
+      df: 84 00        	movwf	0x4
+      e0: 85 30        	movlw	0x85
+      e1: 85 00        	movwf	0x5
+      e2: 01 3f        	moviw	1[FSR0]
+      e3: 8a 00        	movwf	0xa
+      e4: 00 3f        	moviw	0[FSR0]
+      e5: 0a 00        	callw
+      e6: 80 31        	movlp	0x0
+; __pdataBANK1():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:51
+;     } else {
+      e7: f1 28        	goto	0xf1
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:52
+;         led.hiBeam.off();
+      e8: 6d 30        	movlw	0x6d
+      e9: 84 00        	movwf	0x4
+      ea: 85 30        	movlw	0x85
+      eb: 85 00        	movwf	0x5
+      ec: 01 3f        	moviw	1[FSR0]
+      ed: 8a 00        	movwf	0xa
+      ee: 00 3f        	moviw	0[FSR0]
+      ef: 0a 00        	callw
+      f0: 80 31        	movlp	0x0
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:54
+;     if (sw.turnLeft.is_on() == ON) {
+      f1: 88 30        	movlw	0x88
+      f2: 84 00        	movwf	0x4
+      f3: 86 30        	movlw	0x86
+      f4: 85 00        	movwf	0x5
+      f5: 01 3f        	moviw	1[FSR0]
+      f6: 8a 00        	movwf	0xa
+      f7: 00 3f        	moviw	0[FSR0]
+      f8: 0a 00        	callw
+      f9: 80 31        	movlp	0x0
+      fa: 01 3a        	xorlw	0x1
+      fb: 03 1d        	btfss	0x3, 0x2
+      fc: fe 28        	goto	0xfe
+      fd: ff 28        	goto	0xff
+      fe: 09 29        	goto	0x109
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:55
+;         led.turnLeft.on();
+      ff: 71 30        	movlw	0x71
+     100: 84 00        	movwf	0x4
+     101: 85 30        	movlw	0x85
+     102: 85 00        	movwf	0x5
+     103: 01 3f        	moviw	1[FSR0]
+     104: 8a 00        	movwf	0xa
+     105: 00 3f        	moviw	0[FSR0]
+     106: 0a 00        	callw
+     107: 81 31        	movlp	0x1
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:56
+;     } else {
+     108: 12 29        	goto	0x112
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:57
+;         led.turnLeft.off();
+     109: 73 30        	movlw	0x73
+     10a: 84 00        	movwf	0x4
+     10b: 85 30        	movlw	0x85
+     10c: 85 00        	movwf	0x5
+     10d: 01 3f        	moviw	1[FSR0]
+     10e: 8a 00        	movwf	0xa
+     10f: 00 3f        	moviw	0[FSR0]
+     110: 0a 00        	callw
+     111: 81 31        	movlp	0x1
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:59
+;     if (sw.turnRight.is_on() == ON) {
+     112: 8c 30        	movlw	0x8c
+     113: 84 00        	movwf	0x4
+     114: 86 30        	movlw	0x86
+     115: 85 00        	movwf	0x5
+     116: 01 3f        	moviw	1[FSR0]
+     117: 8a 00        	movwf	0xa
+     118: 00 3f        	moviw	0[FSR0]
+     119: 0a 00        	callw
+     11a: 81 31        	movlp	0x1
+     11b: 01 3a        	xorlw	0x1
+     11c: 03 1d        	btfss	0x3, 0x2
+     11d: 1f 29        	goto	0x11f
+     11e: 20 29        	goto	0x120
+     11f: 2a 29        	goto	0x12a
+; __pdataBANK2():
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:60
+;         led.turnRight.on();
+     120: 77 30        	movlw	0x77
+     121: 84 00        	movwf	0x4
+     122: 85 30        	movlw	0x85
+     123: 85 00        	movwf	0x5
+     124: 01 3f        	moviw	1[FSR0]
+     125: 8a 00        	movwf	0xa
+     126: 00 3f        	moviw	0[FSR0]
+     127: 0a 00        	callw
+     128: 81 31        	movlp	0x1
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:61
+;     } else {
+     129: 33 29        	goto	0x133
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:62
+;         led.turnRight.off();
+     12a: 79 30        	movlw	0x79
+     12b: 84 00        	movwf	0x4
+     12c: 85 30        	movlw	0x85
+     12d: 85 00        	movwf	0x5
+     12e: 01 3f        	moviw	1[FSR0]
+     12f: 8a 00        	movwf	0xa
+     130: 00 3f        	moviw	0[FSR0]
+     131: 0a 00        	callw
+     132: 81 31        	movlp	0x1
+; D:\yiming\00work\FR685_TX_V02.X/BOARD.c:64
+; }
+     133: 08 00        	return
+
+00000134 <__ptext76>:
+; __end_of_swSetLED():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:75
+; void LIN_queuePacket(uint8_t cmd, uint8_t *data) {
+     134: 20 00        	movlb	0x0
+     135: d2 00        	movwf	0x52
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:76
+;   const lin_cmd_packet_t *tempSchedule = schedule; // copy table pointer so we can modify it
+     136: 4f 08        	movf	0x4f, w
+     137: d4 00        	movwf	0x54
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:79
+;   for (uint8_t i = 0; i < scheduleLength; i++) {
+     138: d3 01        	clrf	0x53
+     139: 49 29        	goto	0x149
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:80
+;     if (cmd == tempSchedule->cmd) {
+     13a: 54 08        	movf	0x54, w
+     13b: 86 00        	movwf	0x6
+     13c: 01 30        	movlw	0x1
+     13d: 87 00        	movwf	0x7
+     13e: 01 08        	movf	0x1, w
+     13f: 52 06        	xorwf	0x52, w
+     140: 03 1d        	btfss	0x3, 0x2
+     141: 43 29        	goto	0x143
+     142: 44 29        	goto	0x144
+     143: 45 29        	goto	0x145
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:82
+;       break;
+     144: 4f 29        	goto	0x14f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:84
+;     tempSchedule++; // go to next entry
+     145: 07 30        	movlw	0x7
+     146: d4 07        	addwf	0x54, f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:85
+;   }
+     147: 01 30        	movlw	0x1
+     148: d3 07        	addwf	0x53, f
+     149: 4e 08        	movf	0x4e, w
+     14a: 53 02        	subwf	0x53, w
+     14b: 03 1c        	btfss	0x3, 0x0
+     14c: 4e 29        	goto	0x14e
+     14d: 4f 29        	goto	0x14f
+     14e: 3a 29        	goto	0x13a
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:92
+;   memset(LIN_packet.rawPacket, 0, sizeof(LIN_packet.rawPacket));
+     14f: c4 30        	movlw	0xc4
+     150: f0 00        	movwf	0x70
+     151: 00 30        	movlw	0x0
+     152: f1 00        	movwf	0x71
+     153: 00 30        	movlw	0x0
+     154: f2 00        	movwf	0x72
+     155: f3 00        	movwf	0x73
+     156: 0b 30        	movlw	0xb
+     157: f4 00        	movwf	0x74
+     158: 00 30        	movlw	0x0
+     159: f5 00        	movwf	0x75
+     15a: 86 31        	movlp	0x6
+     15b: a6 26        	call	0x6a6
+     15c: 81 31        	movlp	0x1
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:95
+;   LIN_packet.PID = LIN_calcParity(tempSchedule->cmd);
+     15d: 20 00        	movlb	0x0
+     15e: 54 08        	movf	0x54, w
+     15f: 86 00        	movwf	0x6
+     160: 01 30        	movlw	0x1
+     161: 87 00        	movwf	0x7
+     162: 01 08        	movf	0x1, w
+     163: 81 31        	movlp	0x1
+     164: cc 21        	call	0x1cc
+     165: 81 31        	movlp	0x1
+     166: 21 00        	movlb	0x1
+     167: c4 00        	movwf	0x44
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:97
+;   if (tempSchedule->type == TRANSMIT) {
+     168: 20 00        	movlb	0x0
+     169: 54 0a        	incf	0x54, w
+     16a: 86 00        	movwf	0x6
+     16b: 01 30        	movlw	0x1
+     16c: 87 00        	movwf	0x7
+     16d: 01 08        	movf	0x1, w
+     16e: 03 1d        	btfss	0x3, 0x2
+     16f: 71 29        	goto	0x171
+     170: 72 29        	goto	0x172
+     171: af 29        	goto	0x1af
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:100
+;     if (tempSchedule->length > 0) {
+     172: 54 08        	movf	0x54, w
+     173: 02 3e        	addlw	0x2, w
+     174: 86 00        	movwf	0x6
+     175: 01 30        	movlw	0x1
+     176: 87 00        	movwf	0x7
+     177: 01 08        	movf	0x1, w
+     178: 03 19        	btfsc	0x3, 0x2
+     179: 7b 29        	goto	0x17b
+     17a: 7c 29        	goto	0x17c
+     17b: 9c 29        	goto	0x19c
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:101
+;       LIN_packet.length = tempSchedule->length;
+     17c: 54 08        	movf	0x54, w
+     17d: 02 3e        	addlw	0x2, w
+     17e: 86 00        	movwf	0x6
+     17f: 01 30        	movlw	0x1
+     180: 87 00        	movwf	0x7
+     181: 01 08        	movf	0x1, w
+     182: 21 00        	movlb	0x1
+     183: ce 00        	movwf	0x4e
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:102
+;       memcpy(LIN_packet.data, data, tempSchedule->length);
+     184: c5 30        	movlw	0xc5
+     185: f0 00        	movwf	0x70
+     186: 00 30        	movlw	0x0
+     187: f1 00        	movwf	0x71
+     188: 79 08        	movf	0x79, w
+     189: f2 00        	movwf	0x72
+     18a: f3 01        	clrf	0x73
+     18b: 20 00        	movlb	0x0
+     18c: 54 08        	movf	0x54, w
+     18d: 02 3e        	addlw	0x2, w
+     18e: 86 00        	movwf	0x6
+     18f: 01 30        	movlw	0x1
+     190: 87 00        	movwf	0x7
+     191: 01 08        	movf	0x1, w
+     192: fa 00        	movwf	0x7a
+     193: fb 01        	clrf	0x7b
+     194: 7a 08        	movf	0x7a, w
+     195: f4 00        	movwf	0x74
+     196: 7b 08        	movf	0x7b, w
+     197: f5 00        	movwf	0x75
+     198: 85 31        	movlp	0x5
+     199: e3 25        	call	0x5e3
+     19a: 81 31        	movlp	0x1
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:103
+;     } else {
+     19b: a1 29        	goto	0x1a1
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:104
+;       LIN_packet.length = 1; // send dummy byte for checksum
+     19c: 01 30        	movlw	0x1
+     19d: 21 00        	movlb	0x1
+     19e: ce 00        	movwf	0x4e
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:105
+;       LIN_packet.data[0] = 0xAA;
+     19f: aa 30        	movlw	0xaa
+     1a0: c5 00        	movwf	0x45
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:109
+;     LIN_packet.checksum = LIN_getChecksum(LIN_packet.length, LIN_packet.PID, LIN_packet.data);
+     1a1: 21 00        	movlb	0x1
+     1a2: 44 08        	movf	0x44, w
+     1a3: f0 00        	movwf	0x70
+     1a4: c5 30        	movlw	0xc5
+     1a5: f1 00        	movwf	0x71
+     1a6: 00 30        	movlw	0x0
+     1a7: f2 00        	movwf	0x72
+     1a8: 4e 08        	movf	0x4e, w
+     1a9: 84 31        	movlp	0x4
+     1aa: b6 24        	call	0x4b6
+     1ab: 81 31        	movlp	0x1
+     1ac: 21 00        	movlb	0x1
+     1ad: cd 00        	movwf	0x4d
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:111
+;   } else {                                        // Rx packet
+     1ae: c8 29        	goto	0x1c8
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:112
+;     LIN_rxPacket.rxLength = tempSchedule->length; // data length for rx data processing
+     1af: 54 08        	movf	0x54, w
+     1b0: 02 3e        	addlw	0x2, w
+     1b1: 86 00        	movwf	0x6
+     1b2: 01 30        	movlw	0x1
+     1b3: 87 00        	movwf	0x7
+     1b4: 01 08        	movf	0x1, w
+     1b5: 21 00        	movlb	0x1
+     1b6: b9 00        	movwf	0x39
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:113
+;     LIN_rxPacket.cmd = tempSchedule->cmd;         // command for rx data processing
+     1b7: 20 00        	movlb	0x0
+     1b8: 54 08        	movf	0x54, w
+     1b9: 86 00        	movwf	0x6
+     1ba: 01 30        	movlw	0x1
+     1bb: 87 00        	movwf	0x7
+     1bc: 01 08        	movf	0x1, w
+     1bd: 21 00        	movlb	0x1
+     1be: b8 00        	movwf	0x38
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:114
+;     LIN_rxPacket.timeout = tempSchedule->timeout;
+     1bf: 20 00        	movlb	0x0
+     1c0: 54 08        	movf	0x54, w
+     1c1: 03 3e        	addlw	0x3, w
+     1c2: 86 00        	movwf	0x6
+     1c3: 01 30        	movlw	0x1
+     1c4: 87 00        	movwf	0x7
+     1c5: 01 08        	movf	0x1, w
+     1c6: 21 00        	movlb	0x1
+     1c7: c3 00        	movwf	0x43
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:117
+;   LIN_txReady = true;
+     1c8: 01 30        	movlw	0x1
+     1c9: 20 00        	movlb	0x0
+     1ca: d0 00        	movwf	0x50
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:118
+; }
+     1cb: 08 00        	return
+
+000001cc <__ptext80>:
+; _LIN_calcParity():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:225
+; uint8_t LIN_calcParity(uint8_t CMD) {
+     1cc: f1 00        	movwf	0x71
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:227
+;   PID.rawPID = CMD;
+     1cd: 71 08        	movf	0x71, w
+     1ce: f2 00        	movwf	0x72
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:232
+;   PID.P0 = PID.ID0 ^ PID.ID1;
+     1cf: f2 18        	btfsc	0x72, 0x1
+     1d0: d2 29        	goto	0x1d2
+     1d1: d4 29        	goto	0x1d4
+     1d2: 01 30        	movlw	0x1
+     1d3: d5 29        	goto	0x1d5
+     1d4: 00 30        	movlw	0x0
+     1d5: f0 00        	movwf	0x70
+     1d6: 72 18        	btfsc	0x72, 0x0
+     1d7: d9 29        	goto	0x1d9
+     1d8: db 29        	goto	0x1db
+     1d9: 01 30        	movlw	0x1
+     1da: dc 29        	goto	0x1dc
+     1db: 00 30        	movlw	0x0
+     1dc: 70 06        	xorwf	0x70, w
+     1dd: 03 1d        	btfss	0x3, 0x2
+     1de: e0 29        	goto	0x1e0
+     1df: e2 29        	goto	0x1e2
+     1e0: 72 17        	bsf	0x72, 0x6
+     1e1: e3 29        	goto	0x1e3
+     1e2: 72 13        	bcf	0x72, 0x6
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:233
+;   PID.P0 = PID.P0 ^ PID.ID2;
+     1e3: 72 19        	btfsc	0x72, 0x2
+     1e4: e6 29        	goto	0x1e6
+     1e5: e8 29        	goto	0x1e8
+     1e6: 01 30        	movlw	0x1
+     1e7: e9 29        	goto	0x1e9
+     1e8: 00 30        	movlw	0x0
+     1e9: f0 00        	movwf	0x70
+     1ea: 72 1b        	btfsc	0x72, 0x6
+     1eb: ed 29        	goto	0x1ed
+     1ec: ef 29        	goto	0x1ef
+     1ed: 01 30        	movlw	0x1
+     1ee: f0 29        	goto	0x1f0
+     1ef: 00 30        	movlw	0x0
+     1f0: 70 06        	xorwf	0x70, w
+     1f1: 03 1d        	btfss	0x3, 0x2
+     1f2: f4 29        	goto	0x1f4
+     1f3: f6 29        	goto	0x1f6
+     1f4: 72 17        	bsf	0x72, 0x6
+     1f5: f7 29        	goto	0x1f7
+     1f6: 72 13        	bcf	0x72, 0x6
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:234
+;   PID.P0 = PID.P0 ^ PID.ID4;
+     1f7: 72 1a        	btfsc	0x72, 0x4
+     1f8: fa 29        	goto	0x1fa
+     1f9: fc 29        	goto	0x1fc
+     1fa: 01 30        	movlw	0x1
+     1fb: fd 29        	goto	0x1fd
+     1fc: 00 30        	movlw	0x0
+     1fd: f0 00        	movwf	0x70
+     1fe: 72 1b        	btfsc	0x72, 0x6
+     1ff: 01 2a        	goto	0x201
+     200: 03 2a        	goto	0x203
+     201: 01 30        	movlw	0x1
+     202: 04 2a        	goto	0x204
+     203: 00 30        	movlw	0x0
+     204: 70 06        	xorwf	0x70, w
+     205: 03 1d        	btfss	0x3, 0x2
+     206: 08 2a        	goto	0x208
+     207: 0a 2a        	goto	0x20a
+     208: 72 17        	bsf	0x72, 0x6
+     209: 0b 2a        	goto	0x20b
+     20a: 72 13        	bcf	0x72, 0x6
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:235
+;   PID.P1 = PID.ID1 ^ PID.ID3;
+     20b: f2 19        	btfsc	0x72, 0x3
+     20c: 0e 2a        	goto	0x20e
+     20d: 10 2a        	goto	0x210
+     20e: 01 30        	movlw	0x1
+     20f: 11 2a        	goto	0x211
+     210: 00 30        	movlw	0x0
+     211: f0 00        	movwf	0x70
+     212: f2 18        	btfsc	0x72, 0x1
+     213: 15 2a        	goto	0x215
+     214: 17 2a        	goto	0x217
+     215: 01 30        	movlw	0x1
+     216: 18 2a        	goto	0x218
+     217: 00 30        	movlw	0x0
+     218: 70 06        	xorwf	0x70, w
+     219: 03 1d        	btfss	0x3, 0x2
+     21a: 1c 2a        	goto	0x21c
+     21b: 1e 2a        	goto	0x21e
+     21c: f2 17        	bsf	0x72, 0x7
+     21d: 1f 2a        	goto	0x21f
+     21e: f2 13        	bcf	0x72, 0x7
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:236
+;   PID.P1 = PID.P1 ^ PID.ID4;
+     21f: 72 1a        	btfsc	0x72, 0x4
+     220: 22 2a        	goto	0x222
+     221: 24 2a        	goto	0x224
+     222: 01 30        	movlw	0x1
+     223: 25 2a        	goto	0x225
+     224: 00 30        	movlw	0x0
+     225: f0 00        	movwf	0x70
+     226: f2 1b        	btfsc	0x72, 0x7
+     227: 29 2a        	goto	0x229
+     228: 2b 2a        	goto	0x22b
+     229: 01 30        	movlw	0x1
+     22a: 2c 2a        	goto	0x22c
+     22b: 00 30        	movlw	0x0
+     22c: 70 06        	xorwf	0x70, w
+     22d: 03 1d        	btfss	0x3, 0x2
+     22e: 30 2a        	goto	0x230
+     22f: 32 2a        	goto	0x232
+     230: f2 17        	bsf	0x72, 0x7
+     231: 33 2a        	goto	0x233
+     232: f2 13        	bcf	0x72, 0x7
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:237
+;   PID.P1 = PID.P1 ^ PID.ID5;
+     233: f2 1a        	btfsc	0x72, 0x5
+     234: 36 2a        	goto	0x236
+     235: 38 2a        	goto	0x238
+     236: 01 30        	movlw	0x1
+     237: 39 2a        	goto	0x239
+     238: 00 30        	movlw	0x0
+     239: f0 00        	movwf	0x70
+     23a: f2 1b        	btfsc	0x72, 0x7
+     23b: 3d 2a        	goto	0x23d
+     23c: 3f 2a        	goto	0x23f
+     23d: 01 30        	movlw	0x1
+     23e: 40 2a        	goto	0x240
+     23f: 00 30        	movlw	0x0
+     240: 70 06        	xorwf	0x70, w
+     241: 03 1d        	btfss	0x3, 0x2
+     242: 44 2a        	goto	0x244
+     243: 46 2a        	goto	0x246
+     244: f2 17        	bsf	0x72, 0x7
+     245: 47 2a        	goto	0x247
+     246: f2 13        	bcf	0x72, 0x7
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:238
+;   PID.P1 = ~PID.P1;
+     247: 03 10        	bcf	0x3, 0x0
+     248: f2 1f        	btfss	0x72, 0x7
+     249: 03 14        	bsf	0x3, 0x0
+     24a: 03 18        	btfsc	0x3, 0x0
+     24b: 4d 2a        	goto	0x24d
+     24c: 4f 2a        	goto	0x24f
+     24d: f2 17        	bsf	0x72, 0x7
+     24e: 50 2a        	goto	0x250
+     24f: f2 13        	bcf	0x72, 0x7
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:240
+;   return PID.rawPID;
+     250: 72 08        	movf	0x72, w
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:241
+; }
+     251: 08 00        	return
+
+00000252 <__ptext53>:
+; __end_of_LIN_calcParity():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:124
+;   switch (LIN_state) {
+     252: b4 2a        	goto	0x2b4
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:126
+;     if (LIN_txReady == true) {
+     253: 50 03        	decf	0x50, w
+     254: 03 1d        	btfss	0x3, 0x2
+     255: 57 2a        	goto	0x257
+     256: 58 2a        	goto	0x258
+     257: cb 2a        	goto	0x2cb
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:127
+;       LIN_txReady = false;
+     258: d0 01        	clrf	0x50
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:128
+;       LIN_disableRx(); // disable EUSART rx
+     259: 8f 31        	movlp	0xf
+     25a: 86 27        	call	0x786
+     25b: 82 31        	movlp	0x2
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:130
+;       LIN_sendPacket();
+     25c: 84 31        	movlp	0x4
+     25d: 13 24        	call	0x413
+     25e: 82 31        	movlp	0x2
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:131
+;       LIN_state = LIN_TX_IP;
+     25f: 01 30        	movlw	0x1
+     260: 20 00        	movlb	0x0
+     261: c7 00        	movwf	0x47
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:132
+;     } else {
+     262: cb 2a        	goto	0x2cb
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:138
+;     if (PIE1bits.TXIE == 0) {
+     263: 21 00        	movlb	0x1
+     264: 11 1a        	btfsc	0x11, 0x4
+     265: 67 2a        	goto	0x267
+     266: 68 2a        	goto	0x268
+     267: cb 2a        	goto	0x2cb
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:139
+;       if (TXSTAbits.TRMT == 1) {
+     268: 23 00        	movlb	0x3
+     269: 9e 1c        	btfss	0x1e, 0x1
+     26a: 6c 2a        	goto	0x26c
+     26b: 6d 2a        	goto	0x26d
+     26c: cb 2a        	goto	0x2cb
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:141
+;         if (LIN_rxPacket.rxLength > 0) {
+     26d: 21 00        	movlb	0x1
+     26e: 39 08        	movf	0x39, w
+     26f: 03 19        	btfsc	0x3, 0x2
+     270: 72 2a        	goto	0x272
+     271: 73 2a        	goto	0x273
+     272: 7e 2a        	goto	0x27e
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:143
+;           LIN_startTimer(LIN_rxPacket.timeout);
+     273: 43 08        	movf	0x43, w
+     274: 87 31        	movlp	0x7
+     275: 2f 27        	call	0x72f
+     276: 82 31        	movlp	0x2
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:144
+;           LIN_enableRx(); // enable EUSART rx
+     277: 8f 31        	movlp	0xf
+     278: 8b 27        	call	0x78b
+     279: 82 31        	movlp	0x2
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:145
+;           LIN_state = LIN_RX_IP;
+     27a: 02 30        	movlw	0x2
+     27b: 20 00        	movlb	0x0
+     27c: c7 00        	movwf	0x47
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:146
+;         } else {
+     27d: cb 2a        	goto	0x2cb
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:147
+;           LIN_state = LIN_IDLE;
+     27e: 20 00        	movlb	0x0
+     27f: c7 01        	clrf	0x47
+     280: cb 2a        	goto	0x2cb
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:154
+;     if (LIN_timerRunning == false) {
+     281: 4b 08        	movf	0x4b, w
+     282: 03 1d        	btfss	0x3, 0x2
+     283: 85 2a        	goto	0x285
+     284: 86 2a        	goto	0x286
+     285: 97 2a        	goto	0x297
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:157
+;       rxIndex = 0;
+     286: cd 01        	clrf	0x4d
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:158
+;       LIN_state = LIN_IDLE;
+     287: c7 01        	clrf	0x47
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:159
+;       memset(LIN_rxPacket.rawPacket, 0, sizeof(LIN_rxPacket.rawPacket)); // clear receive data
+     288: b8 30        	movlw	0xb8
+     289: d5 00        	movwf	0x55
+     28a: 00 30        	movlw	0x0
+     28b: d6 00        	movwf	0x56
+     28c: 00 30        	movlw	0x0
+     28d: d7 00        	movwf	0x57
+     28e: d8 00        	movwf	0x58
+     28f: 0c 30        	movlw	0xc
+     290: d9 00        	movwf	0x59
+     291: 00 30        	movlw	0x0
+     292: da 00        	movwf	0x5a
+     293: 86 31        	movlp	0x6
+     294: 8e 26        	call	0x68e
+     295: 82 31        	movlp	0x2
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:160
+;     } else if (EUSART_is_rx_ready()) {
+     296: cb 2a        	goto	0x2cb
+     297: 8f 31        	movlp	0xf
+     298: f7 27        	call	0x7f7
+     299: 82 31        	movlp	0x2
+     29a: 00 3a        	xorlw	0x0
+     29b: 03 19        	btfsc	0x3, 0x2
+     29c: 9e 2a        	goto	0x29e
+     29d: 9f 2a        	goto	0x29f
+     29e: cb 2a        	goto	0x2cb
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:161
+;       if (LIN_receivePacket() == true) {
+     29f: 83 31        	movlp	0x3
+     2a0: 9b 23        	call	0x39b
+     2a1: 82 31        	movlp	0x2
+     2a2: 01 3a        	xorlw	0x1
+     2a3: 03 1d        	btfss	0x3, 0x2
+     2a4: a6 2a        	goto	0x2a6
+     2a5: a7 2a        	goto	0x2a7
+     2a6: cb 2a        	goto	0x2cb
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:163
+;         LIN_disableRx(); // disable EUSART rx
+     2a7: 8f 31        	movlp	0xf
+     2a8: 86 27        	call	0x786
+     2a9: 82 31        	movlp	0x2
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:164
+;         LIN_state = LIN_RX_RDY;
+     2aa: 03 30        	movlw	0x3
+     2ab: 20 00        	movlb	0x0
+     2ac: c7 00        	movwf	0x47
+     2ad: cb 2a        	goto	0x2cb
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:170
+;     LIN_processData();
+     2ae: 39 08        	movf	0x39, w
+     2af: 8a 00        	movwf	0xa
+     2b0: 38 08        	movf	0x38, w
+     2b1: 0a 00        	callw
+     2b2: 82 31        	movlp	0x2
+     2b3: 7e 2a        	goto	0x27e
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:173
+;   }
+     2b4: 20 00        	movlb	0x0
+     2b5: 47 08        	movf	0x47, w
+     2b6: e9 00        	movwf	0x69
+     2b7: ea 01        	clrf	0x6a
+     2b8: 6a 08        	movf	0x6a, w
+     2b9: 00 3a        	xorlw	0x0
+     2ba: 03 19        	btfsc	0x3, 0x2
+     2bb: bd 2a        	goto	0x2bd
+     2bc: cb 2a        	goto	0x2cb
+     2bd: 69 08        	movf	0x69, w
+     2be: 00 3a        	xorlw	0x0
+     2bf: 03 19        	btfsc	0x3, 0x2
+     2c0: 53 2a        	goto	0x253
+     2c1: 01 3a        	xorlw	0x1
+     2c2: 03 19        	btfsc	0x3, 0x2
+     2c3: 63 2a        	goto	0x263
+     2c4: 03 3a        	xorlw	0x3
+     2c5: 03 19        	btfsc	0x3, 0x2
+     2c6: 81 2a        	goto	0x281
+     2c7: 01 3a        	xorlw	0x1
+     2c8: 03 19        	btfsc	0x3, 0x2
+     2c9: ae 2a        	goto	0x2ae
+     2ca: cb 2a        	goto	0x2cb
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:175
+; }
+     2cb: 08 00        	return
+
+000002cc <__ptext74>:
+; _LIN_sendPeriodicTx():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:334
+;   LIN_periodCallBack = 0;
+     2cc: 20 00        	movlb	0x0
+     2cd: c8 01        	clrf	0x48
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:335
+;   periodicTx = schedule + scheduleIndex;
+     2ce: 07 30        	movlw	0x7
+     2cf: f0 00        	movwf	0x70
+     2d0: 46 08        	movf	0x46, w
+     2d1: 87 31        	movlp	0x7
+     2d2: 0c 27        	call	0x70c
+     2d3: 82 31        	movlp	0x2
+     2d4: 20 00        	movlb	0x0
+     2d5: 4f 07        	addwf	0x4f, w
+     2d6: fc 00        	movwf	0x7c
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:337
+;   if (periodicTx->period > 0) {
+     2d7: 7c 08        	movf	0x7c, w
+     2d8: 04 3e        	addlw	0x4, w
+     2d9: 86 00        	movwf	0x6
+     2da: 01 30        	movlw	0x1
+     2db: 87 00        	movwf	0x7
+     2dc: 01 08        	movf	0x1, w
+     2dd: 03 19        	btfsc	0x3, 0x2
+     2de: e0 2a        	goto	0x2e0
+     2df: e1 2a        	goto	0x2e1
+     2e0: f0 2a        	goto	0x2f0
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:338
+;     LIN_queuePacket(periodicTx->cmd, periodicTx->data);
+     2e1: 7c 08        	movf	0x7c, w
+     2e2: 86 00        	movwf	0x6
+     2e3: 01 30        	movlw	0x1
+     2e4: 87 00        	movwf	0x7
+     2e5: 01 30        	movlw	0x1
+     2e6: 45 3f        	moviw	5[FSR1]
+     2e7: f9 00        	movwf	0x79
+     2e8: 7c 08        	movf	0x7c, w
+     2e9: 86 00        	movwf	0x6
+     2ea: 01 30        	movlw	0x1
+     2eb: 87 00        	movwf	0x7
+     2ec: 01 08        	movf	0x1, w
+     2ed: 81 31        	movlp	0x1
+     2ee: 34 21        	call	0x134
+     2ef: 82 31        	movlp	0x2
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:342
+;     if (++scheduleIndex >= scheduleLength) {
+     2f0: 01 30        	movlw	0x1
+     2f1: 20 00        	movlb	0x0
+     2f2: c6 07        	addwf	0x46, f
+     2f3: 4e 08        	movf	0x4e, w
+     2f4: 46 02        	subwf	0x46, w
+     2f5: 03 1c        	btfss	0x3, 0x0
+     2f6: f8 2a        	goto	0x2f8
+     2f7: f9 2a        	goto	0x2f9
+     2f8: fa 2a        	goto	0x2fa
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:343
+;       scheduleIndex = 0;
+     2f9: c6 01        	clrf	0x46
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:345
+;     periodicTx = schedule + scheduleIndex;
+     2fa: 07 30        	movlw	0x7
+     2fb: f0 00        	movwf	0x70
+     2fc: 46 08        	movf	0x46, w
+     2fd: 87 31        	movlp	0x7
+     2fe: 0c 27        	call	0x70c
+     2ff: 82 31        	movlp	0x2
+     300: 20 00        	movlb	0x0
+     301: 4f 07        	addwf	0x4f, w
+     302: fc 00        	movwf	0x7c
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:346
+;   } while (periodicTx->period == 0);
+     303: 7c 08        	movf	0x7c, w
+     304: 04 3e        	addlw	0x4, w
+     305: 86 00        	movwf	0x6
+     306: 01 30        	movlw	0x1
+     307: 87 00        	movwf	0x7
+     308: 01 08        	movf	0x1, w
+     309: 03 19        	btfsc	0x3, 0x2
+     30a: 0c 2b        	goto	0x30c
+     30b: 0d 2b        	goto	0x30d
+     30c: f0 2a        	goto	0x2f0
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:348
+;   LIN_period = periodicTx->period;
+     30d: 7c 08        	movf	0x7c, w
+     30e: 04 3e        	addlw	0x4, w
+     30f: 86 00        	movwf	0x6
+     310: 01 30        	movlw	0x1
+     311: 87 00        	movwf	0x7
+     312: 01 08        	movf	0x1, w
+     313: cc 00        	movwf	0x4c
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:349
+; }
+     314: 08 00        	return
+
+00000315 <_swState_update>:
+; __end_of_LIN_sendPeriodicTx():
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:99
+;   sw_states.pos = sw.pos.get();
+     315: 76 30        	movlw	0x76
+     316: 84 00        	movwf	0x4
+     317: 86 30        	movlw	0x86
+     318: 85 00        	movwf	0x5
+     319: 01 3f        	moviw	1[FSR0]
+     31a: 8a 00        	movwf	0xa
+     31b: 00 3f        	moviw	0[FSR0]
+     31c: 0a 00        	callw
+     31d: 83 31        	movlp	0x3
+     31e: 20 00        	movlb	0x0
+     31f: a0 00        	movwf	0x20
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:100
+;   sw_states.drl = sw.drl.get();
+     320: 7a 30        	movlw	0x7a
+     321: 84 00        	movwf	0x4
+     322: 86 30        	movlw	0x86
+     323: 85 00        	movwf	0x5
+     324: 01 3f        	moviw	1[FSR0]
+     325: 8a 00        	movwf	0xa
+     326: 00 3f        	moviw	0[FSR0]
+     327: 0a 00        	callw
+     328: 83 31        	movlp	0x3
+     329: 20 00        	movlb	0x0
+     32a: a1 00        	movwf	0x21
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:101
+;   sw_states.loBeam = sw.loBeam.get();
+     32b: 7e 30        	movlw	0x7e
+     32c: 84 00        	movwf	0x4
+     32d: 86 30        	movlw	0x86
+     32e: 85 00        	movwf	0x5
+     32f: 01 3f        	moviw	1[FSR0]
+     330: 8a 00        	movwf	0xa
+     331: 00 3f        	moviw	0[FSR0]
+     332: 0a 00        	callw
+     333: 83 31        	movlp	0x3
+     334: 20 00        	movlb	0x0
+     335: a2 00        	movwf	0x22
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:102
+;   sw_states.hiBeam = sw.hiBeam.get();
+     336: 82 30        	movlw	0x82
+     337: 84 00        	movwf	0x4
+     338: 86 30        	movlw	0x86
+     339: 85 00        	movwf	0x5
+     33a: 01 3f        	moviw	1[FSR0]
+     33b: 8a 00        	movwf	0xa
+     33c: 00 3f        	moviw	0[FSR0]
+     33d: 0a 00        	callw
+     33e: 83 31        	movlp	0x3
+     33f: 20 00        	movlb	0x0
+     340: a3 00        	movwf	0x23
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:103
+;   sw_states.turnLeft = sw.turnLeft.get();
+     341: 86 30        	movlw	0x86
+     342: 84 00        	movwf	0x4
+     343: 86 30        	movlw	0x86
+     344: 85 00        	movwf	0x5
+     345: 01 3f        	moviw	1[FSR0]
+     346: 8a 00        	movwf	0xa
+     347: 00 3f        	moviw	0[FSR0]
+     348: 0a 00        	callw
+     349: 83 31        	movlp	0x3
+     34a: 20 00        	movlb	0x0
+     34b: a4 00        	movwf	0x24
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:104
+;   sw_states.turnRight = sw.turnRight.get();
+     34c: 8a 30        	movlw	0x8a
+     34d: 84 00        	movwf	0x4
+     34e: 86 30        	movlw	0x86
+     34f: 85 00        	movwf	0x5
+     350: 01 3f        	moviw	1[FSR0]
+     351: 8a 00        	movwf	0xa
+     352: 00 3f        	moviw	0[FSR0]
+     353: 0a 00        	callw
+     354: 83 31        	movlp	0x3
+     355: 20 00        	movlb	0x0
+     356: a5 00        	movwf	0x25
+; D:\yiming\00work\FR685_TX_V02.X/SWITCH.c:105
+; }
+     357: 08 00        	return
+
+00000358 <__ptext47>:
+; __ptext47():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:91
+;     PIE1bits.RCIE = 0;
+     358: 21 00        	movlb	0x1
+     359: 91 12        	bcf	0x11, 0x5
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:92
+;     EUSART_SetRxInterruptHandler(EUSART_Receive_ISR);
+     35a: d9 30        	movlw	0xd9
+     35b: 20 00        	movlb	0x0
+     35c: d5 00        	movwf	0x55
+     35d: 03 30        	movlw	0x3
+     35e: d6 00        	movwf	0x56
+     35f: 8f 31        	movlp	0xf
+     360: a7 27        	call	0x7a7
+     361: 83 31        	movlp	0x3
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:93
+;     PIE1bits.TXIE = 0;
+     362: 21 00        	movlb	0x1
+     363: 11 12        	bcf	0x11, 0x4
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:94
+;     EUSART_SetTxInterruptHandler(EUSART_Transmit_ISR);
+     364: 22 30        	movlw	0x22
+     365: 20 00        	movlb	0x0
+     366: d5 00        	movwf	0x55
+     367: 06 30        	movlw	0x6
+     368: d6 00        	movwf	0x56
+     369: 8f 31        	movlp	0xf
+     36a: ad 27        	call	0x7ad
+     36b: 83 31        	movlp	0x3
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:98
+;     BAUDCON = 0x18;
+     36c: 18 30        	movlw	0x18
+     36d: 23 00        	movlb	0x3
+     36e: 9f 00        	movwf	0x1f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:101
+;     RCSTA = 0x90;
+     36f: 90 30        	movlw	0x90
+     370: 9d 00        	movwf	0x1d
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:104
+;     TXSTA = 0x24;
+     371: 24 30        	movlw	0x24
+     372: 9e 00        	movwf	0x1e
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:107
+;     SPBRGL = 0xFF;
+     373: ff 30        	movlw	0xff
+     374: 9b 00        	movwf	0x1b
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:110
+;     SPBRGH = 0x02;
+     375: 02 30        	movlw	0x2
+     376: 9c 00        	movwf	0x1c
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:113
+;     EUSART_SetFramingErrorHandler(EUSART_DefaultFramingErrorHandler);
+     377: 5c 30        	movlw	0x5c
+     378: 20 00        	movlb	0x0
+     379: d5 00        	movwf	0x55
+     37a: 0f 30        	movlw	0xf
+     37b: d6 00        	movwf	0x56
+     37c: 8f 31        	movlp	0xf
+     37d: 9b 27        	call	0x79b
+     37e: 83 31        	movlp	0x3
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:114
+;     EUSART_SetOverrunErrorHandler(EUSART_DefaultOverrunErrorHandler);
+     37f: 7e 30        	movlw	0x7e
+     380: 20 00        	movlb	0x0
+     381: d5 00        	movwf	0x55
+     382: 0f 30        	movlw	0xf
+     383: d6 00        	movwf	0x56
+     384: 8f 31        	movlp	0xf
+     385: a1 27        	call	0x7a1
+     386: 83 31        	movlp	0x3
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:115
+;     EUSART_SetErrorHandler(EUSART_DefaultErrorHandler);
+     387: 7a 30        	movlw	0x7a
+     388: 20 00        	movlb	0x0
+     389: d5 00        	movwf	0x55
+     38a: 0f 30        	movlw	0xf
+     38b: d6 00        	movwf	0x56
+     38c: 8f 31        	movlp	0xf
+     38d: 95 27        	call	0x795
+     38e: 83 31        	movlp	0x3
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:117
+;     eusartRxLastError.status = 0;
+     38f: 20 00        	movlb	0x0
+     390: bf 01        	clrf	0x3f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:120
+;     eusartTxHead = 0;
+     391: c5 01        	clrf	0x45
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:121
+;     eusartTxTail = 0;
+     392: c4 01        	clrf	0x44
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:122
+;     eusartTxBufferRemaining = sizeof(eusartTxBuffer);
+     393: 08 30        	movlw	0x8
+     394: c3 00        	movwf	0x43
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:124
+;     eusartRxHead = 0;
+     395: c2 01        	clrf	0x42
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:125
+;     eusartRxTail = 0;
+     396: c1 01        	clrf	0x41
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:126
+;     eusartRxCount = 0;
+     397: c0 01        	clrf	0x40
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:129
+;     PIE1bits.RCIE = 1;
+     398: 21 00        	movlb	0x1
+     399: 91 16        	bsf	0x11, 0x5
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:130
+; }
+     39a: 08 00        	return
+
+0000039b <__ptext63>:
+; __ptext63():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:180
+;   if (rxIndex < LIN_rxPacket.rxLength) {
+     39b: 21 00        	movlb	0x1
+     39c: 39 08        	movf	0x39, w
+     39d: 20 00        	movlb	0x0
+     39e: 4d 02        	subwf	0x4d, w
+     39f: 03 18        	btfsc	0x3, 0x0
+     3a0: a2 2b        	goto	0x3a2
+     3a1: a3 2b        	goto	0x3a3
+     3a2: bc 2b        	goto	0x3bc
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:182
+;     LIN_rxPacket.data[rxIndex++] = EUSART_Read();
+     3a3: 85 31        	movlp	0x5
+     3a4: 34 25        	call	0x534
+     3a5: 83 31        	movlp	0x3
+     3a6: 20 00        	movlb	0x0
+     3a7: de 00        	movwf	0x5e
+     3a8: ba 30        	movlw	0xba
+     3a9: df 00        	movwf	0x5f
+     3aa: 00 30        	movlw	0x0
+     3ab: e0 00        	movwf	0x60
+     3ac: 4d 08        	movf	0x4d, w
+     3ad: 5f 07        	addwf	0x5f, w
+     3ae: e1 00        	movwf	0x61
+     3af: 00 30        	movlw	0x0
+     3b0: 60 3d        	addwfc	0x60, w
+     3b1: e2 00        	movwf	0x62
+     3b2: 61 08        	movf	0x61, w
+     3b3: 86 00        	movwf	0x6
+     3b4: 62 08        	movf	0x62, w
+     3b5: 87 00        	movwf	0x7
+     3b6: 5e 08        	movf	0x5e, w
+     3b7: 81 00        	movwf	0x1
+     3b8: 01 30        	movlw	0x1
+     3b9: cd 07        	addwf	0x4d, f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:183
+;     NOP();
+     3ba: 00 00        	nop
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:184
+;   } else {
+     3bb: d7 2b        	goto	0x3d7
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:185
+;     rxIndex = 0;
+     3bc: cd 01        	clrf	0x4d
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:187
+;     if (EUSART_Read() == LIN_getChecksum_receive(LIN_rxPacket.rxLength, LIN_packet.PID, LIN_rxPacket.data))
+     3bd: 21 00        	movlb	0x1
+     3be: 44 08        	movf	0x44, w
+     3bf: 20 00        	movlb	0x0
+     3c0: d5 00        	movwf	0x55
+     3c1: ba 30        	movlw	0xba
+     3c2: d6 00        	movwf	0x56
+     3c3: 00 30        	movlw	0x0
+     3c4: d7 00        	movwf	0x57
+     3c5: 21 00        	movlb	0x1
+     3c6: 39 08        	movf	0x39, w
+     3c7: 84 31        	movlp	0x4
+     3c8: 83 24        	call	0x483
+     3c9: 83 31        	movlp	0x3
+     3ca: 20 00        	movlb	0x0
+     3cb: de 00        	movwf	0x5e
+     3cc: 85 31        	movlp	0x5
+     3cd: 34 25        	call	0x534
+     3ce: 83 31        	movlp	0x3
+     3cf: 20 00        	movlb	0x0
+     3d0: 5e 06        	xorwf	0x5e, w
+     3d1: 03 1d        	btfss	0x3, 0x2
+     3d2: d4 2b        	goto	0x3d4
+     3d3: d5 2b        	goto	0x3d5
+     3d4: d7 2b        	goto	0x3d7
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:188
+;       return true;
+     3d5: 01 30        	movlw	0x1
+     3d6: d8 2b        	goto	0x3d8
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:191
+;   return false;
+     3d7: 00 30        	movlw	0x0
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:192
+; }
+     3d8: 08 00        	return
+
+000003d9 <__ptext82>:
+; __end_of_LIN_receivePacket():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:219
+;     eusartRxStatusBuffer[eusartRxHead].status = 0;
+     3d9: 20 00        	movlb	0x0
+     3da: 42 08        	movf	0x42, w
+     3db: a0 3e        	addlw	0x20, f
+     3dc: 86 00        	movwf	0x6
+     3dd: 87 01        	clrf	0x7
+     3de: 81 01        	clrf	0x1
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:221
+;     if(RCSTAbits.FERR){
+     3df: 23 00        	movlb	0x3
+     3e0: 1d 1d        	btfss	0x1d, 0x2
+     3e1: e3 2b        	goto	0x3e3
+     3e2: e4 2b        	goto	0x3e4
+     3e3: ef 2b        	goto	0x3ef
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:222
+;         eusartRxStatusBuffer[eusartRxHead].ferr = 1;
+     3e4: 20 00        	movlb	0x0
+     3e5: 42 08        	movf	0x42, w
+     3e6: a0 3e        	addlw	0x20, f
+     3e7: 86 00        	movwf	0x6
+     3e8: 87 01        	clrf	0x7
+     3e9: 81 14        	bsf	0x1, 0x1
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:223
+;         EUSART_FramingErrorHandler();
+     3ea: 33 08        	movf	0x33, w
+     3eb: 8a 00        	movwf	0xa
+     3ec: 32 08        	movf	0x32, w
+     3ed: 0a 00        	callw
+     3ee: 83 31        	movlp	0x3
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:226
+;     if(RCSTAbits.OERR){
+     3ef: 23 00        	movlb	0x3
+     3f0: 9d 1c        	btfss	0x1d, 0x1
+     3f1: f3 2b        	goto	0x3f3
+     3f2: f4 2b        	goto	0x3f4
+     3f3: ff 2b        	goto	0x3ff
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:227
+;         eusartRxStatusBuffer[eusartRxHead].oerr = 1;
+     3f4: 20 00        	movlb	0x0
+     3f5: 42 08        	movf	0x42, w
+     3f6: a0 3e        	addlw	0x20, f
+     3f7: 86 00        	movwf	0x6
+     3f8: 87 01        	clrf	0x7
+     3f9: 01 15        	bsf	0x1, 0x2
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:228
+;         EUSART_OverrunErrorHandler();
+     3fa: 31 08        	movf	0x31, w
+     3fb: 8a 00        	movwf	0xa
+     3fc: 30 08        	movf	0x30, w
+     3fd: 0a 00        	callw
+     3fe: 83 31        	movlp	0x3
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:231
+;     if(eusartRxStatusBuffer[eusartRxHead].status){
+     3ff: 20 00        	movlb	0x0
+     400: 42 08        	movf	0x42, w
+     401: a0 3e        	addlw	0x20, f
+     402: 86 00        	movwf	0x6
+     403: 87 01        	clrf	0x7
+     404: 01 08        	movf	0x1, w
+     405: 03 19        	btfsc	0x3, 0x2
+     406: 08 2c        	goto	0x408
+     407: 09 2c        	goto	0x409
+     408: 0f 2c        	goto	0x40f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:232
+;         EUSART_ErrorHandler();
+     409: 2f 08        	movf	0x2f, w
+     40a: 8a 00        	movwf	0xa
+     40b: 2e 08        	movf	0x2e, w
+     40c: 0a 00        	callw
+     40d: 84 31        	movlp	0x4
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:233
+;     } else {
+     40e: 12 2c        	goto	0x412
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:234
+;         EUSART_RxDataHandler();
+     40f: 86 31        	movlp	0x6
+     410: bd 26        	call	0x6bd
+     411: 83 31        	movlp	0x3
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:238
+; }
+     412: 08 00        	return
+
+00000413 <__ptext60>:
+; _LIN_sendPacket():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:197
+;   LIN_sendBreak();
+     413: 8f 31        	movlp	0xf
+     414: 65 27        	call	0x765
+     415: 84 31        	movlp	0x4
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:198
+;   EUSART_Write(0x00); // send dummy transmission
+     416: 00 30        	movlw	0x0
+     417: 84 31        	movlp	0x4
+     418: e8 24        	call	0x4e8
+     419: 84 31        	movlp	0x4
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:200
+;   EUSART_Write(0x55);
+     41a: 55 30        	movlw	0x55
+     41b: 84 31        	movlp	0x4
+     41c: e8 24        	call	0x4e8
+     41d: 84 31        	movlp	0x4
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:202
+;   EUSART_Write(LIN_packet.PID);
+     41e: 21 00        	movlb	0x1
+     41f: 44 08        	movf	0x44, w
+     420: 84 31        	movlp	0x4
+     421: e8 24        	call	0x4e8
+     422: 84 31        	movlp	0x4
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:204
+;   if (LIN_rxPacket.rxLength == 0) { // not receiving data
+     423: 21 00        	movlb	0x1
+     424: 39 08        	movf	0x39, w
+     425: 03 1d        	btfss	0x3, 0x2
+     426: 28 2c        	goto	0x428
+     427: 29 2c        	goto	0x429
+     428: 4a 2c        	goto	0x44a
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:207
+;     for (uint8_t i = 0; i < LIN_packet.length; i++) {
+     429: 20 00        	movlb	0x0
+     42a: d8 01        	clrf	0x58
+     42b: 3d 2c        	goto	0x43d
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:208
+;       EUSART_Write(LIN_packet.data[i]);
+     42c: c5 30        	movlw	0xc5
+     42d: d6 00        	movwf	0x56
+     42e: 00 30        	movlw	0x0
+     42f: d7 00        	movwf	0x57
+     430: 58 08        	movf	0x58, w
+     431: 56 07        	addwf	0x56, w
+     432: 86 00        	movwf	0x6
+     433: 00 30        	movlw	0x0
+     434: 57 3d        	addwfc	0x57, w
+     435: 87 00        	movwf	0x7
+     436: 01 08        	movf	0x1, w
+     437: 84 31        	movlp	0x4
+     438: e8 24        	call	0x4e8
+     439: 84 31        	movlp	0x4
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:209
+;     }
+     43a: 01 30        	movlw	0x1
+     43b: 20 00        	movlb	0x0
+     43c: d8 07        	addwf	0x58, f
+     43d: 21 00        	movlb	0x1
+     43e: 4e 08        	movf	0x4e, w
+     43f: 20 00        	movlb	0x0
+     440: 58 02        	subwf	0x58, w
+     441: 03 1c        	btfss	0x3, 0x0
+     442: 44 2c        	goto	0x444
+     443: 45 2c        	goto	0x445
+     444: 2c 2c        	goto	0x42c
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:211
+;     EUSART_Write(LIN_packet.checksum);
+     445: 21 00        	movlb	0x1
+     446: 4d 08        	movf	0x4d, w
+     447: 84 31        	movlp	0x4
+     448: e8 24        	call	0x4e8
+     449: 84 31        	movlp	0x4
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:213
+;   NOP();
+     44a: 00 00        	nop
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:214
+; }
+     44b: 08 00        	return
+
+0000044c <__ptext22>:
+; _LED_Init():
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:131
+;   led.pos.off();
+     44c: 5b 30        	movlw	0x5b
+     44d: 84 00        	movwf	0x4
+     44e: 85 30        	movlw	0x85
+     44f: 85 00        	movwf	0x5
+     450: 01 3f        	moviw	1[FSR0]
+     451: 8a 00        	movwf	0xa
+     452: 00 3f        	moviw	0[FSR0]
+     453: 0a 00        	callw
+     454: 84 31        	movlp	0x4
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:132
+;   led.drl.off();
+     455: 61 30        	movlw	0x61
+     456: 84 00        	movwf	0x4
+     457: 85 30        	movlw	0x85
+     458: 85 00        	movwf	0x5
+     459: 01 3f        	moviw	1[FSR0]
+     45a: 8a 00        	movwf	0xa
+     45b: 00 3f        	moviw	0[FSR0]
+     45c: 0a 00        	callw
+     45d: 84 31        	movlp	0x4
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:133
+;   led.loBeam.off();
+     45e: 67 30        	movlw	0x67
+     45f: 84 00        	movwf	0x4
+     460: 85 30        	movlw	0x85
+     461: 85 00        	movwf	0x5
+     462: 01 3f        	moviw	1[FSR0]
+     463: 8a 00        	movwf	0xa
+     464: 00 3f        	moviw	0[FSR0]
+     465: 0a 00        	callw
+     466: 84 31        	movlp	0x4
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:134
+;   led.hiBeam.off();
+     467: 6d 30        	movlw	0x6d
+     468: 84 00        	movwf	0x4
+     469: 85 30        	movlw	0x85
+     46a: 85 00        	movwf	0x5
+     46b: 01 3f        	moviw	1[FSR0]
+     46c: 8a 00        	movwf	0xa
+     46d: 00 3f        	moviw	0[FSR0]
+     46e: 0a 00        	callw
+     46f: 84 31        	movlp	0x4
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:135
+;   led.turnLeft.off();
+     470: 73 30        	movlw	0x73
+     471: 84 00        	movwf	0x4
+     472: 85 30        	movlw	0x85
+     473: 85 00        	movwf	0x5
+     474: 01 3f        	moviw	1[FSR0]
+     475: 8a 00        	movwf	0xa
+     476: 00 3f        	moviw	0[FSR0]
+     477: 0a 00        	callw
+     478: 84 31        	movlp	0x4
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:136
+;   led.turnRight.off();
+     479: 79 30        	movlw	0x79
+     47a: 84 00        	movwf	0x4
+     47b: 85 30        	movlw	0x85
+     47c: 85 00        	movwf	0x5
+     47d: 01 3f        	moviw	1[FSR0]
+     47e: 8a 00        	movwf	0xa
+     47f: 00 3f        	moviw	0[FSR0]
+     480: 0a 00        	callw
+     481: 84 31        	movlp	0x4
+; D:\yiming\00work\FR685_TX_V02.X/LED.c:137
+; }
+     482: 08 00        	return
+
+00000483 <__ptext64>:
+; __end_of_LED_Init():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:256
+; uint8_t LIN_getChecksum_receive(uint8_t length, uint8_t pid, uint8_t *data) {
+     483: 20 00        	movlb	0x0
+     484: da 00        	movwf	0x5a
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:257
+;   uint16_t checksum = pid;
+     485: 55 08        	movf	0x55, w
+     486: d8 00        	movwf	0x58
+     487: d9 01        	clrf	0x59
+     488: 58 08        	movf	0x58, w
+     489: dc 00        	movwf	0x5c
+     48a: 59 08        	movf	0x59, w
+     48b: dd 00        	movwf	0x5d
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:259
+;   for (uint8_t i = 0; i < length; i++) {
+     48c: db 01        	clrf	0x5b
+     48d: ac 2c        	goto	0x4ac
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:260
+;     checksum = checksum + *data++;
+     48e: 56 08        	movf	0x56, w
+     48f: 86 00        	movwf	0x6
+     490: 57 08        	movf	0x57, w
+     491: 87 00        	movwf	0x7
+     492: 01 08        	movf	0x1, w
+     493: 5c 07        	addwf	0x5c, w
+     494: dc 00        	movwf	0x5c
+     495: 5d 08        	movf	0x5d, w
+     496: 03 18        	btfsc	0x3, 0x0
+     497: 5d 0a        	incf	0x5d, w
+     498: dd 00        	movwf	0x5d
+     499: 01 30        	movlw	0x1
+     49a: d6 07        	addwf	0x56, f
+     49b: 00 30        	movlw	0x0
+     49c: d7 3d        	addwfc	0x57, f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:261
+;     if (checksum > 0xFF)
+     49d: 01 30        	movlw	0x1
+     49e: 5d 02        	subwf	0x5d, w
+     49f: 00 30        	movlw	0x0
+     4a0: 03 19        	btfsc	0x3, 0x2
+     4a1: 5c 02        	subwf	0x5c, w
+     4a2: 03 1c        	btfss	0x3, 0x0
+     4a3: a5 2c        	goto	0x4a5
+     4a4: a6 2c        	goto	0x4a6
+     4a5: aa 2c        	goto	0x4aa
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:262
+;       checksum -= 0xFF;
+     4a6: ff 30        	movlw	0xff
+     4a7: dc 02        	subwf	0x5c, f
+     4a8: 00 30        	movlw	0x0
+     4a9: dd 3b        	<unknown>
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:263
+;   }
+     4aa: 01 30        	movlw	0x1
+     4ab: db 07        	addwf	0x5b, f
+     4ac: 5a 08        	movf	0x5a, w
+     4ad: 5b 02        	subwf	0x5b, w
+     4ae: 03 1c        	btfss	0x3, 0x0
+     4af: b1 2c        	goto	0x4b1
+     4b0: b2 2c        	goto	0x4b2
+     4b1: 8e 2c        	goto	0x48e
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:264
+;   checksum = ~checksum;
+     4b2: dc 09        	comf	0x5c, f
+     4b3: dd 09        	comf	0x5d, f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:266
+;   return (uint8_t)checksum;
+     4b4: 5c 08        	movf	0x5c, w
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:267
+; }
+     4b5: 08 00        	return
+
+000004b6 <__ptext79>:
+; __end_of_LIN_getChecksum_receive():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:243
+; uint8_t LIN_getChecksum(uint8_t length, uint8_t pid, uint8_t *data) {
+     4b6: f5 00        	movwf	0x75
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:244
+;   uint16_t checksum = pid;
+     4b7: 70 08        	movf	0x70, w
+     4b8: f3 00        	movwf	0x73
+     4b9: f4 01        	clrf	0x74
+     4ba: 73 08        	movf	0x73, w
+     4bb: f7 00        	movwf	0x77
+     4bc: 74 08        	movf	0x74, w
+     4bd: f8 00        	movwf	0x78
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:246
+;   for (uint8_t i = 0; i < length; i++) {
+     4be: f6 01        	clrf	0x76
+     4bf: de 2c        	goto	0x4de
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:247
+;     checksum = checksum + *data++;
+     4c0: 71 08        	movf	0x71, w
+     4c1: 86 00        	movwf	0x6
+     4c2: 72 08        	movf	0x72, w
+     4c3: 87 00        	movwf	0x7
+     4c4: 01 08        	movf	0x1, w
+     4c5: 77 07        	addwf	0x77, w
+     4c6: f7 00        	movwf	0x77
+     4c7: 78 08        	movf	0x78, w
+     4c8: 03 18        	btfsc	0x3, 0x0
+     4c9: 78 0a        	incf	0x78, w
+     4ca: f8 00        	movwf	0x78
+     4cb: 01 30        	movlw	0x1
+     4cc: f1 07        	addwf	0x71, f
+     4cd: 00 30        	movlw	0x0
+     4ce: f2 3d        	addwfc	0x72, f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:248
+;     if (checksum > 0xFF)
+     4cf: 01 30        	movlw	0x1
+     4d0: 78 02        	subwf	0x78, w
+     4d1: 00 30        	movlw	0x0
+     4d2: 03 19        	btfsc	0x3, 0x2
+     4d3: 77 02        	subwf	0x77, w
+     4d4: 03 1c        	btfss	0x3, 0x0
+     4d5: d7 2c        	goto	0x4d7
+     4d6: d8 2c        	goto	0x4d8
+     4d7: dc 2c        	goto	0x4dc
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:249
+;       checksum -= 0xFF;
+     4d8: ff 30        	movlw	0xff
+     4d9: f7 02        	subwf	0x77, f
+     4da: 00 30        	movlw	0x0
+     4db: f8 3b        	<unknown>
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:250
+;   }
+     4dc: 01 30        	movlw	0x1
+     4dd: f6 07        	addwf	0x76, f
+     4de: 75 08        	movf	0x75, w
+     4df: 76 02        	subwf	0x76, w
+     4e0: 03 1c        	btfss	0x3, 0x0
+     4e1: e3 2c        	goto	0x4e3
+     4e2: e4 2c        	goto	0x4e4
+     4e3: c0 2c        	goto	0x4c0
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:251
+;   checksum = ~checksum;
+     4e4: f7 09        	comf	0x77, f
+     4e5: f8 09        	comf	0x78, f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:253
+;   return (uint8_t)checksum;
+     4e6: 77 08        	movf	0x77, w
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:254
+; }
+     4e7: 08 00        	return
+
+000004e8 <__ptext62>:
+; __end_of_LIN_getChecksum():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:173
+; void EUSART_Write(uint8_t txData)
+     4e8: 20 00        	movlb	0x0
+     4e9: d5 00        	movwf	0x55
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:175
+;     while(0 == eusartTxBufferRemaining)
+     4ea: 43 08        	movf	0x43, w
+     4eb: 03 19        	btfsc	0x3, 0x2
+     4ec: ee 2c        	goto	0x4ee
+     4ed: ef 2c        	goto	0x4ef
+     4ee: ea 2c        	goto	0x4ea
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:179
+;     if(0 == PIE1bits.TXIE)
+     4ef: 21 00        	movlb	0x1
+     4f0: 11 1a        	btfsc	0x11, 0x4
+     4f1: f3 2c        	goto	0x4f3
+     4f2: f4 2c        	goto	0x4f4
+     4f3: f9 2c        	goto	0x4f9
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:181
+;         TXREG = txData;
+     4f4: 20 00        	movlb	0x0
+     4f5: 55 08        	movf	0x55, w
+     4f6: 23 00        	movlb	0x3
+     4f7: 9a 00        	movwf	0x1a
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:182
+;     }
+     4f8: 0c 2d        	goto	0x50c
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:185
+;         PIE1bits.TXIE = 0;
+     4f9: 11 12        	bcf	0x11, 0x4
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:186
+;         eusartTxBuffer[eusartTxHead++] = txData;
+     4fa: 20 00        	movlb	0x0
+     4fb: 45 08        	movf	0x45, w
+     4fc: b0 3e        	addlw	0x30, f
+     4fd: 86 00        	movwf	0x6
+     4fe: 87 01        	clrf	0x7
+     4ff: 55 08        	movf	0x55, w
+     500: 81 00        	movwf	0x1
+     501: 01 30        	movlw	0x1
+     502: c5 07        	addwf	0x45, f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:187
+;         if(sizeof(eusartTxBuffer) <= eusartTxHead)
+     503: 08 30        	movlw	0x8
+     504: 45 02        	subwf	0x45, w
+     505: 03 1c        	btfss	0x3, 0x0
+     506: 08 2d        	goto	0x508
+     507: 09 2d        	goto	0x509
+     508: 0a 2d        	goto	0x50a
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:189
+;             eusartTxHead = 0;
+     509: c5 01        	clrf	0x45
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:191
+;         eusartTxBufferRemaining--;
+     50a: 01 30        	movlw	0x1
+     50b: c3 02        	subwf	0x43, f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:193
+;     PIE1bits.TXIE = 1;
+     50c: 21 00        	movlb	0x1
+     50d: 11 16        	bsf	0x11, 0x4
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:194
+; }
+     50e: 08 00        	return
+
+0000050f <__ptext55>:
+; __ptext55():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:217
+;   uint8_t cmd = LIN_rxPacket.cmd & 0x3F;
+     50f: 21 00        	movlb	0x1
+     510: 38 08        	movf	0x38, w
+     511: 3f 39        	andlw	0x3f
+     512: 20 00        	movlb	0x0
+     513: df 00        	movwf	0x5f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:219
+;   memcpy(data, LIN_rxPacket.data, sizeof(LIN_rxPacket.data));
+     514: 5e 08        	movf	0x5e, w
+     515: d5 00        	movwf	0x55
+     516: d6 01        	clrf	0x56
+     517: ba 30        	movlw	0xba
+     518: d7 00        	movwf	0x57
+     519: 00 30        	movlw	0x0
+     51a: d8 00        	movwf	0x58
+     51b: 08 30        	movlw	0x8
+     51c: d9 00        	movwf	0x59
+     51d: 00 30        	movlw	0x0
+     51e: da 00        	movwf	0x5a
+     51f: 85 31        	movlp	0x5
+     520: c2 25        	call	0x5c2
+     521: 85 31        	movlp	0x5
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:220
+;   memset(LIN_rxPacket.rawPacket, 0, sizeof(LIN_rxPacket.rawPacket)); // clear receive data
+     522: b8 30        	movlw	0xb8
+     523: 20 00        	movlb	0x0
+     524: d5 00        	movwf	0x55
+     525: 00 30        	movlw	0x0
+     526: d6 00        	movwf	0x56
+     527: 00 30        	movlw	0x0
+     528: d7 00        	movwf	0x57
+     529: d8 00        	movwf	0x58
+     52a: 0c 30        	movlw	0xc
+     52b: d9 00        	movwf	0x59
+     52c: 00 30        	movlw	0x0
+     52d: da 00        	movwf	0x5a
+     52e: 86 31        	movlp	0x6
+     52f: 8e 26        	call	0x68e
+     530: 85 31        	movlp	0x5
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:222
+;   return cmd;
+     531: 20 00        	movlb	0x0
+     532: 5f 08        	movf	0x5f, w
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.c:223
+; }
+     533: 08 00        	return
+
+00000534 <__ptext65>:
+; __end_of_LIN_getPacket():
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:155
+;     while(0 == eusartRxCount)
+     534: 20 00        	movlb	0x0
+     535: 40 08        	movf	0x40, w
+     536: 03 19        	btfsc	0x3, 0x2
+     537: 39 2d        	goto	0x539
+     538: 3a 2d        	goto	0x53a
+     539: 34 2d        	goto	0x534
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:159
+;     eusartRxLastError = eusartRxStatusBuffer[eusartRxTail];
+     53a: 41 08        	movf	0x41, w
+     53b: a0 3e        	addlw	0x20, f
+     53c: 86 00        	movwf	0x6
+     53d: 87 01        	clrf	0x7
+     53e: 01 08        	movf	0x1, w
+     53f: bf 00        	movwf	0x3f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:161
+;     readValue = eusartRxBuffer[eusartRxTail++];
+     540: 41 08        	movf	0x41, w
+     541: a8 3e        	addlw	0x28, f
+     542: 86 00        	movwf	0x6
+     543: 87 01        	clrf	0x7
+     544: 01 08        	movf	0x1, w
+     545: d5 00        	movwf	0x55
+     546: 01 30        	movlw	0x1
+     547: c1 07        	addwf	0x41, f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:162
+;     if(sizeof(eusartRxBuffer) <= eusartRxTail)
+     548: 08 30        	movlw	0x8
+     549: 41 02        	subwf	0x41, w
+     54a: 03 1c        	btfss	0x3, 0x0
+     54b: 4d 2d        	goto	0x54d
+     54c: 4e 2d        	goto	0x54e
+     54d: 4f 2d        	goto	0x54f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:164
+;         eusartRxTail = 0;
+     54e: c1 01        	clrf	0x41
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:166
+;     PIE1bits.RCIE = 0;
+     54f: 21 00        	movlb	0x1
+     550: 91 12        	bcf	0x11, 0x5
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:167
+;     eusartRxCount--;
+     551: 01 30        	movlw	0x1
+     552: 20 00        	movlb	0x0
+     553: c0 02        	subwf	0x40, f
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:168
+;     PIE1bits.RCIE = 1;
+     554: 21 00        	movlb	0x1
+     555: 91 16        	bsf	0x11, 0x5
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:170
+;     return readValue;
+     556: 20 00        	movlb	0x0
+     557: 55 08        	movf	0x55, w
+; D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c:171
+; }
+     558: 08 00        	return
+
+Disassembly of section text29:
+
+00000002 <__ptext29>:
+; _Clear_No_Call_Warning():
+; D:\yiming\00work\FR685_TX_V02.X/Warning_ignored.c:40
+; }
+       2: 08 00        	return
+
+Disassembly of section clrtext:
+
+00000fb9 <clear_ram0>:
+; clear_ram0():
+     fb9: 64 00        	tris	0x4
+     fba: 80 01        	clrf	0x0
+     fbb: 01 31        	addfsr	0, 0x1
+     fbc: 89 0b        	decfsz	0x9, f
+     fbd: ba 2f        	goto	0x7ba
+     fbe: 00 34        	retlw	0x0

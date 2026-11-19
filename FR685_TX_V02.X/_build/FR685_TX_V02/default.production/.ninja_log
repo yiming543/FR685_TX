@@ -1,0 +1,15 @@
+# ninja log v7
+875	7392	8166940289116087	CMakeFiles/FR685_TX_V02_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V02.X/mcc_generated_files/device_config.c.p1	89c3662c233a419
+34	7535	8166940280675828	CMakeFiles/FR685_TX_V02_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V02.X/BOARD.c.p1	14e75a83add1d0fe
+591	8466	8166940286299957	CMakeFiles/FR685_TX_V02_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V02.X/mcc_generated_files/LINDrivers/lin_app.c.p1	dbcf131a3273d003
+90	8563	8166940281264743	CMakeFiles/FR685_TX_V02_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V02.X/LED.c.p1	e6c932158fb5eba
+248	8695	8166940282824291	CMakeFiles/FR685_TX_V02_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V02.X/Warning_ignored.c.p1	5984c140b27fd21c
+161	8720	8166940281945117	CMakeFiles/FR685_TX_V02_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V02.X/SWITCH.c.p1	75a5470785e90880
+384	8745	8166940284258839	CMakeFiles/FR685_TX_V02_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V02.X/main.c.p1	5531d723ae93ab79
+760	8965	8166940287940761	CMakeFiles/FR685_TX_V02_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V02.X/mcc_generated_files/LINDrivers/lin_master.c.p1	50d71402796e4bed
+966	9298	8166940290071732	CMakeFiles/FR685_TX_V02_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V02.X/mcc_generated_files/eusart.c.p1	cb1cd2a286d9df39
+1200	9478	8166940292440590	CMakeFiles/FR685_TX_V02_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V02.X/mcc_generated_files/mcc.c.p1	1b60a409bb428886
+1054	9498	8166940291012482	CMakeFiles/FR685_TX_V02_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V02.X/mcc_generated_files/interrupt_manager.c.p1	6e0c57d74c9fa212
+1622	9507	8166940296634270	CMakeFiles/FR685_TX_V02_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V02.X/mcc_generated_files/tmr0.c.p1	7ad387ce779c0e0d
+1475	9665	8166940295184709	CMakeFiles/FR685_TX_V02_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V02.X/mcc_generated_files/pin_manager.c.p1	9a2201f22c20a9aa
+9665	21964	8166940377004879	D:/yiming/00work/FR685_TX_V02.X/out/FR685_TX_V02/production/default-production.elf	ba14aed6a50d757d
