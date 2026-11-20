@@ -159,7 +159,7 @@ lin_state_t LIN_handler(void) {
       // memset(LIN_rxPacket.rawPacket, 0, sizeof(LIN_rxPacket.rawPacket)); // clear receive data
       uint8_t length = sizeof(LIN_rxPacket.rawPacket);
       for (uint8_t i = 0; i < length; i++) {
-        LIN_rxPacket.data[i] = 0;
+        LIN_rxPacket.rawPacket[i] = 0;
       }
     } else if (EUSART_is_rx_ready()) {
       if (LIN_receivePacket() == true) {

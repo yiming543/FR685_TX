@@ -976,8 +976,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 403 ]
 {
 "162
-[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_master.c: 162:         LIN_rxPacket.data[i] = 0;
-[e = *U + &U . . _LIN_rxPacket 0 2 * -> _i `ux -> -> # *U &U . . _LIN_rxPacket 0 2 `ui `ux -> -> 0 `i `uc ]
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_master.c: 162:         LIN_rxPacket.rawPacket[i] = 0;
+[e = *U + &U . _LIN_rxPacket 1 * -> _i `ux -> -> # *U &U . _LIN_rxPacket 1 `ui `ux -> -> 0 `i `uc ]
 "163
 [; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_master.c: 163:       }
 }

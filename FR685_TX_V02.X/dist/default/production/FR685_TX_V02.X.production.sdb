@@ -21,9 +21,9 @@ TRANSMIT 0
 RECEIVE 1
 ]
 [e E123 . `uc
+ID_01 1
 ID_00 0
 ID_10 16
-ID_01 1
 ID_18 24
 ]
 [e E3194 . `uc
@@ -31,9 +31,9 @@ TRANSMIT 0
 RECEIVE 1
 ]
 [e E3275 . `uc
+ID_01 1
 ID_00 0
 ID_10 16
-ID_01 1
 ID_18 24
 ]
 [e E3194 . `uc
@@ -41,9 +41,9 @@ TRANSMIT 0
 RECEIVE 1
 ]
 [e E3275 . `uc
+ID_01 1
 ID_00 0
 ID_10 16
-ID_01 1
 ID_18 24
 ]
 "58 D:\yiming\00work\FR685_TX_V02.X/mcc_generated_files/LINDrivers/lin_app.h
@@ -52,9 +52,9 @@ TRANSMIT 0
 RECEIVE 1
 ]
 [e E3277 . `uc
+ID_01 1
 ID_00 0
 ID_10 16
-ID_01 1
 ID_18 24
 ]
 "76 D:\yiming\00work\FR685_TX_V02.X\main.c
@@ -64,7 +64,7 @@ LIN_TX_IP 1
 LIN_RX_IP 2
 LIN_RX_RDY 3
 ]
-"15 D:\yiming\00work\FR685_TX_V02.X\LED.c
+"14 D:\yiming\00work\FR685_TX_V02.X\LED.c
 [e E57 . `uc
 POS 0
 DRL 1
@@ -76,17 +76,17 @@ TURN_LEFT_RESPONSE 6
 TURN_RIGHT_RESPONSE 7
 LED_COUNT 8
 ]
-"69 D:\yiming\00work\FR685_TX_V02.X\BOARD.c
+"79 D:\yiming\00work\FR685_TX_V02.X\BOARD.c
 [v _PublishLinData PublishLinData `(v  1 s 1 PublishLinData ]
-"81
+"91
 [v _board_init board_init `(v  1 e 1 0 ]
-"88
+"98
 [v _swSetModeControl swSetModeControl `(v  1 e 1 0 ]
-"112
+"122
 [v _swSetLED swSetLED `(v  1 e 1 0 ]
-"162
+"172
 [v _swSetDATA swSetDATA `(v  1 e 1 0 ]
-"191
+"200
 [v _board_update board_update `(v  1 e 1 0 ]
 "4 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\memcpy.c
 [v _memcpy memcpy `(*.39v  1 e 2 0 ]
@@ -102,55 +102,55 @@ LED_COUNT 8
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"14 D:\yiming\00work\FR685_TX_V02.X\LED.c
+"13 D:\yiming\00work\FR685_TX_V02.X\LED.c
 [v _POS_ON POS_ON `(v  1 s 1 POS_ON ]
-"21
+"20
 [v _POS_OFF POS_OFF `(v  1 s 1 POS_OFF ]
-"28
+"27
 [v _LED_POS_IS_ON LED_POS_IS_ON `(uc  1 s 1 LED_POS_IS_ON ]
-"32
+"31
 [v _DRL_ON DRL_ON `(v  1 s 1 DRL_ON ]
-"39
+"38
 [v _DRL_OFF DRL_OFF `(v  1 s 1 DRL_OFF ]
-"46
+"45
 [v _LED_DRL_IS_ON LED_DRL_IS_ON `(uc  1 s 1 LED_DRL_IS_ON ]
-"50
+"49
 [v _LO_BEAM_ON LO_BEAM_ON `(v  1 s 1 LO_BEAM_ON ]
-"57
+"56
 [v _LO_BEAM_OFF LO_BEAM_OFF `(v  1 s 1 LO_BEAM_OFF ]
-"64
+"63
 [v _LED_LO_BEAM_IS_ON LED_LO_BEAM_IS_ON `(uc  1 s 1 LED_LO_BEAM_IS_ON ]
-"68
+"67
 [v _HI_BEAM_ON HI_BEAM_ON `(v  1 s 1 HI_BEAM_ON ]
-"75
+"74
 [v _HI_BEAM_OFF HI_BEAM_OFF `(v  1 s 1 HI_BEAM_OFF ]
-"82
+"81
 [v _LED_HI_BEAM_IS_ON LED_HI_BEAM_IS_ON `(uc  1 s 1 LED_HI_BEAM_IS_ON ]
-"86
+"85
 [v _TURN_LEFT_ON TURN_LEFT_ON `(v  1 s 1 TURN_LEFT_ON ]
-"93
+"92
 [v _TURN_LEFT_OFF TURN_LEFT_OFF `(v  1 s 1 TURN_LEFT_OFF ]
-"100
+"99
 [v _LED_TURN_LEFT_IS_ON LED_TURN_LEFT_IS_ON `(uc  1 s 1 LED_TURN_LEFT_IS_ON ]
-"104
+"103
 [v _TURN_RIGHT_ON TURN_RIGHT_ON `(v  1 s 1 TURN_RIGHT_ON ]
-"111
+"110
 [v _TURN_RIGHT_OFF TURN_RIGHT_OFF `(v  1 s 1 TURN_RIGHT_OFF ]
-"118
+"117
 [v _LED_TURN_RIGHT_IS_ON LED_TURN_RIGHT_IS_ON `(uc  1 s 1 LED_TURN_RIGHT_IS_ON ]
-"122
+"121
 [v _TURN_LEFT_RESPONSE_ON TURN_LEFT_RESPONSE_ON `(v  1 s 1 TURN_LEFT_RESPONSE_ON ]
-"129
+"128
 [v _TURN_LEFT_RESPONSE_OFF TURN_LEFT_RESPONSE_OFF `(v  1 s 1 TURN_LEFT_RESPONSE_OFF ]
-"136
+"135
 [v _LED_TURN_LEFT_RESPONSE_IS_ON LED_TURN_LEFT_RESPONSE_IS_ON `(uc  1 s 1 LED_TURN_LEFT_RESPONSE_IS_ON ]
-"140
+"139
 [v _TURN_RIGHT_RESPONSE_ON TURN_RIGHT_RESPONSE_ON `(v  1 s 1 TURN_RIGHT_RESPONSE_ON ]
-"147
+"146
 [v _TURN_RIGHT_RESPONSE_OFF TURN_RIGHT_RESPONSE_OFF `(v  1 s 1 TURN_RIGHT_RESPONSE_OFF ]
-"154
+"153
 [v _LED_TURN_RIGHT_RESPONSE_IS_ON LED_TURN_RIGHT_RESPONSE_IS_ON `(uc  1 s 1 LED_TURN_RIGHT_RESPONSE_IS_ON ]
-"180
+"170
 [v _LED_Init LED_Init `(v  1 e 1 0 ]
 "66 D:\yiming\00work\FR685_TX_V02.X\main.c
 [v _main main `(i  1 e 2 0 ]
@@ -284,31 +284,31 @@ LED_COUNT 8
 [v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
 "136
 [v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
-"30 D:\yiming\00work\FR685_TX_V02.X\SWITCH.c
+"26 D:\yiming\00work\FR685_TX_V02.X\SWITCH.c
 [v _SW_POS_GET SW_POS_GET `(uc  1 s 1 SW_POS_GET ]
-"35
+"30
 [v _SW_DRL_GET SW_DRL_GET `(uc  1 s 1 SW_DRL_GET ]
-"39
+"34
 [v _SW_LO_BEAM_GET SW_LO_BEAM_GET `(uc  1 s 1 SW_LO_BEAM_GET ]
-"43
+"38
 [v _SW_HI_BEAM_GET SW_HI_BEAM_GET `(uc  1 s 1 SW_HI_BEAM_GET ]
-"47
+"42
 [v _SW_TURN_LEFT_GET SW_TURN_LEFT_GET `(uc  1 s 1 SW_TURN_LEFT_GET ]
-"51
+"46
 [v _SW_TURN_RIGHT_GET SW_TURN_RIGHT_GET `(uc  1 s 1 SW_TURN_RIGHT_GET ]
-"55
+"50
 [v _SW_POS_IS_ON SW_POS_IS_ON `(uc  1 s 1 SW_POS_IS_ON ]
-"59
+"54
 [v _SW_DRL_IS_ON SW_DRL_IS_ON `(uc  1 s 1 SW_DRL_IS_ON ]
-"63
+"58
 [v _SW_LO_BEAM_IS_ON SW_LO_BEAM_IS_ON `(uc  1 s 1 SW_LO_BEAM_IS_ON ]
-"67
+"62
 [v _SW_HI_BEAM_IS_ON SW_HI_BEAM_IS_ON `(uc  1 s 1 SW_HI_BEAM_IS_ON ]
-"71
+"66
 [v _SW_TURN_LEFT_IS_ON SW_TURN_LEFT_IS_ON `(uc  1 s 1 SW_TURN_LEFT_IS_ON ]
-"75
+"70
 [v _SW_TURN_RIGHT_IS_ON SW_TURN_RIGHT_IS_ON `(uc  1 s 1 SW_TURN_RIGHT_IS_ON ]
-"88
+"84
 [v _swState_update swState_update `(v  1 e 1 0 ]
 "15 D:\yiming\00work\FR685_TX_V02.X\timer.c
 [v _R_CNT_SET R_CNT_SET `(v  1 s 1 R_CNT_SET ]
@@ -327,9 +327,9 @@ LED_COUNT 8
 "53 D:\yiming\00work\FR685_TX_V02.X/mcc_generated_files/LINDrivers/lin_app.h
 [v _ID_00_Data ID_00_Data `[8]uc  1 e 8 0 ]
 "54
-[v _ID_10_Data ID_10_Data `[8]uc  1 e 8 0 ]
-"55
 [v _ID_01_Data ID_01_Data `[8]uc  1 e 8 0 ]
+"55
+[v _ID_10_Data ID_10_Data `[8]uc  1 e 8 0 ]
 "56
 [v _ID_18_Data ID_18_Data `[8]uc  1 e 8 0 ]
 [s S43 . 7 `uc 1 cmd 1 0 `E42 1 type 1 1 `uc 1 length 1 2 `uc 1 timeout 1 3 `uc 1 period 1 4 `*.39uc 1 data 2 5 ]
@@ -347,7 +347,7 @@ LED_COUNT 8
 [v _linData linData `[8]uc  1 s 8 linData ]
 "42
 [v _ledOffData ledOffData `DC[8]uc  1 s 8 ledOffData ]
-"47
+"48
 [v _linDataTable linDataTable `DC[4][4][8]uc  1 s 128 linDataTable ]
 [s S693 . 1 `uc 1 IOCIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
@@ -366,7 +366,7 @@ LED_COUNT 8
 ]
 [u S707 . 1 `S693 1 . 1 0 `S702 1 . 1 0 ]
 [v _INTCONbits INTCONbits `VES707  1 e 1 @11 ]
-[s S1172 . 1 `uc 1 RA0 1 0 :1:0 
+[s S1259 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -376,9 +376,9 @@ LED_COUNT 8
 `uc 1 RA7 1 0 :1:7 
 ]
 "430
-[u S1181 . 1 `S1172 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES1181  1 e 1 @12 ]
-[s S1193 . 1 `uc 1 RC0 1 0 :1:0 
+[u S1268 . 1 `S1259 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES1268  1 e 1 @12 ]
+[s S1280 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 RC3 1 0 :1:3 
@@ -388,8 +388,8 @@ LED_COUNT 8
 `uc 1 RC7 1 0 :1:7 
 ]
 "554
-[u S1202 . 1 `S1193 1 . 1 0 ]
-[v _PORTCbits PORTCbits `VES1202  1 e 1 @14 ]
+[u S1289 . 1 `S1280 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES1289  1 e 1 @14 ]
 [s S805 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
@@ -410,12 +410,12 @@ LED_COUNT 8
 [v _PR2 PR2 `VEuc  1 e 1 @27 ]
 "1041
 [v _T2CON T2CON `VEuc  1 e 1 @28 ]
-[s S1525 . 1 `uc 1 T2CKPS 1 0 :2:0 
+[s S948 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 T2OUTPS 1 0 :4:3 
 ]
 "1062
-[s S1529 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+[s S952 . 1 `uc 1 T2CKPS0 1 0 :1:0 
 `uc 1 T2CKPS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 T2OUTPS0 1 0 :1:3 
@@ -423,8 +423,8 @@ LED_COUNT 8
 `uc 1 T2OUTPS2 1 0 :1:5 
 `uc 1 T2OUTPS3 1 0 :1:6 
 ]
-[u S1537 . 1 `S1525 1 . 1 0 `S1529 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES1537  1 e 1 @28 ]
+[u S960 . 1 `S948 1 . 1 0 `S952 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES960  1 e 1 @28 ]
 "1206
 [v _TRISA TRISA `VEuc  1 e 1 @140 ]
 "1268
@@ -474,7 +474,7 @@ LED_COUNT 8
 [v _LATA LATA `VEuc  1 e 1 @268 ]
 "2233
 [v _LATB LATB `VEuc  1 e 1 @269 ]
-[s S981 . 1 `uc 1 LATB0 1 0 :1:0 
+[s S1068 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
 `uc 1 LATB3 1 0 :1:3 
@@ -484,11 +484,11 @@ LED_COUNT 8
 `uc 1 LATB7 1 0 :1:7 
 ]
 "2250
-[u S990 . 1 `S981 1 . 1 0 ]
-[v _LATBbits LATBbits `VES990  1 e 1 @269 ]
+[u S1077 . 1 `S1068 1 . 1 0 ]
+[v _LATBbits LATBbits `VES1077  1 e 1 @269 ]
 "2295
 [v _LATC LATC `VEuc  1 e 1 @270 ]
-[s S1002 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S1089 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -498,8 +498,8 @@ LED_COUNT 8
 `uc 1 LATC7 1 0 :1:7 
 ]
 "2312
-[u S1011 . 1 `S1002 1 . 1 0 ]
-[v _LATCbits LATCbits `VES1011  1 e 1 @270 ]
+[u S1098 . 1 `S1089 1 . 1 0 ]
+[v _LATCbits LATCbits `VES1098  1 e 1 @270 ]
 "2357
 [v _LATE LATE `VEuc  1 e 1 @272 ]
 "2650
@@ -556,10 +556,10 @@ LED_COUNT 8
 [v _PLLR PLLR `VEb  1 e 0 @1238 ]
 "8 D:\yiming\00work\FR685_TX_V02.X\LED.c
 [v _led_states led_states `[8]uc  1 s 8 led_states ]
-[s S1029 . 6 `DC*.37(v 1 on 2 0 `DC*.37(v 1 off 2 2 `DC*.37(uc 1 is_on 2 4 ]
-"159
-[s S1033 . 48 `S1029 1 pos 6 0 `S1029 1 drl 6 6 `S1029 1 loBeam 6 12 `S1029 1 hiBeam 6 18 `S1029 1 turnLeft 6 24 `S1029 1 turnRight 6 30 `S1029 1 turnLeftResponse 6 36 `S1029 1 turnRightResponse 6 42 ]
-[v _led led `DCS1033  1 e 48 0 ]
+[s S1116 . 6 `DC*.37(v 1 on 2 0 `DC*.37(v 1 off 2 2 `DC*.37(uc 1 is_on 2 4 ]
+"158
+[s S1120 . 48 `S1116 1 pos 6 0 `S1116 1 drl 6 6 `S1116 1 loBeam 6 12 `S1116 1 hiBeam 6 18 `S1116 1 turnLeft 6 24 `S1116 1 turnRight 6 30 `S1116 1 turnLeftResponse 6 36 `S1116 1 turnRightResponse 6 42 ]
+[v _led led `DCS1120  1 e 48 0 ]
 "62 D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/eusart.c
 [v _eusartTxHead eusartTxHead `VEuc  1 e 1 0 ]
 "63
@@ -632,13 +632,13 @@ LED_COUNT 8
 [v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
 "58 D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files/tmr2.c
 [v _TMR2_InterruptHandler TMR2_InterruptHandler `*.37(v  1 e 2 0 ]
-[s S1165 . 6 `uc 1 pos 1 0 `uc 1 drl 1 1 `uc 1 loBeam 1 2 `uc 1 hiBeam 1 3 `uc 1 turnLeft 1 4 `uc 1 turnRight 1 5 ]
-"20 D:\yiming\00work\FR685_TX_V02.X\SWITCH.c
-[v _sw_states sw_states `S1165  1 s 6 sw_states ]
-[s S1218 . 4 `DC*.37(uc 1 get 2 0 `DC*.37(uc 1 is_on 2 2 ]
-"80
-[s S1221 . 24 `S1218 1 pos 4 0 `S1218 1 drl 4 4 `S1218 1 loBeam 4 8 `S1218 1 hiBeam 4 12 `S1218 1 turnLeft 4 16 `S1218 1 turnRight 4 20 ]
-[v _sw sw `DCS1221  1 e 24 0 ]
+[s S1252 . 6 `uc 1 pos 1 0 `uc 1 drl 1 1 `uc 1 loBeam 1 2 `uc 1 hiBeam 1 3 `uc 1 turnLeft 1 4 `uc 1 turnRight 1 5 ]
+"16 D:\yiming\00work\FR685_TX_V02.X\SWITCH.c
+[v _sw_states sw_states `S1252  1 s 6 sw_states ]
+[s S1305 . 4 `DC*.37(uc 1 get 2 0 `DC*.37(uc 1 is_on 2 2 ]
+"75
+[s S1308 . 24 `S1305 1 pos 4 0 `S1305 1 drl 4 4 `S1305 1 loBeam 4 8 `S1305 1 hiBeam 4 12 `S1305 1 turnLeft 4 16 `S1305 1 turnRight 4 20 ]
+[v _sw sw `DCS1308  1 e 24 0 ]
 "11 D:\yiming\00work\FR685_TX_V02.X\timer.c
 [v _R_Cnt R_Cnt `VEuc  1 s 1 R_Cnt ]
 "12
@@ -652,90 +652,90 @@ LED_COUNT 8
 {
 "83
 } 0
-"191 D:\yiming\00work\FR685_TX_V02.X\BOARD.c
+"200 D:\yiming\00work\FR685_TX_V02.X\BOARD.c
 [v _board_update board_update `(v  1 e 1 0 ]
 {
-"196
+"206
 } 0
-"88
+"98
 [v _swSetModeControl swSetModeControl `(v  1 e 1 0 ]
 {
-"110
+"120
 } 0
-"112
+"122
 [v _swSetLED swSetLED `(v  1 e 1 0 ]
 {
-"160
+"170
 } 0
-"122 D:\yiming\00work\FR685_TX_V02.X\LED.c
+"121 D:\yiming\00work\FR685_TX_V02.X\LED.c
 [v _TURN_LEFT_RESPONSE_ON TURN_LEFT_RESPONSE_ON `(v  1 s 1 TURN_LEFT_RESPONSE_ON ]
 {
-"127
+"126
 } 0
-"104
+"103
 [v _TURN_RIGHT_ON TURN_RIGHT_ON `(v  1 s 1 TURN_RIGHT_ON ]
 {
-"109
+"108
 } 0
-"86
+"85
 [v _TURN_LEFT_ON TURN_LEFT_ON `(v  1 s 1 TURN_LEFT_ON ]
 {
-"91
-} 0
-"68
-[v _HI_BEAM_ON HI_BEAM_ON `(v  1 s 1 HI_BEAM_ON ]
-{
-"73
-} 0
-"50
-[v _LO_BEAM_ON LO_BEAM_ON `(v  1 s 1 LO_BEAM_ON ]
-{
-"55
-} 0
-"32
-[v _DRL_ON DRL_ON `(v  1 s 1 DRL_ON ]
-{
-"37
-} 0
-"14
-[v _POS_ON POS_ON `(v  1 s 1 POS_ON ]
-{
-"19
-} 0
-"140
-[v _TURN_RIGHT_RESPONSE_ON TURN_RIGHT_RESPONSE_ON `(v  1 s 1 TURN_RIGHT_RESPONSE_ON ]
-{
-"145
-} 0
-"71 D:\yiming\00work\FR685_TX_V02.X\SWITCH.c
-[v _SW_TURN_LEFT_IS_ON SW_TURN_LEFT_IS_ON `(uc  1 s 1 SW_TURN_LEFT_IS_ON ]
-{
-"73
+"90
 } 0
 "67
+[v _HI_BEAM_ON HI_BEAM_ON `(v  1 s 1 HI_BEAM_ON ]
+{
+"72
+} 0
+"49
+[v _LO_BEAM_ON LO_BEAM_ON `(v  1 s 1 LO_BEAM_ON ]
+{
+"54
+} 0
+"31
+[v _DRL_ON DRL_ON `(v  1 s 1 DRL_ON ]
+{
+"36
+} 0
+"13
+[v _POS_ON POS_ON `(v  1 s 1 POS_ON ]
+{
+"18
+} 0
+"139
+[v _TURN_RIGHT_RESPONSE_ON TURN_RIGHT_RESPONSE_ON `(v  1 s 1 TURN_RIGHT_RESPONSE_ON ]
+{
+"144
+} 0
+"66 D:\yiming\00work\FR685_TX_V02.X\SWITCH.c
+[v _SW_TURN_LEFT_IS_ON SW_TURN_LEFT_IS_ON `(uc  1 s 1 SW_TURN_LEFT_IS_ON ]
+{
+"68
+} 0
+"62
 [v _SW_HI_BEAM_IS_ON SW_HI_BEAM_IS_ON `(uc  1 s 1 SW_HI_BEAM_IS_ON ]
 {
-"69
+"64
 } 0
-"63
+"58
 [v _SW_LO_BEAM_IS_ON SW_LO_BEAM_IS_ON `(uc  1 s 1 SW_LO_BEAM_IS_ON ]
 {
-"65
+"60
 } 0
-"59
+"54
 [v _SW_DRL_IS_ON SW_DRL_IS_ON `(uc  1 s 1 SW_DRL_IS_ON ]
 {
-"61
+"56
 } 0
-"55
+"50
 [v _SW_POS_IS_ON SW_POS_IS_ON `(uc  1 s 1 SW_POS_IS_ON ]
 {
-"57
+"52
 } 0
-"75
+"70
 [v _SW_TURN_RIGHT_IS_ON SW_TURN_RIGHT_IS_ON `(uc  1 s 1 SW_TURN_RIGHT_IS_ON ]
 {
-"77
+"72
 } 0
 "27 D:\yiming\00work\FR685_TX_V02.X\timer.c
 [v _L_CNT_GET L_CNT_GET `(uc  1 s 1 L_CNT_GET ]
@@ -747,155 +747,155 @@ LED_COUNT 8
 {
 "21
 } 0
-"162 D:\yiming\00work\FR685_TX_V02.X\BOARD.c
+"172 D:\yiming\00work\FR685_TX_V02.X\BOARD.c
 [v _swSetDATA swSetDATA `(v  1 e 1 0 ]
 {
-"164
-[v swSetDATA@selectedData selectedData `*.25DCuc  1 a 2 10 ]
-"163
-[v swSetDATA@index index `uc  1 a 1 12 ]
-"189
+"174
+[v swSetDATA@selectedData selectedData `*.25DCuc  1 a 2 0 ]
+"173
+[v swSetDATA@index index `uc  1 a 1 2 ]
+"198
 } 0
-"69
+"79
 [v _PublishLinData PublishLinData `(v  1 s 1 PublishLinData ]
 {
-"70
+"80
 [v PublishLinData@index index `uc  1 a 1 9 ]
-"71
-[v PublishLinData@globalInterruptWasEnabled globalInterruptWasEnabled `uc  1 a 1 8 ]
-"69
-[v PublishLinData@sourceData sourceData `*.4DCuc  1 p 1 7 ]
-"79
-} 0
 "81
+[v PublishLinData@globalInterruptWasEnabled globalInterruptWasEnabled `uc  1 a 1 8 ]
+"79
+[v PublishLinData@sourceData sourceData `*.4DCuc  1 p 1 7 ]
+"89
+} 0
+"91
 [v _board_init board_init `(v  1 e 1 0 ]
 {
-"86
+"96
 } 0
-"88 D:\yiming\00work\FR685_TX_V02.X\SWITCH.c
+"84 D:\yiming\00work\FR685_TX_V02.X\SWITCH.c
 [v _swState_update swState_update `(v  1 e 1 0 ]
 {
-"95
+"91
 } 0
-"47
+"42
 [v _SW_TURN_LEFT_GET SW_TURN_LEFT_GET `(uc  1 s 1 SW_TURN_LEFT_GET ]
 {
-"49
+"44
 } 0
-"43
+"38
 [v _SW_HI_BEAM_GET SW_HI_BEAM_GET `(uc  1 s 1 SW_HI_BEAM_GET ]
 {
-"45
+"40
 } 0
-"39
+"34
 [v _SW_LO_BEAM_GET SW_LO_BEAM_GET `(uc  1 s 1 SW_LO_BEAM_GET ]
 {
-"41
-} 0
-"35
-[v _SW_DRL_GET SW_DRL_GET `(uc  1 s 1 SW_DRL_GET ]
-{
-"37
+"36
 } 0
 "30
+[v _SW_DRL_GET SW_DRL_GET `(uc  1 s 1 SW_DRL_GET ]
+{
+"32
+} 0
+"26
 [v _SW_POS_GET SW_POS_GET `(uc  1 s 1 SW_POS_GET ]
 {
-"33
+"28
 } 0
-"51
+"46
 [v _SW_TURN_RIGHT_GET SW_TURN_RIGHT_GET `(uc  1 s 1 SW_TURN_RIGHT_GET ]
 {
-"53
+"48
 } 0
 "47 D:\yiming\00work\FR685_TX_V02.X\timer.c
 [v _TMR2_init TMR2_init `(v  1 e 1 0 ]
 {
 "49
 } 0
-"180 D:\yiming\00work\FR685_TX_V02.X\LED.c
+"170 D:\yiming\00work\FR685_TX_V02.X\LED.c
 [v _LED_Init LED_Init `(v  1 e 1 0 ]
 {
-"198
+"188
 } 0
-"129
+"128
 [v _TURN_LEFT_RESPONSE_OFF TURN_LEFT_RESPONSE_OFF `(v  1 s 1 TURN_LEFT_RESPONSE_OFF ]
 {
-"134
+"133
 } 0
-"111
+"110
 [v _TURN_RIGHT_OFF TURN_RIGHT_OFF `(v  1 s 1 TURN_RIGHT_OFF ]
 {
-"116
+"115
 } 0
-"93
+"92
 [v _TURN_LEFT_OFF TURN_LEFT_OFF `(v  1 s 1 TURN_LEFT_OFF ]
 {
-"98
+"97
 } 0
-"75
+"74
 [v _HI_BEAM_OFF HI_BEAM_OFF `(v  1 s 1 HI_BEAM_OFF ]
 {
-"80
+"79
 } 0
-"57
+"56
 [v _LO_BEAM_OFF LO_BEAM_OFF `(v  1 s 1 LO_BEAM_OFF ]
 {
-"62
+"61
 } 0
-"39
+"38
 [v _DRL_OFF DRL_OFF `(v  1 s 1 DRL_OFF ]
 {
-"44
+"43
 } 0
-"21
+"20
 [v _POS_OFF POS_OFF `(v  1 s 1 POS_OFF ]
 {
-"26
+"25
 } 0
-"147
+"146
 [v _TURN_RIGHT_RESPONSE_OFF TURN_RIGHT_RESPONSE_OFF `(v  1 s 1 TURN_RIGHT_RESPONSE_OFF ]
 {
-"152
+"151
 } 0
-"154
+"153
 [v _LED_TURN_RIGHT_RESPONSE_IS_ON LED_TURN_RIGHT_RESPONSE_IS_ON `(uc  1 s 1 LED_TURN_RIGHT_RESPONSE_IS_ON ]
 {
-"156
+"155
 } 0
-"118
+"117
 [v _LED_TURN_RIGHT_IS_ON LED_TURN_RIGHT_IS_ON `(uc  1 s 1 LED_TURN_RIGHT_IS_ON ]
 {
-"120
+"119
 } 0
-"136
+"135
 [v _LED_TURN_LEFT_RESPONSE_IS_ON LED_TURN_LEFT_RESPONSE_IS_ON `(uc  1 s 1 LED_TURN_LEFT_RESPONSE_IS_ON ]
 {
-"138
+"137
 } 0
-"100
+"99
 [v _LED_TURN_LEFT_IS_ON LED_TURN_LEFT_IS_ON `(uc  1 s 1 LED_TURN_LEFT_IS_ON ]
 {
-"102
+"101
 } 0
-"28
+"27
 [v _LED_POS_IS_ON LED_POS_IS_ON `(uc  1 s 1 LED_POS_IS_ON ]
 {
-"30
+"29
 } 0
-"64
+"63
 [v _LED_LO_BEAM_IS_ON LED_LO_BEAM_IS_ON `(uc  1 s 1 LED_LO_BEAM_IS_ON ]
 {
-"66
+"65
 } 0
-"82
+"81
 [v _LED_HI_BEAM_IS_ON LED_HI_BEAM_IS_ON `(uc  1 s 1 LED_HI_BEAM_IS_ON ]
 {
-"84
+"83
 } 0
-"46
+"45
 [v _LED_DRL_IS_ON LED_DRL_IS_ON `(uc  1 s 1 LED_DRL_IS_ON ]
 {
-"48
+"47
 } 0
 "22 D:\yiming\00work\FR685_TX_V02.X\Warning_ignored.c
 [v _Clear_No_Call_Warning Clear_No_Call_Warning `(v  1 e 1 0 ]

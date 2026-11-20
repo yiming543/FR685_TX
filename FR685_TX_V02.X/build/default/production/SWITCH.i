@@ -11,10 +11,6 @@
 
 
 
-# 1 "./LED.h" 1
-
-
-
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/stdint.h" 1 3
 
 
@@ -120,51 +116,7 @@ typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 149 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include\\c99/stdint.h" 2 3
-# 5 "./LED.h" 2
-
-
-
-
-
-
-
-typedef struct {
-  void (*const on)(void);
-  void (*const off)(void);
-  uint8_t (*const is_on)(void);
-} LED_t;
-
-typedef struct{
-  LED_t pos;
-  LED_t drl;
-  LED_t loBeam;
-  LED_t hiBeam;
-  LED_t turnLeft;
-  LED_t turnRight;
-  LED_t turnLeftResponse;
-  LED_t turnRightResponse;
-} LEDs_t;
-
-typedef enum {
-  POS = 0,
-  DRL,
-  LO_BEAM,
-  HI_BEAM,
-  TURN_LEFT,
-  TURN_RIGHT,
-  TURN_LEFT_RESPONSE,
-  TURN_RIGHT_RESPONSE,
-  LED_COUNT,
-} Led_t;
-
-
-
-extern const LEDs_t led;
-
-
-void LED_Init(void);
 # 5 "./SWITCH.h" 2
-
 
 
 
@@ -183,21 +135,11 @@ typedef struct {
   SWITCH_t turnRight;
 } SWITCHs_t;
 
-typedef struct {
-  uint8_t pos;
-  uint8_t drl;
-  uint8_t loBeam;
-  uint8_t hiBeam;
-  uint8_t turnLeft;
-  uint8_t turnRight;
-} SW_STATE_t;
-
 
 
 extern const SWITCHs_t sw;
 extern void swState_update(void);
 # 2 "SWITCH.c" 2
-
 # 1 "./mcc_generated_files/pin_manager.h" 1
 # 54 "./mcc_generated_files/pin_manager.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/xc.h" 1 3
@@ -5085,21 +5027,31 @@ extern __bank0 __bit __timeout;
 void PIN_MANAGER_Initialize (void);
 # 311 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 4 "SWITCH.c" 2
- extern void swSetModeControl(void);
-# 20 "SWITCH.c"
-static SW_STATE_t sw_states = {
+# 3 "SWITCH.c" 2
+
+
+
+
+typedef struct {
+  uint8_t pos;
+  uint8_t drl;
+  uint8_t loBeam;
+  uint8_t hiBeam;
+  uint8_t turnLeft;
+  uint8_t turnRight;
+} swStates_t;
+
+static swStates_t sw_states = {
     .pos = (0U),
     .drl = (0U),
     .loBeam = (0U),
     .hiBeam = (0U),
     .turnLeft = (0U),
-    .turnRight = (0U)};
+    .turnRight = (0U),
+};
 
 
-static uint8_t
-SW_POS_GET(void) {
-
+static uint8_t SW_POS_GET(void) {
   return (uint8_t)(!!(PORTAbits.RA0 == (0U)));
 }
 
@@ -5155,6 +5107,7 @@ const SWITCHs_t sw = {
     .hiBeam = {.get = SW_HI_BEAM_GET, .is_on = SW_HI_BEAM_IS_ON},
     .turnLeft = {.get = SW_TURN_LEFT_GET, .is_on = SW_TURN_LEFT_IS_ON},
     .turnRight = {.get = SW_TURN_RIGHT_GET, .is_on = SW_TURN_RIGHT_IS_ON}};
+
 
 void swState_update(void) {
   sw_states.pos = sw.pos.get();

@@ -172,7 +172,14 @@ extern const LEDs_t led;
 void LED_Init(void);
 # 3 "D:\\yiming\\00work\\FR685_TX_V02.X\\BOARD.c" 2
 # 1 "D:\\yiming\\00work\\FR685_TX_V02.X/SWITCH.h" 1
-# 10 "D:\\yiming\\00work\\FR685_TX_V02.X/SWITCH.h"
+
+
+
+
+
+
+
+
 typedef struct {
   uint8_t (*const get)(void);
   uint8_t (*const is_on)(void);
@@ -186,15 +193,6 @@ typedef struct {
   SWITCH_t turnLeft;
   SWITCH_t turnRight;
 } SWITCHs_t;
-
-typedef struct {
-  uint8_t pos;
-  uint8_t drl;
-  uint8_t loBeam;
-  uint8_t hiBeam;
-  uint8_t turnLeft;
-  uint8_t turnRight;
-} SW_STATE_t;
 
 
 
@@ -5121,157 +5119,167 @@ uint16_t Rcount;
 uint16_t Lcount;
 
 static const uint8_t ledOffData[(8U)] = {
-    0x31U, 0x08U, 0x34U, 0x00U, 0x04U, 0xB0U, 0x87U, 0xBEU};
+    0x31U, 0x08U, 0x34U, 0x00U, 0x04U, 0xB0U, 0x87U, 0xBEU
+};
 
 
 static const uint8_t
-    linDataTable[(4U)][(4U)][(8U)] = {
+linDataTable[(4U)][(4U)][(8U)] = {
 
-        {{0x24U, 0x08U, 0x31U, 0x00U, 0x04U, 0xB0U, 0x88U, 0xBEU},
-         {0x24U, 0x08U, 0x29U, 0x00U, 0x04U, 0xB0U, 0xA3U, 0xBEU},
-         {0x24U, 0x08U, 0x71U, 0x00U, 0x07U, 0xB0U, 0x88U, 0xBEU},
-         {0x24U, 0x08U, 0x69U, 0x00U, 0x04U, 0xB0U, 0x99U, 0xBEU}},
+    {
+        {0x24U, 0x08U, 0x31U, 0x00U, 0x04U, 0xB0U, 0x88U, 0xBEU},
+        {0x24U, 0x08U, 0x29U, 0x00U, 0x04U, 0xB0U, 0xA3U, 0xBEU},
+        {0x24U, 0x08U, 0x71U, 0x00U, 0x07U, 0xB0U, 0x88U, 0xBEU},
+        {0x24U, 0x08U, 0x69U, 0x00U, 0x04U, 0xB0U, 0x99U, 0xBEU}
+    },
 
-        {{0x24U, 0x08U, 0x32U, 0x00U, 0x07U, 0xB0U, 0x88U, 0xBEU},
-         {0x24U, 0x08U, 0x2AU, 0x00U, 0x07U, 0xB0U, 0xA2U, 0xBEU},
-         {0x24U, 0x08U, 0x72U, 0x00U, 0x07U, 0xB0U, 0x88U, 0xBFU},
-         {0x24U, 0x08U, 0x6AU, 0x00U, 0x07U, 0xB0U, 0xA3U, 0xBEU}},
+    {
+        {0x24U, 0x08U, 0x32U, 0x00U, 0x07U, 0xB0U, 0x88U, 0xBEU},
+        {0x24U, 0x08U, 0x2AU, 0x00U, 0x07U, 0xB0U, 0xA2U, 0xBEU},
+        {0x24U, 0x08U, 0x72U, 0x00U, 0x07U, 0xB0U, 0x88U, 0xBFU},
+        {0x24U, 0x08U, 0x6AU, 0x00U, 0x07U, 0xB0U, 0xA3U, 0xBEU}
+    },
 
-        {{0x24U, 0x08U, 0xB4U, 0x00U, 0x0FU, 0xB0U, 0x74U, 0xBEU},
-         {0x24U, 0x08U, 0x2CU, 0x00U, 0x04U, 0xB0U, 0x8CU, 0xBEU},
-         {0x24U, 0x08U, 0xB4U, 0x00U, 0x0FU, 0xB0U, 0x74U, 0xBEU},
-         {0x24U, 0x08U, 0x6CU, 0x00U, 0x04U, 0xB0U, 0x9EU, 0xBEU}},
+    {
+        {0x24U, 0x08U, 0xB4U, 0x00U, 0x0FU, 0xB0U, 0x74U, 0xBEU},
+        {0x24U, 0x08U, 0x2CU, 0x00U, 0x04U, 0xB0U, 0x8CU, 0xBEU},
+        {0x24U, 0x08U, 0xB4U, 0x00U, 0x0FU, 0xB0U, 0x74U, 0xBEU},
+        {0x24U, 0x08U, 0x6CU, 0x00U, 0x04U, 0xB0U, 0x9EU, 0xBEU}
+    },
 
-        {{0x24U, 0x08U, 0x33U, 0x00U, 0x0FU, 0xB0U, 0x88U, 0xBEU},
-         {0x24U, 0x08U, 0x2BU, 0x00U, 0x0FU, 0xB0U, 0x99U, 0xBEU},
-         {0x24U, 0x08U, 0x33U, 0x00U, 0x0FU, 0xB0U, 0x88U, 0xBEU},
-         {0x24U, 0x08U, 0x2BU, 0x00U, 0x0FU, 0xB0U, 0x99U, 0xBEU}}};
+    {
+        {0x24U, 0x08U, 0x33U, 0x00U, 0x0FU, 0xB0U, 0x88U, 0xBEU},
+        {0x24U, 0x08U, 0x2BU, 0x00U, 0x0FU, 0xB0U, 0x99U, 0xBEU},
+        {0x24U, 0x08U, 0x33U, 0x00U, 0x0FU, 0xB0U, 0x88U, 0xBEU},
+        {0x24U, 0x08U, 0x2BU, 0x00U, 0x0FU, 0xB0U, 0x99U, 0xBEU}
+    }
+};
 
 static void PublishLinData(const uint8_t *sourceData) {
-  uint8_t index;
-  uint8_t globalInterruptWasEnabled;
+    uint8_t index;
+    uint8_t globalInterruptWasEnabled;
 
-  globalInterruptWasEnabled = INTCONbits.GIE;
-  INTCONbits.GIE = 0;
-  for (index = 0U; index < (8U); ++index) {
-    ID_01_Data[index] = sourceData[index];
-  }
-  INTCONbits.GIE = globalInterruptWasEnabled;
+    globalInterruptWasEnabled = INTCONbits.GIE;
+    INTCONbits.GIE = 0;
+    for (index = 0U; index < (8U); ++index) {
+        ID_01_Data[index] = sourceData[index];
+    }
+    INTCONbits.GIE = globalInterruptWasEnabled;
 }
 
 void board_init(void) {
-  LED_Init();
-  Clear_No_Call_Warning();
-  swState_update();
-  TMR2_init();
+    LED_Init();
+    Clear_No_Call_Warning();
+    swState_update();
+    TMR2_init();
 }
 
 void swSetModeControl(void) {
-  mode = (0U);
-  controlMode = (0U);
+    mode = (0U);
+    controlMode = (0U);
 
-  if (sw.pos.is_on() == (1U)) {
-    mode |= ((uint8_t)0x01U);
-  }
+    if (sw.pos.is_on() == (1U)) {
+        mode |= ((uint8_t)0x01U);
+    }
 
-  if (sw.drl.is_on() == (1U)) {
-    mode |= ((uint8_t)0x02U);
-  }
+    if (sw.drl.is_on() == (1U)) {
+        mode |= ((uint8_t)0x02U);
+    }
 
-  if (sw.loBeam.is_on() == (1U)) {
-    controlMode |= ((uint8_t)0x01U);
-  }
+    if (sw.loBeam.is_on() == (1U)) {
+        controlMode |= ((uint8_t)0x01U);
+    }
 
-  if (sw.hiBeam.is_on() == (1U)) {
-    controlMode |= ((uint8_t)0x02U);
-  }
+    if (sw.hiBeam.is_on() == (1U)) {
+        controlMode |= ((uint8_t)0x02U);
+    }
 
-  ledOff = sw.turnLeft.is_on();
-  hiBeam = sw.turnRight.is_on();
+    ledOff = sw.turnLeft.is_on();
+    hiBeam = sw.turnRight.is_on();
 }
 
 void swSetLED(void) {
-  if (sw.pos.is_on() == (1U)) {
-    led.pos.on();
-  } else {
-    led.pos.off();
-  }
+    if (sw.pos.is_on() == (1U)) {
+        led.pos.on();
+    } else {
+        led.pos.off();
+    }
 
-  if (sw.drl.is_on() == (1U)) {
-    led.drl.on();
-  } else {
-    led.drl.off();
-  }
+    if (sw.drl.is_on() == (1U)) {
+        led.drl.on();
+    } else {
+        led.drl.off();
+    }
 
-  if (sw.loBeam.is_on() == (1U)) {
-    led.loBeam.on();
-  } else {
-    led.loBeam.off();
-  }
+    if (sw.loBeam.is_on() == (1U)) {
+        led.loBeam.on();
+    } else {
+        led.loBeam.off();
+    }
 
-  if (sw.hiBeam.is_on() == (1U)) {
-    led.hiBeam.on();
-  } else {
-    led.hiBeam.off();
-  }
+    if (sw.hiBeam.is_on() == (1U)) {
+        led.hiBeam.on();
+    } else {
+        led.hiBeam.off();
+    }
 
-  if (sw.turnLeft.is_on() == (1U)) {
-    led.turnLeft.on();
-  } else {
-    led.turnLeft.off();
-  }
+    if (sw.turnLeft.is_on() == (1U)) {
+        led.turnLeft.on();
+    } else {
+        led.turnLeft.off();
+    }
 
-  if (sw.turnRight.is_on() == (1U)) {
-    led.turnRight.on();
-  } else {
-    led.turnRight.off();
-  }
+    if (sw.turnRight.is_on() == (1U)) {
+        led.turnRight.on();
+    } else {
+        led.turnRight.off();
+    }
 
-  if (tmr2.R_CNT.get() > 0U) {
-    led.turnLeftResponse.on();
-  } else {
-    led.turnLeftResponse.off();
-  }
+    if (tmr2.R_CNT.get() > 0U) {
+        led.turnLeftResponse.on();
+    } else {
+        led.turnLeftResponse.off();
+    }
 
-  if (tmr2.L_CNT.get() > 0U) {
-    led.turnRightResponse.on();
-  } else {
-    led.turnRightResponse.off();
-  }
+    if (tmr2.L_CNT.get() > 0U) {
+        led.turnRightResponse.on();
+    } else {
+        led.turnRightResponse.off();
+    }
 }
 
 void swSetDATA(void) {
-  uint8_t index;
-  const uint8_t *selectedData;
+    uint8_t index;
+    const uint8_t *selectedData;
 
-  if (ledOff == (1U)) {
-    selectedData = ledOffData;
-  } else if ((mode < (4U)) && (controlMode < (4U))) {
-    selectedData = linDataTable[mode][controlMode];
-  } else {
-
-    selectedData = linDataTable[(0U)][(0U)];
-  }
-
-  for (index = 0U; index < (8U); ++index) {
-    linData[index] = selectedData[index];
-  }
-
-  if (ledOff != (1U)) {
-    if (hiBeam == (1U)) {
-      linData[1] = (uint8_t)(linData[1] | ((uint8_t)0x80U));
+    if (ledOff == (1U)) {
+        selectedData = ledOffData;
+    } else if ((mode < (4U)) && (controlMode < (4U))) {
+        selectedData = linDataTable[mode][controlMode];
     } else {
-      linData[1] =
-          (uint8_t)(linData[1] & (uint8_t)(~((uint8_t)0x80U)));
-    }
-  }
 
-  PublishLinData(linData);
+        selectedData = linDataTable[(0U)][(0U)];
+    }
+
+    for (index = 0U; index < (8U); ++index) {
+        linData[index] = selectedData[index];
+    }
+
+    if (ledOff != (1U)) {
+        if (hiBeam == (1U)) {
+            linData[1] = (uint8_t) (linData[1] | ((uint8_t)0x80U));
+        } else {
+            linData[1] = (uint8_t) (linData[1] & (uint8_t) (~((uint8_t)0x80U)));
+        }
+    }
+
+
 }
 
 void board_update(void) {
     swState_update();
     swSetModeControl();
     swSetDATA();
+    PublishLinData(linData);
     swSetLED();
 }

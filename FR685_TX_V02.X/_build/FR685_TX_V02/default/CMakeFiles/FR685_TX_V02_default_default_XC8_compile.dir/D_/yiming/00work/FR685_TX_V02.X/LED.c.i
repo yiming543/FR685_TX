@@ -5054,193 +5054,183 @@ void PIN_MANAGER_IOC(void);
 
 
 static uint8_t led_states[LED_COUNT] = {
-    (0U), (0U), (0U), (0U), (0U), (0U)
-};
+    (0U), (0U), (0U), (0U), (0U), (0U)};
 
 
 
 static void POS_ON(void) {
-    if (led_states[POS] == (0U)) {
-        do { LATBbits.LATB5 = 1; } while(0);
-        led_states[POS] = (1U);
-    }
+  if (led_states[POS] == (0U)) {
+    do { LATBbits.LATB5 = 1; } while(0);
+    led_states[POS] = (1U);
+  }
 }
 
 static void POS_OFF(void) {
-    if (led_states[POS] != (0U)) {
-        do { LATBbits.LATB5 = 0; } while(0);
-        led_states[POS] = (0U);
-    }
+  if (led_states[POS] != (0U)) {
+    do { LATBbits.LATB5 = 0; } while(0);
+    led_states[POS] = (0U);
+  }
 }
 
 static uint8_t LED_POS_IS_ON(void) {
-    return led_states[POS];
+  return led_states[POS];
 }
 
 static void DRL_ON(void) {
-    if (led_states[DRL] == (0U)) {
-        do { LATBbits.LATB4 = 1; } while(0);
-        led_states[DRL] = (1U);
-    }
+  if (led_states[DRL] == (0U)) {
+    do { LATBbits.LATB4 = 1; } while(0);
+    led_states[DRL] = (1U);
+  }
 }
 
 static void DRL_OFF(void) {
-    if (led_states[DRL] != (0U)) {
-        do { LATBbits.LATB4 = 0; } while(0);
-        led_states[DRL] = (0U);
-    }
+  if (led_states[DRL] != (0U)) {
+    do { LATBbits.LATB4 = 0; } while(0);
+    led_states[DRL] = (0U);
+  }
 }
 
 static uint8_t LED_DRL_IS_ON(void) {
-    return led_states[DRL];
+  return led_states[DRL];
 }
 
 static void LO_BEAM_ON(void) {
-    if (led_states[LO_BEAM] == (0U)) {
-        do { LATBbits.LATB3 = 1; } while(0);
-        led_states[LO_BEAM] = (1U);
-    }
+  if (led_states[LO_BEAM] == (0U)) {
+    do { LATBbits.LATB3 = 1; } while(0);
+    led_states[LO_BEAM] = (1U);
+  }
 }
 
 static void LO_BEAM_OFF(void) {
-    if (led_states[LO_BEAM] != (0U)) {
-        do { LATBbits.LATB3 = 0; } while(0);
-        led_states[LO_BEAM] = (0U);
-    }
+  if (led_states[LO_BEAM] != (0U)) {
+    do { LATBbits.LATB3 = 0; } while(0);
+    led_states[LO_BEAM] = (0U);
+  }
 }
 
 static uint8_t LED_LO_BEAM_IS_ON(void) {
-    return led_states[LO_BEAM];
+  return led_states[LO_BEAM];
 }
 
 static void HI_BEAM_ON(void) {
-    if (led_states[HI_BEAM] == (0U)) {
-        do { LATBbits.LATB2 = 1; } while(0);
-        led_states[HI_BEAM] = (1U);
-    }
+  if (led_states[HI_BEAM] == (0U)) {
+    do { LATBbits.LATB2 = 1; } while(0);
+    led_states[HI_BEAM] = (1U);
+  }
 }
 
 static void HI_BEAM_OFF(void) {
-    if (led_states[HI_BEAM] != (0U)) {
-        do { LATBbits.LATB2 = 0; } while(0);
-        led_states[HI_BEAM] = (0U);
-    }
+  if (led_states[HI_BEAM] != (0U)) {
+    do { LATBbits.LATB2 = 0; } while(0);
+    led_states[HI_BEAM] = (0U);
+  }
 }
 
 static uint8_t LED_HI_BEAM_IS_ON(void) {
-    return led_states[HI_BEAM];
+  return led_states[HI_BEAM];
 }
 
 static void TURN_LEFT_ON(void) {
-    if (led_states[TURN_LEFT] == (0U)) {
-        do { LATBbits.LATB1 = 1; } while(0);
-        led_states[TURN_LEFT] = (1U);
-    }
+  if (led_states[TURN_LEFT] == (0U)) {
+    do { LATBbits.LATB1 = 1; } while(0);
+    led_states[TURN_LEFT] = (1U);
+  }
 }
 
 static void TURN_LEFT_OFF(void) {
-    if (led_states[TURN_LEFT] != (0U)) {
-        do { LATBbits.LATB1 = 0; } while(0);
-        led_states[TURN_LEFT] = (0U);
-    }
+  if (led_states[TURN_LEFT] != (0U)) {
+    do { LATBbits.LATB1 = 0; } while(0);
+    led_states[TURN_LEFT] = (0U);
+  }
 }
 
 static uint8_t LED_TURN_LEFT_IS_ON(void) {
-    return led_states[TURN_LEFT];
+  return led_states[TURN_LEFT];
 }
 
 static void TURN_RIGHT_ON(void) {
-    if (led_states[TURN_RIGHT] == (0U)) {
-        do { LATBbits.LATB0 = 1; } while(0);
-        led_states[TURN_RIGHT] = (1U);
-    }
+  if (led_states[TURN_RIGHT] == (0U)) {
+    do { LATBbits.LATB0 = 1; } while(0);
+    led_states[TURN_RIGHT] = (1U);
+  }
 }
 
 static void TURN_RIGHT_OFF(void) {
-    if (led_states[TURN_RIGHT] != (0U)) {
-        do { LATBbits.LATB0 = 0; } while(0);
-        led_states[TURN_RIGHT] = (0U);
-    }
+  if (led_states[TURN_RIGHT] != (0U)) {
+    do { LATBbits.LATB0 = 0; } while(0);
+    led_states[TURN_RIGHT] = (0U);
+  }
 }
 
 static uint8_t LED_TURN_RIGHT_IS_ON(void) {
-    return led_states[TURN_RIGHT];
+  return led_states[TURN_RIGHT];
 }
 
 static void TURN_LEFT_RESPONSE_ON(void) {
-    if (led_states[TURN_LEFT_RESPONSE] == (0U)) {
-        do { LATCbits.LATC4 = 1; } while(0);
-        led_states[TURN_LEFT_RESPONSE] = (1U);
-    }
+  if (led_states[TURN_LEFT_RESPONSE] == (0U)) {
+    do { LATCbits.LATC4 = 1; } while(0);
+    led_states[TURN_LEFT_RESPONSE] = (1U);
+  }
 }
 
 static void TURN_LEFT_RESPONSE_OFF(void) {
-    if (led_states[TURN_LEFT_RESPONSE] != (0U)) {
-        do { LATCbits.LATC4 = 0; } while(0);
-        led_states[TURN_LEFT_RESPONSE] = (0U);
-    }
+  if (led_states[TURN_LEFT_RESPONSE] != (0U)) {
+    do { LATCbits.LATC4 = 0; } while(0);
+    led_states[TURN_LEFT_RESPONSE] = (0U);
+  }
 }
 
 static uint8_t LED_TURN_LEFT_RESPONSE_IS_ON(void) {
-    return led_states[TURN_LEFT_RESPONSE];
+  return led_states[TURN_LEFT_RESPONSE];
 }
 
 static void TURN_RIGHT_RESPONSE_ON(void) {
-    if (led_states[TURN_RIGHT_RESPONSE] == (0U)) {
-        do { LATCbits.LATC5 = 1; } while(0);
-        led_states[TURN_RIGHT_RESPONSE] = (1U);
-    }
+  if (led_states[TURN_RIGHT_RESPONSE] == (0U)) {
+    do { LATCbits.LATC5 = 1; } while(0);
+    led_states[TURN_RIGHT_RESPONSE] = (1U);
+  }
 }
 
 static void TURN_RIGHT_RESPONSE_OFF(void) {
-    if (led_states[TURN_RIGHT_RESPONSE] != (0U)) {
-        do { LATCbits.LATC5 = 0; } while(0);
-        led_states[TURN_RIGHT_RESPONSE] = (0U);
-    }
+  if (led_states[TURN_RIGHT_RESPONSE] != (0U)) {
+    do { LATCbits.LATC5 = 0; } while(0);
+    led_states[TURN_RIGHT_RESPONSE] = (0U);
+  }
 }
 
 static uint8_t LED_TURN_RIGHT_RESPONSE_IS_ON(void) {
-    return led_states[TURN_RIGHT_RESPONSE];
+  return led_states[TURN_RIGHT_RESPONSE];
 }
 
 
 const LEDs_t led = {
-    .pos =
-    {.on = POS_ON, .off = POS_OFF, .is_on = LED_POS_IS_ON},
-    .drl =
-    {.on = DRL_ON, .off = DRL_OFF, .is_on = LED_DRL_IS_ON},
-    .loBeam =
-    {.on = LO_BEAM_ON, .off = LO_BEAM_OFF, .is_on = LED_LO_BEAM_IS_ON},
-    .hiBeam =
-    {.on = HI_BEAM_ON, .off = HI_BEAM_OFF, .is_on = LED_HI_BEAM_IS_ON},
-    .turnLeft =
-    {.on = TURN_LEFT_ON, .off = TURN_LEFT_OFF, .is_on = LED_TURN_LEFT_IS_ON},
-    .turnRight =
-    {.on = TURN_RIGHT_ON, .off = TURN_RIGHT_OFF, .is_on = LED_TURN_RIGHT_IS_ON},
-    .turnLeftResponse =
-    {.on = TURN_LEFT_RESPONSE_ON, .off = TURN_LEFT_RESPONSE_OFF, .is_on = LED_TURN_LEFT_RESPONSE_IS_ON},
-    .turnRightResponse =
-    {.on = TURN_RIGHT_RESPONSE_ON, .off = TURN_RIGHT_RESPONSE_OFF, .is_on = LED_TURN_RIGHT_RESPONSE_IS_ON}
-};
+    .pos = {.on = POS_ON, .off = POS_OFF, .is_on = LED_POS_IS_ON},
+    .drl = {.on = DRL_ON, .off = DRL_OFF, .is_on = LED_DRL_IS_ON},
+    .loBeam = {.on = LO_BEAM_ON, .off = LO_BEAM_OFF, .is_on = LED_LO_BEAM_IS_ON},
+    .hiBeam = {.on = HI_BEAM_ON, .off = HI_BEAM_OFF, .is_on = LED_HI_BEAM_IS_ON},
+    .turnLeft = {.on = TURN_LEFT_ON, .off = TURN_LEFT_OFF, .is_on = LED_TURN_LEFT_IS_ON},
+    .turnRight = {.on = TURN_RIGHT_ON, .off = TURN_RIGHT_OFF, .is_on = LED_TURN_RIGHT_IS_ON},
+    .turnLeftResponse = {.on = TURN_LEFT_RESPONSE_ON, .off = TURN_LEFT_RESPONSE_OFF, .is_on = LED_TURN_LEFT_RESPONSE_IS_ON},
+    .turnRightResponse = {.on = TURN_RIGHT_RESPONSE_ON, .off = TURN_RIGHT_RESPONSE_OFF, .is_on = LED_TURN_RIGHT_RESPONSE_IS_ON}};
 
 
 
 void LED_Init(void) {
-    led.pos.off();
-    led.drl.off();
-    led.loBeam.off();
-    led.hiBeam.off();
-    led.turnLeft.off();
-    led.turnRight.off();
-    led.turnLeftResponse.off();
-    led.turnRightResponse.off();
+  led.pos.off();
+  led.drl.off();
+  led.loBeam.off();
+  led.hiBeam.off();
+  led.turnLeft.off();
+  led.turnRight.off();
+  led.turnLeftResponse.off();
+  led.turnRightResponse.off();
 
-    uint8_t tmp_pos = LED_POS_IS_ON();
-    uint8_t tmp_drl = LED_DRL_IS_ON();
-    uint8_t tmp_loBeam = LED_LO_BEAM_IS_ON();
-    uint8_t tmp_hiBeam = LED_HI_BEAM_IS_ON();
-    uint8_t tmp_turnLeft = LED_TURN_LEFT_IS_ON();
-    uint8_t tmp_turnRight = LED_TURN_RIGHT_IS_ON();
-    uint8_t tmp_turnLeftRespone = LED_TURN_LEFT_RESPONSE_IS_ON();
-    uint8_t tmp_turnRightRespone = LED_TURN_RIGHT_RESPONSE_IS_ON();
+  uint8_t tmp_pos = LED_POS_IS_ON();
+  uint8_t tmp_drl = LED_DRL_IS_ON();
+  uint8_t tmp_loBeam = LED_LO_BEAM_IS_ON();
+  uint8_t tmp_hiBeam = LED_HI_BEAM_IS_ON();
+  uint8_t tmp_turnLeft = LED_TURN_LEFT_IS_ON();
+  uint8_t tmp_turnRight = LED_TURN_RIGHT_IS_ON();
+  uint8_t tmp_turnLeftRespone = LED_TURN_LEFT_RESPONSE_IS_ON();
+  uint8_t tmp_turnRightRespone = LED_TURN_RIGHT_RESPONSE_IS_ON();
 }

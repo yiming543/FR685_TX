@@ -5372,23 +5372,23 @@ void LIN_sendPeriodicTx(void);
 
 
 typedef enum {
+  ID_01 = 0x01,
   ID_00 = 0x00,
   ID_10 = 0x10,
-  ID_01 = 0x01,
   ID_18 = 0x18
 } lin_cmd_t;
 
 uint8_t ID_00_Data[8]={0x01, 0x08, 0x25, 0x80, 0x00, 0x9C, 0xFF, 0xFF};
-uint8_t ID_10_Data[8];
 uint8_t ID_01_Data[8];
+uint8_t ID_10_Data[8];
 uint8_t ID_18_Data[8];
 
 lin_cmd_packet_t scheduleTable[] = {
 
     {ID_00, TRANSMIT, 8, 10, 20, ID_00_Data},
-    {ID_10, RECEIVE, 8, 15, 20, ID_10_Data},
     {ID_01, TRANSMIT, 8, 10, 20, ID_01_Data},
-    {ID_18, RECEIVE, 8, 15, 20, ID_18_Data}};
+    {ID_18, RECEIVE, 8, 15, 20, ID_18_Data},
+    {ID_10, RECEIVE, 8, 15, 20, ID_10_Data}};
 
 
 void LIN_Master_Initialize(void);

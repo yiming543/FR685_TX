@@ -1,19 +1,19 @@
 Version 4.0 HI-TECH Software Intermediate Code
 "341 C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.9.258/xc8\pic\include\proc/pic16f1936.h
 [; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.9.258/xc8\pic\include\proc/pic16f1936.h: 341:     struct {
-[s S36 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S36 . IOCIF INTF TMR0IF IOCIE INTE TMR0IE PEIE GIE ]
+[s S35 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S35 . IOCIF INTF TMR0IF IOCIE INTE TMR0IE PEIE GIE ]
 "351
 [; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.9.258/xc8\pic\include\proc/pic16f1936.h: 351:     struct {
-[s S37 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
-[n S37 . . T0IF . T0IE ]
+[s S36 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S36 . . T0IF . T0IE ]
 "340
 [; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.9.258/xc8\pic\include\proc/pic16f1936.h: 340: typedef union {
-[u S35 `S36 1 `S37 1 ]
-[n S35 . . . ]
+[u S34 `S35 1 `S36 1 ]
+[n S34 . . . ]
 "358
 [; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.9.258/xc8\pic\include\proc/pic16f1936.h: 358: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
-[v _INTCONbits `VS35 ~T0 @X0 0 e@11 ]
+[v _INTCONbits `VS34 ~T0 @X0 0 e@11 ]
 "9 BOARD.c
 [; ;BOARD.c: 9: extern uint8_t ID_01_Data[8];
 [v _ID_01_Data `uc ~T0 @X0 -> 0 `x e ]
@@ -23,8 +23,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "15 ./Warning_ignored.h
 [; ;./Warning_ignored.h: 15: extern void Clear_No_Call_Warning(void) ;
 [v _Clear_No_Call_Warning `(v ~T0 @X0 0 ef ]
-"36 ./SWITCH.h
-[; ;./SWITCH.h: 36: extern void swState_update(void);
+"26 ./SWITCH.h
+[; ;./SWITCH.h: 26: extern void swState_update(void);
 [v _swState_update `(v ~T0 @X0 0 ef ]
 "31 ./timer.h
 [; ;./timer.h: 31: extern void TMR2_init(void);
@@ -33,16 +33,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v F74 `*F75 ~T0 @X0 1 t ]
 [v F78 `(uc ~T0 @X0 0 tf ]
 [v F77 `*F78 ~T0 @X0 1 t ]
-"10 ./SWITCH.h
-[; ;./SWITCH.h: 10: typedef struct {
+"9 ./SWITCH.h
+[; ;./SWITCH.h: 9: typedef struct {
 [s S3 `C*F75 1 `C*F78 1 ]
 [n S3 . get is_on ]
-"15
-[; ;./SWITCH.h: 15: typedef struct {
+"14
+[; ;./SWITCH.h: 14: typedef struct {
 [s S4 `S3 1 `S3 1 `S3 1 `S3 1 `S3 1 `S3 1 ]
 [n S4 . pos drl loBeam hiBeam turnLeft turnRight ]
-"35
-[; ;./SWITCH.h: 35: extern const SWITCHs_t sw;
+"25
+[; ;./SWITCH.h: 25: extern const SWITCHs_t sw;
 [v _sw `CS4 ~T0 @X0 0 e ]
 [v F41 `(v ~T0 @X0 0 tf ]
 [v F40 `*F41 ~T0 @X0 1 t ]
@@ -61,21 +61,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 "43
 [; ;./LED.h: 43: extern const LEDs_t led;
 [v _led `CS2 ~T0 @X0 0 e ]
-[v F2856 `(v ~T0 @X0 0 tf1`uc ]
-[v F2855 `*F2856 ~T0 @X0 1 t ]
-[v F2860 `(uc ~T0 @X0 0 tf ]
-[v F2859 `*F2860 ~T0 @X0 1 t ]
+[v F2848 `(v ~T0 @X0 0 tf1`uc ]
+[v F2847 `*F2848 ~T0 @X0 1 t ]
+[v F2852 `(uc ~T0 @X0 0 tf ]
+[v F2851 `*F2852 ~T0 @X0 1 t ]
 "15 ./timer.h
 [; ;./timer.h: 15: typedef struct {
-[s S373 `C*F2856 1 `C*F2860 1 ]
-[n S373 . set get ]
+[s S372 `C*F2848 1 `C*F2852 1 ]
+[n S372 . set get ]
 "25
 [; ;./timer.h: 25: typedef struct{
-[s S375 `S373 1 `S373 1 ]
-[n S375 . R_CNT L_CNT ]
+[s S374 `S372 1 `S372 1 ]
+[n S374 . R_CNT L_CNT ]
 "30
 [; ;./timer.h: 30: extern TMR2_t const tmr2;
-[v _tmr2 `CS375 ~T0 @X0 0 e ]
+[v _tmr2 `CS374 ~T0 @X0 0 e ]
 "38 C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.9.258/xc8\pic\include\proc/pic16f1936.h
 [; ;C:/Users/t00904/.mchp_packs/Microchip/PIC12-16F1xxx_DFP/1.9.258/xc8\pic\include\proc/pic16f1936.h: 38: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -619,11 +619,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 190 `ui `uc
 ..
 ]
-[v F2889 `Cuc ~T0 @X0 -> 8 `i t ]
-[v F2888 `F2889 ~T0 @X0 -> 4 `i t ]
-"47
-[; ;BOARD.c: 47:     linDataTable[(4U)][(4U)][(8U)] = {
-[v _linDataTable `F2888 ~T0 @X0 -> 4 `i s ]
+[v F2881 `Cuc ~T0 @X0 -> 8 `i t ]
+[v F2880 `F2881 ~T0 @X0 -> 4 `i t ]
+"48
+[; ;BOARD.c: 48: linDataTable[(4U)][(4U)][(8U)] = {
+[v _linDataTable `F2880 ~T0 @X0 -> 4 `i s ]
 [i _linDataTable
 :U ..
 :U ..
@@ -796,423 +796,423 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ..
 ]
-"69
-[; ;BOARD.c: 69: static void PublishLinData(const uint8_t *sourceData) {
+"79
+[; ;BOARD.c: 79: static void PublishLinData(const uint8_t *sourceData) {
 [v _PublishLinData `(v ~T0 @X0 1 sf1`*Cuc ]
 {
 [e :U _PublishLinData ]
 [v _sourceData `*Cuc ~T0 @X0 1 r1 ]
 [f ]
-"70
-[; ;BOARD.c: 70:   uint8_t index;
+"80
+[; ;BOARD.c: 80:     uint8_t index;
 [v _index `uc ~T0 @X0 1 a ]
-"71
-[; ;BOARD.c: 71:   uint8_t globalInterruptWasEnabled;
+"81
+[; ;BOARD.c: 81:     uint8_t globalInterruptWasEnabled;
 [v _globalInterruptWasEnabled `uc ~T0 @X0 1 a ]
-"73
-[; ;BOARD.c: 73:   globalInterruptWasEnabled = INTCONbits.GIE;
+"83
+[; ;BOARD.c: 83:     globalInterruptWasEnabled = INTCONbits.GIE;
 [e = _globalInterruptWasEnabled . . _INTCONbits 0 7 ]
-"74
-[; ;BOARD.c: 74:   INTCONbits.GIE = 0;
+"84
+[; ;BOARD.c: 84:     INTCONbits.GIE = 0;
 [e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
-"75
-[; ;BOARD.c: 75:   for (index = 0U; index < (8U); ++index) {
+"85
+[; ;BOARD.c: 85:     for (index = 0U; index < (8U); ++index) {
 {
 [e = _index -> -> 0 `ui `uc ]
-[e $ < -> _index `ui -> 8 `ui 377  ]
-[e $U 378  ]
-[e :U 377 ]
+[e $ < -> _index `ui -> 8 `ui 376  ]
+[e $U 377  ]
+[e :U 376 ]
 {
-"76
-[; ;BOARD.c: 76:     ID_01_Data[index] = sourceData[index];
+"86
+[; ;BOARD.c: 86:         ID_01_Data[index] = sourceData[index];
 [e = *U + &U _ID_01_Data * -> _index `ux -> -> # *U &U _ID_01_Data `ui `ux *U + _sourceData * -> _index `ux -> -> # *U _sourceData `ui `ux ]
-"77
-[; ;BOARD.c: 77:   }
+"87
+[; ;BOARD.c: 87:     }
 }
 [e =+ _index -> -> 1 `i `uc ]
-[e $ < -> _index `ui -> 8 `ui 377  ]
-[e :U 378 ]
+[e $ < -> _index `ui -> 8 `ui 376  ]
+[e :U 377 ]
 }
-"78
-[; ;BOARD.c: 78:   INTCONbits.GIE = globalInterruptWasEnabled;
+"88
+[; ;BOARD.c: 88:     INTCONbits.GIE = globalInterruptWasEnabled;
 [e = . . _INTCONbits 0 7 _globalInterruptWasEnabled ]
-"79
-[; ;BOARD.c: 79: }
-[e :UE 376 ]
+"89
+[; ;BOARD.c: 89: }
+[e :UE 375 ]
 }
-"81
-[; ;BOARD.c: 81: void board_init(void) {
+"91
+[; ;BOARD.c: 91: void board_init(void) {
 [v _board_init `(v ~T0 @X0 1 ef ]
 {
 [e :U _board_init ]
 [f ]
-"82
-[; ;BOARD.c: 82:   LED_Init();
+"92
+[; ;BOARD.c: 92:     LED_Init();
 [e ( _LED_Init ..  ]
-"83
-[; ;BOARD.c: 83:   Clear_No_Call_Warning();
+"93
+[; ;BOARD.c: 93:     Clear_No_Call_Warning();
 [e ( _Clear_No_Call_Warning ..  ]
-"84
-[; ;BOARD.c: 84:   swState_update();
+"94
+[; ;BOARD.c: 94:     swState_update();
 [e ( _swState_update ..  ]
-"85
-[; ;BOARD.c: 85:   TMR2_init();
+"95
+[; ;BOARD.c: 95:     TMR2_init();
 [e ( _TMR2_init ..  ]
-"86
-[; ;BOARD.c: 86: }
-[e :UE 380 ]
+"96
+[; ;BOARD.c: 96: }
+[e :UE 379 ]
 }
-"88
-[; ;BOARD.c: 88: void swSetModeControl(void) {
+"98
+[; ;BOARD.c: 98: void swSetModeControl(void) {
 [v _swSetModeControl `(v ~T0 @X0 1 ef ]
 {
 [e :U _swSetModeControl ]
 [f ]
-"89
-[; ;BOARD.c: 89:   mode = (0U);
+"99
+[; ;BOARD.c: 99:     mode = (0U);
 [e = _mode -> -> 0 `ui `uc ]
-"90
-[; ;BOARD.c: 90:   controlMode = (0U);
+"100
+[; ;BOARD.c: 100:     controlMode = (0U);
 [e = _controlMode -> -> 0 `ui `uc ]
-"92
-[; ;BOARD.c: 92:   if (sw.pos.is_on() == (1U)) {
-[e $ ! == -> ( *U . . _sw 0 1 ..  `ui -> 1 `ui 382  ]
+"102
+[; ;BOARD.c: 102:     if (sw.pos.is_on() == (1U)) {
+[e $ ! == -> ( *U . . _sw 0 1 ..  `ui -> 1 `ui 381  ]
 {
-"93
-[; ;BOARD.c: 93:     mode |= ((uint8_t)0x01U);
+"103
+[; ;BOARD.c: 103:         mode |= ((uint8_t)0x01U);
 [e =| _mode -> -> -> 1 `ui `uc `uc ]
-"94
-[; ;BOARD.c: 94:   }
+"104
+[; ;BOARD.c: 104:     }
+}
+[e :U 381 ]
+"106
+[; ;BOARD.c: 106:     if (sw.drl.is_on() == (1U)) {
+[e $ ! == -> ( *U . . _sw 1 1 ..  `ui -> 1 `ui 382  ]
+{
+"107
+[; ;BOARD.c: 107:         mode |= ((uint8_t)0x02U);
+[e =| _mode -> -> -> 2 `ui `uc `uc ]
+"108
+[; ;BOARD.c: 108:     }
 }
 [e :U 382 ]
-"96
-[; ;BOARD.c: 96:   if (sw.drl.is_on() == (1U)) {
-[e $ ! == -> ( *U . . _sw 1 1 ..  `ui -> 1 `ui 383  ]
+"110
+[; ;BOARD.c: 110:     if (sw.loBeam.is_on() == (1U)) {
+[e $ ! == -> ( *U . . _sw 2 1 ..  `ui -> 1 `ui 383  ]
 {
-"97
-[; ;BOARD.c: 97:     mode |= ((uint8_t)0x02U);
-[e =| _mode -> -> -> 2 `ui `uc `uc ]
-"98
-[; ;BOARD.c: 98:   }
+"111
+[; ;BOARD.c: 111:         controlMode |= ((uint8_t)0x01U);
+[e =| _controlMode -> -> -> 1 `ui `uc `uc ]
+"112
+[; ;BOARD.c: 112:     }
 }
 [e :U 383 ]
-"100
-[; ;BOARD.c: 100:   if (sw.loBeam.is_on() == (1U)) {
-[e $ ! == -> ( *U . . _sw 2 1 ..  `ui -> 1 `ui 384  ]
+"114
+[; ;BOARD.c: 114:     if (sw.hiBeam.is_on() == (1U)) {
+[e $ ! == -> ( *U . . _sw 3 1 ..  `ui -> 1 `ui 384  ]
 {
-"101
-[; ;BOARD.c: 101:     controlMode |= ((uint8_t)0x01U);
-[e =| _controlMode -> -> -> 1 `ui `uc `uc ]
-"102
-[; ;BOARD.c: 102:   }
+"115
+[; ;BOARD.c: 115:         controlMode |= ((uint8_t)0x02U);
+[e =| _controlMode -> -> -> 2 `ui `uc `uc ]
+"116
+[; ;BOARD.c: 116:     }
 }
 [e :U 384 ]
-"104
-[; ;BOARD.c: 104:   if (sw.hiBeam.is_on() == (1U)) {
-[e $ ! == -> ( *U . . _sw 3 1 ..  `ui -> 1 `ui 385  ]
-{
-"105
-[; ;BOARD.c: 105:     controlMode |= ((uint8_t)0x02U);
-[e =| _controlMode -> -> -> 2 `ui `uc `uc ]
-"106
-[; ;BOARD.c: 106:   }
-}
-[e :U 385 ]
-"108
-[; ;BOARD.c: 108:   ledOff = sw.turnLeft.is_on();
+"118
+[; ;BOARD.c: 118:     ledOff = sw.turnLeft.is_on();
 [e = _ledOff ( *U . . _sw 4 1 ..  ]
-"109
-[; ;BOARD.c: 109:   hiBeam = sw.turnRight.is_on();
+"119
+[; ;BOARD.c: 119:     hiBeam = sw.turnRight.is_on();
 [e = _hiBeam ( *U . . _sw 5 1 ..  ]
-"110
-[; ;BOARD.c: 110: }
-[e :UE 381 ]
+"120
+[; ;BOARD.c: 120: }
+[e :UE 380 ]
 }
-"112
-[; ;BOARD.c: 112: void swSetLED(void) {
+"122
+[; ;BOARD.c: 122: void swSetLED(void) {
 [v _swSetLED `(v ~T0 @X0 1 ef ]
 {
 [e :U _swSetLED ]
 [f ]
-"113
-[; ;BOARD.c: 113:   if (sw.pos.is_on() == (1U)) {
-[e $ ! == -> ( *U . . _sw 0 1 ..  `ui -> 1 `ui 387  ]
-{
-"114
-[; ;BOARD.c: 114:     led.pos.on();
-[e ( *U . . _led 0 0 ..  ]
-"115
-[; ;BOARD.c: 115:   } else {
-}
-[e $U 388  ]
-[e :U 387 ]
-{
-"116
-[; ;BOARD.c: 116:     led.pos.off();
-[e ( *U . . _led 0 1 ..  ]
-"117
-[; ;BOARD.c: 117:   }
-}
-[e :U 388 ]
-"119
-[; ;BOARD.c: 119:   if (sw.drl.is_on() == (1U)) {
-[e $ ! == -> ( *U . . _sw 1 1 ..  `ui -> 1 `ui 389  ]
-{
-"120
-[; ;BOARD.c: 120:     led.drl.on();
-[e ( *U . . _led 1 0 ..  ]
-"121
-[; ;BOARD.c: 121:   } else {
-}
-[e $U 390  ]
-[e :U 389 ]
-{
-"122
-[; ;BOARD.c: 122:     led.drl.off();
-[e ( *U . . _led 1 1 ..  ]
 "123
-[; ;BOARD.c: 123:   }
-}
-[e :U 390 ]
+[; ;BOARD.c: 123:     if (sw.pos.is_on() == (1U)) {
+[e $ ! == -> ( *U . . _sw 0 1 ..  `ui -> 1 `ui 386  ]
+{
+"124
+[; ;BOARD.c: 124:         led.pos.on();
+[e ( *U . . _led 0 0 ..  ]
 "125
-[; ;BOARD.c: 125:   if (sw.loBeam.is_on() == (1U)) {
-[e $ ! == -> ( *U . . _sw 2 1 ..  `ui -> 1 `ui 391  ]
+[; ;BOARD.c: 125:     } else {
+}
+[e $U 387  ]
+[e :U 386 ]
 {
 "126
-[; ;BOARD.c: 126:     led.loBeam.on();
-[e ( *U . . _led 2 0 ..  ]
+[; ;BOARD.c: 126:         led.pos.off();
+[e ( *U . . _led 0 1 ..  ]
 "127
-[; ;BOARD.c: 127:   } else {
+[; ;BOARD.c: 127:     }
 }
-[e $U 392  ]
-[e :U 391 ]
-{
-"128
-[; ;BOARD.c: 128:     led.loBeam.off();
-[e ( *U . . _led 2 1 ..  ]
+[e :U 387 ]
 "129
-[; ;BOARD.c: 129:   }
-}
-[e :U 392 ]
+[; ;BOARD.c: 129:     if (sw.drl.is_on() == (1U)) {
+[e $ ! == -> ( *U . . _sw 1 1 ..  `ui -> 1 `ui 388  ]
+{
+"130
+[; ;BOARD.c: 130:         led.drl.on();
+[e ( *U . . _led 1 0 ..  ]
 "131
-[; ;BOARD.c: 131:   if (sw.hiBeam.is_on() == (1U)) {
-[e $ ! == -> ( *U . . _sw 3 1 ..  `ui -> 1 `ui 393  ]
+[; ;BOARD.c: 131:     } else {
+}
+[e $U 389  ]
+[e :U 388 ]
 {
 "132
-[; ;BOARD.c: 132:     led.hiBeam.on();
-[e ( *U . . _led 3 0 ..  ]
+[; ;BOARD.c: 132:         led.drl.off();
+[e ( *U . . _led 1 1 ..  ]
 "133
-[; ;BOARD.c: 133:   } else {
+[; ;BOARD.c: 133:     }
 }
-[e $U 394  ]
-[e :U 393 ]
-{
-"134
-[; ;BOARD.c: 134:     led.hiBeam.off();
-[e ( *U . . _led 3 1 ..  ]
+[e :U 389 ]
 "135
-[; ;BOARD.c: 135:   }
-}
-[e :U 394 ]
+[; ;BOARD.c: 135:     if (sw.loBeam.is_on() == (1U)) {
+[e $ ! == -> ( *U . . _sw 2 1 ..  `ui -> 1 `ui 390  ]
+{
+"136
+[; ;BOARD.c: 136:         led.loBeam.on();
+[e ( *U . . _led 2 0 ..  ]
 "137
-[; ;BOARD.c: 137:   if (sw.turnLeft.is_on() == (1U)) {
-[e $ ! == -> ( *U . . _sw 4 1 ..  `ui -> 1 `ui 395  ]
+[; ;BOARD.c: 137:     } else {
+}
+[e $U 391  ]
+[e :U 390 ]
 {
 "138
-[; ;BOARD.c: 138:     led.turnLeft.on();
-[e ( *U . . _led 4 0 ..  ]
+[; ;BOARD.c: 138:         led.loBeam.off();
+[e ( *U . . _led 2 1 ..  ]
 "139
-[; ;BOARD.c: 139:   } else {
+[; ;BOARD.c: 139:     }
 }
-[e $U 396  ]
-[e :U 395 ]
-{
-"140
-[; ;BOARD.c: 140:     led.turnLeft.off();
-[e ( *U . . _led 4 1 ..  ]
+[e :U 391 ]
 "141
-[; ;BOARD.c: 141:   }
-}
-[e :U 396 ]
+[; ;BOARD.c: 141:     if (sw.hiBeam.is_on() == (1U)) {
+[e $ ! == -> ( *U . . _sw 3 1 ..  `ui -> 1 `ui 392  ]
+{
+"142
+[; ;BOARD.c: 142:         led.hiBeam.on();
+[e ( *U . . _led 3 0 ..  ]
 "143
-[; ;BOARD.c: 143:   if (sw.turnRight.is_on() == (1U)) {
-[e $ ! == -> ( *U . . _sw 5 1 ..  `ui -> 1 `ui 397  ]
+[; ;BOARD.c: 143:     } else {
+}
+[e $U 393  ]
+[e :U 392 ]
 {
 "144
-[; ;BOARD.c: 144:     led.turnRight.on();
-[e ( *U . . _led 5 0 ..  ]
+[; ;BOARD.c: 144:         led.hiBeam.off();
+[e ( *U . . _led 3 1 ..  ]
 "145
-[; ;BOARD.c: 145:   } else {
+[; ;BOARD.c: 145:     }
 }
-[e $U 398  ]
-[e :U 397 ]
-{
-"146
-[; ;BOARD.c: 146:     led.turnRight.off();
-[e ( *U . . _led 5 1 ..  ]
+[e :U 393 ]
 "147
-[; ;BOARD.c: 147:   }
-}
-[e :U 398 ]
+[; ;BOARD.c: 147:     if (sw.turnLeft.is_on() == (1U)) {
+[e $ ! == -> ( *U . . _sw 4 1 ..  `ui -> 1 `ui 394  ]
+{
+"148
+[; ;BOARD.c: 148:         led.turnLeft.on();
+[e ( *U . . _led 4 0 ..  ]
 "149
-[; ;BOARD.c: 149:   if (tmr2.R_CNT.get() > 0U) {
-[e $ ! > -> ( *U . . _tmr2 0 1 ..  `ui -> 0 `ui 399  ]
+[; ;BOARD.c: 149:     } else {
+}
+[e $U 395  ]
+[e :U 394 ]
 {
 "150
-[; ;BOARD.c: 150:     led.turnLeftResponse.on();
-[e ( *U . . _led 6 0 ..  ]
+[; ;BOARD.c: 150:         led.turnLeft.off();
+[e ( *U . . _led 4 1 ..  ]
 "151
-[; ;BOARD.c: 151:   } else {
+[; ;BOARD.c: 151:     }
 }
-[e $U 400  ]
-[e :U 399 ]
-{
-"152
-[; ;BOARD.c: 152:     led.turnLeftResponse.off();
-[e ( *U . . _led 6 1 ..  ]
+[e :U 395 ]
 "153
-[; ;BOARD.c: 153:   }
-}
-[e :U 400 ]
+[; ;BOARD.c: 153:     if (sw.turnRight.is_on() == (1U)) {
+[e $ ! == -> ( *U . . _sw 5 1 ..  `ui -> 1 `ui 396  ]
+{
+"154
+[; ;BOARD.c: 154:         led.turnRight.on();
+[e ( *U . . _led 5 0 ..  ]
 "155
-[; ;BOARD.c: 155:   if (tmr2.L_CNT.get() > 0U) {
-[e $ ! > -> ( *U . . _tmr2 1 1 ..  `ui -> 0 `ui 401  ]
+[; ;BOARD.c: 155:     } else {
+}
+[e $U 397  ]
+[e :U 396 ]
 {
 "156
-[; ;BOARD.c: 156:     led.turnRightResponse.on();
-[e ( *U . . _led 7 0 ..  ]
+[; ;BOARD.c: 156:         led.turnRight.off();
+[e ( *U . . _led 5 1 ..  ]
 "157
-[; ;BOARD.c: 157:   } else {
+[; ;BOARD.c: 157:     }
 }
-[e $U 402  ]
-[e :U 401 ]
-{
-"158
-[; ;BOARD.c: 158:     led.turnRightResponse.off();
-[e ( *U . . _led 7 1 ..  ]
+[e :U 397 ]
 "159
-[; ;BOARD.c: 159:   }
-}
-[e :U 402 ]
+[; ;BOARD.c: 159:     if (tmr2.R_CNT.get() > 0U) {
+[e $ ! > -> ( *U . . _tmr2 0 1 ..  `ui -> 0 `ui 398  ]
+{
 "160
-[; ;BOARD.c: 160: }
-[e :UE 386 ]
+[; ;BOARD.c: 160:         led.turnLeftResponse.on();
+[e ( *U . . _led 6 0 ..  ]
+"161
+[; ;BOARD.c: 161:     } else {
 }
+[e $U 399  ]
+[e :U 398 ]
+{
 "162
-[; ;BOARD.c: 162: void swSetDATA(void) {
+[; ;BOARD.c: 162:         led.turnLeftResponse.off();
+[e ( *U . . _led 6 1 ..  ]
+"163
+[; ;BOARD.c: 163:     }
+}
+[e :U 399 ]
+"165
+[; ;BOARD.c: 165:     if (tmr2.L_CNT.get() > 0U) {
+[e $ ! > -> ( *U . . _tmr2 1 1 ..  `ui -> 0 `ui 400  ]
+{
+"166
+[; ;BOARD.c: 166:         led.turnRightResponse.on();
+[e ( *U . . _led 7 0 ..  ]
+"167
+[; ;BOARD.c: 167:     } else {
+}
+[e $U 401  ]
+[e :U 400 ]
+{
+"168
+[; ;BOARD.c: 168:         led.turnRightResponse.off();
+[e ( *U . . _led 7 1 ..  ]
+"169
+[; ;BOARD.c: 169:     }
+}
+[e :U 401 ]
+"170
+[; ;BOARD.c: 170: }
+[e :UE 385 ]
+}
+"172
+[; ;BOARD.c: 172: void swSetDATA(void) {
 [v _swSetDATA `(v ~T0 @X0 1 ef ]
 {
 [e :U _swSetDATA ]
 [f ]
-"163
-[; ;BOARD.c: 163:   uint8_t index;
-[v _index `uc ~T0 @X0 1 a ]
-"164
-[; ;BOARD.c: 164:   const uint8_t *selectedData;
-[v _selectedData `*Cuc ~T0 @X0 1 a ]
-"166
-[; ;BOARD.c: 166:   if (ledOff == (1U)) {
-[e $ ! == -> _ledOff `ui -> 1 `ui 404  ]
-{
-"167
-[; ;BOARD.c: 167:     selectedData = ledOffData;
-[e = _selectedData &U _ledOffData ]
-"168
-[; ;BOARD.c: 168:   } else if ((mode < (4U)) && (controlMode < (4U))) {
-}
-[e $U 405  ]
-[e :U 404 ]
-[e $ ! && < -> _mode `ui -> 4 `ui < -> _controlMode `ui -> 4 `ui 406  ]
-{
-"169
-[; ;BOARD.c: 169:     selectedData = linDataTable[mode][controlMode];
-[e = _selectedData &U *U + &U *U + &U _linDataTable * -> _mode `ux -> * * -> # *U &U *U &U _linDataTable `ui -> -> 4 `i `ui -> -> 8 `i `ui `ux * -> _controlMode `ux -> * -> # *U &U *U &U *U + &U _linDataTable * -> _mode `ux -> * * -> # *U &U *U &U _linDataTable `ui -> -> 4 `i `ui -> -> 8 `i `ui `ux `ui -> -> 8 `i `ui `ux ]
-"170
-[; ;BOARD.c: 170:   } else {
-}
-[e $U 407  ]
-[e :U 406 ]
-{
-"172
-[; ;BOARD.c: 172:     selectedData = linDataTable[(0U)][(0U)];
-[e = _selectedData &U *U + &U *U + &U _linDataTable * -> -> 0 `ui `ux -> * * -> # *U &U *U &U _linDataTable `ui -> -> 4 `i `ui -> -> 8 `i `ui `ux * -> -> 0 `ui `ux -> * -> # *U &U *U &U *U + &U _linDataTable * -> -> 0 `ui `ux -> * * -> # *U &U *U &U _linDataTable `ui -> -> 4 `i `ui -> -> 8 `i `ui `ux `ui -> -> 8 `i `ui `ux ]
 "173
-[; ;BOARD.c: 173:   }
+[; ;BOARD.c: 173:     uint8_t index;
+[v _index `uc ~T0 @X0 1 a ]
+"174
+[; ;BOARD.c: 174:     const uint8_t *selectedData;
+[v _selectedData `*Cuc ~T0 @X0 1 a ]
+"176
+[; ;BOARD.c: 176:     if (ledOff == (1U)) {
+[e $ ! == -> _ledOff `ui -> 1 `ui 403  ]
+{
+"177
+[; ;BOARD.c: 177:         selectedData = ledOffData;
+[e = _selectedData &U _ledOffData ]
+"178
+[; ;BOARD.c: 178:     } else if ((mode < (4U)) && (controlMode < (4U))) {
 }
-[e :U 407 ]
+[e $U 404  ]
+[e :U 403 ]
+[e $ ! && < -> _mode `ui -> 4 `ui < -> _controlMode `ui -> 4 `ui 405  ]
+{
+"179
+[; ;BOARD.c: 179:         selectedData = linDataTable[mode][controlMode];
+[e = _selectedData &U *U + &U *U + &U _linDataTable * -> _mode `ux -> * * -> # *U &U *U &U _linDataTable `ui -> -> 4 `i `ui -> -> 8 `i `ui `ux * -> _controlMode `ux -> * -> # *U &U *U &U *U + &U _linDataTable * -> _mode `ux -> * * -> # *U &U *U &U _linDataTable `ui -> -> 4 `i `ui -> -> 8 `i `ui `ux `ui -> -> 8 `i `ui `ux ]
+"180
+[; ;BOARD.c: 180:     } else {
+}
+[e $U 406  ]
 [e :U 405 ]
-"175
-[; ;BOARD.c: 175:   for (index = 0U; index < (8U); ++index) {
+{
+"182
+[; ;BOARD.c: 182:         selectedData = linDataTable[(0U)][(0U)];
+[e = _selectedData &U *U + &U *U + &U _linDataTable * -> -> 0 `ui `ux -> * * -> # *U &U *U &U _linDataTable `ui -> -> 4 `i `ui -> -> 8 `i `ui `ux * -> -> 0 `ui `ux -> * -> # *U &U *U &U *U + &U _linDataTable * -> -> 0 `ui `ux -> * * -> # *U &U *U &U _linDataTable `ui -> -> 4 `i `ui -> -> 8 `i `ui `ux `ui -> -> 8 `i `ui `ux ]
+"183
+[; ;BOARD.c: 183:     }
+}
+[e :U 406 ]
+[e :U 404 ]
+"185
+[; ;BOARD.c: 185:     for (index = 0U; index < (8U); ++index) {
 {
 [e = _index -> -> 0 `ui `uc ]
-[e $ < -> _index `ui -> 8 `ui 408  ]
-[e $U 409  ]
-[e :U 408 ]
+[e $ < -> _index `ui -> 8 `ui 407  ]
+[e $U 408  ]
+[e :U 407 ]
 {
-"176
-[; ;BOARD.c: 176:     linData[index] = selectedData[index];
+"186
+[; ;BOARD.c: 186:         linData[index] = selectedData[index];
 [e = *U + &U _linData * -> _index `ux -> -> # *U &U _linData `ui `ux *U + _selectedData * -> _index `ux -> -> # *U _selectedData `ui `ux ]
-"177
-[; ;BOARD.c: 177:   }
+"187
+[; ;BOARD.c: 187:     }
 }
 [e =+ _index -> -> 1 `i `uc ]
-[e $ < -> _index `ui -> 8 `ui 408  ]
-[e :U 409 ]
+[e $ < -> _index `ui -> 8 `ui 407  ]
+[e :U 408 ]
 }
-"179
-[; ;BOARD.c: 179:   if (ledOff != (1U)) {
-[e $ ! != -> _ledOff `ui -> 1 `ui 411  ]
-{
-"180
-[; ;BOARD.c: 180:     if (hiBeam == (1U)) {
-[e $ ! == -> _hiBeam `ui -> 1 `ui 412  ]
-{
-"181
-[; ;BOARD.c: 181:       linData[1] = (uint8_t)(linData[1] | ((uint8_t)0x80U));
-[e = *U + &U _linData * -> -> -> 1 `i `ui `ux -> -> # *U &U _linData `ui `ux -> | -> *U + &U _linData * -> -> -> 1 `i `ui `ux -> -> # *U &U _linData `ui `ux `i -> -> -> 128 `ui `uc `i `uc ]
-"182
-[; ;BOARD.c: 182:     } else {
-}
-[e $U 413  ]
-[e :U 412 ]
-{
-"183
-[; ;BOARD.c: 183:       linData[1] =
-[e = *U + &U _linData * -> -> -> 1 `i `ui `ux -> -> # *U &U _linData `ui `ux -> & -> *U + &U _linData * -> -> -> 1 `i `ui `ux -> -> # *U &U _linData `ui `ux `i -> -> ~ -> -> -> 128 `ui `uc `i `uc `i `uc ]
-"185
-[; ;BOARD.c: 185:     }
-}
-[e :U 413 ]
-"186
-[; ;BOARD.c: 186:   }
-}
-[e :U 411 ]
-"188
-[; ;BOARD.c: 188:   PublishLinData(linData);
-[e ( _PublishLinData (1 -> &U _linData `*Cuc ]
 "189
-[; ;BOARD.c: 189: }
-[e :UE 403 ]
-}
+[; ;BOARD.c: 189:     if (ledOff != (1U)) {
+[e $ ! != -> _ledOff `ui -> 1 `ui 410  ]
+{
+"190
+[; ;BOARD.c: 190:         if (hiBeam == (1U)) {
+[e $ ! == -> _hiBeam `ui -> 1 `ui 411  ]
+{
 "191
-[; ;BOARD.c: 191: void board_update(void) {
+[; ;BOARD.c: 191:             linData[1] = (uint8_t) (linData[1] | ((uint8_t)0x80U));
+[e = *U + &U _linData * -> -> -> 1 `i `ui `ux -> -> # *U &U _linData `ui `ux -> | -> *U + &U _linData * -> -> -> 1 `i `ui `ux -> -> # *U &U _linData `ui `ux `i -> -> -> 128 `ui `uc `i `uc ]
+"192
+[; ;BOARD.c: 192:         } else {
+}
+[e $U 412  ]
+[e :U 411 ]
+{
+"193
+[; ;BOARD.c: 193:             linData[1] = (uint8_t) (linData[1] & (uint8_t) (~((uint8_t)0x80U)));
+[e = *U + &U _linData * -> -> -> 1 `i `ui `ux -> -> # *U &U _linData `ui `ux -> & -> *U + &U _linData * -> -> -> 1 `i `ui `ux -> -> # *U &U _linData `ui `ux `i -> -> ~ -> -> -> 128 `ui `uc `i `uc `i `uc ]
+"194
+[; ;BOARD.c: 194:         }
+}
+[e :U 412 ]
+"195
+[; ;BOARD.c: 195:     }
+}
+[e :U 410 ]
+"198
+[; ;BOARD.c: 198: }
+[e :UE 402 ]
+}
+"200
+[; ;BOARD.c: 200: void board_update(void) {
 [v _board_update `(v ~T0 @X0 1 ef ]
 {
 [e :U _board_update ]
 [f ]
-"192
-[; ;BOARD.c: 192:     swState_update();
+"201
+[; ;BOARD.c: 201:     swState_update();
 [e ( _swState_update ..  ]
-"193
-[; ;BOARD.c: 193:     swSetModeControl();
+"202
+[; ;BOARD.c: 202:     swSetModeControl();
 [e ( _swSetModeControl ..  ]
-"194
-[; ;BOARD.c: 194:     swSetDATA();
+"203
+[; ;BOARD.c: 203:     swSetDATA();
 [e ( _swSetDATA ..  ]
-"195
-[; ;BOARD.c: 195:     swSetLED();
+"204
+[; ;BOARD.c: 204:     PublishLinData(linData);
+[e ( _PublishLinData (1 -> &U _linData `*Cuc ]
+"205
+[; ;BOARD.c: 205:     swSetLED();
 [e ( _swSetLED ..  ]
-"196
-[; ;BOARD.c: 196: }
-[e :UE 414 ]
+"206
+[; ;BOARD.c: 206: }
+[e :UE 413 ]
 }

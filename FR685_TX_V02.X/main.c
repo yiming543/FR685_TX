@@ -52,9 +52,9 @@
 // 18	01	08	34	00	04	90	B3	3E	lock
 // 19	31	08	34	00	04	B0	87	BE	LED OFF
 
-// 20261118 FR685_TX_V02 CS:24BB
+// 20261118 FR685_TX_V02 CS:047F
 // 使用MCC LIN TX，收到裝置回饋信號亮LED燈。
-// MISRA 2012:MCC 有65個警告
+// MISRA 2012:MCC 有64個警告
 
 #include "BOARD.h"
 #include "mcc_generated_files/mcc.h"
