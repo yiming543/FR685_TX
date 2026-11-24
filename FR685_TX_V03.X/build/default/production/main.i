@@ -7,7 +7,7 @@
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
-# 64 "main.c"
+# 66 "main.c"
 # 1 "./BOARD.h" 1
 
 
@@ -18,7 +18,7 @@
 extern void board_init(void);
 
 extern void board_update(void);
-# 65 "main.c" 2
+# 67 "main.c" 2
 # 1 "./mcc_generated_files/mcc.h" 1
 # 49 "./mcc_generated_files/mcc.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/xc.h" 1 3
@@ -5402,7 +5402,7 @@ void SYSTEM_Initialize(void);
 void OSCILLATOR_Initialize(void);
 # 99 "./mcc_generated_files/mcc.h"
 void WDT_Initialize(void);
-# 66 "main.c" 2
+# 68 "main.c" 2
 
 
 

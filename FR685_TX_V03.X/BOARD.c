@@ -80,6 +80,7 @@ static void PublishLinData(const uint8_t *sourceData) {
     ID_01_Data[index] = sourceData[index];
   }
   // 這2個BYTE必須相同，否則hiBeam會閃爍
+  ID_00_Data[0] = ID_01_Data[0];
   ID_00_Data[1] = ID_01_Data[1];
   ID_00_Data[2] = ID_01_Data[2];
   INTCONbits.GIE = globalInterruptWasEnabled;
