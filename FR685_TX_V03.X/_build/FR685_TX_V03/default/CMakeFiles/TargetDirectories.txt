@@ -1,0 +1,4 @@
+D:/yiming/00work/FR685_TX_V03.X/_build/FR685_TX_V03/default/CMakeFiles/FR685_TX_V03_default_default_XC8_compile.dir
+D:/yiming/00work/FR685_TX_V03.X/_build/FR685_TX_V03/default/CMakeFiles/FR685_TX_V03_default_image_uBMef5vG.dir
+D:/yiming/00work/FR685_TX_V03.X/_build/FR685_TX_V03/default/CMakeFiles/edit_cache.dir
+D:/yiming/00work/FR685_TX_V03.X/_build/FR685_TX_V03/default/CMakeFiles/rebuild_cache.dir

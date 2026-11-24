@@ -1,0 +1,176 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"58 D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.h
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.h: 58: lin_cmd_packet_t scheduleTable[] = {
+[c E42 0 1 .. ]
+[n E42 . TRANSMIT RECEIVE  ]
+"58 D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.h
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.h: 58: typedef struct {
+[s S1 `uc 1 `E42 1 `uc 1 `uc 1 `uc 1 `*uc 1 ]
+[n S1 . cmd type length timeout period data ]
+"58 D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.h
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.h: 58: lin_cmd_packet_t scheduleTable[] = {
+[c E123 0 16 1 24 .. ]
+[n E123 . ID_00 ID_10 ID_01 ID_18  ]
+[v F87 `*CS1 ~T0 @X0 1 t ]
+[v F88 `(v ~T0 @X0 0 tf ]
+"104 D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.h
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.h: 104: void LIN_init(uint8_t tableLength, const lin_cmd_packet_t* const table, void (*processData)(void));
+[v _LIN_init `(v ~T0 @X0 0 ef3`uc`C*CS1`*F88 ]
+"68 D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.h
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.h: 68: void processLIN(void);
+[v _processLIN `(v ~T0 @X0 0 ef ]
+"112 D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.h
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_master.h: 112: uint8_t LIN_getPacket(uint8_t* data);
+[v _LIN_getPacket `(uc ~T0 @X0 0 ef1`*uc ]
+"44 D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 44: extern uint16_t Lcount;
+[v _Lcount `us ~T0 @X0 0 e ]
+"43
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 43: extern uint16_t Rcount;
+[v _Rcount `us ~T0 @X0 0 e ]
+"53 D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.h
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.h: 53: uint8_t ID_00_Data[8]={0x01, 0x08, 0x25, 0x80, 0x00, 0x9C, 0xFF, 0xFF};
+[v _ID_00_Data `uc ~T0 @X0 -> 8 `i e ]
+[i _ID_00_Data
+:U ..
+-> -> 1 `i `uc
+-> -> 8 `i `uc
+-> -> 37 `i `uc
+-> -> 128 `i `uc
+-> -> 0 `i `uc
+-> -> 156 `i `uc
+-> -> 255 `i `uc
+-> -> 255 `i `uc
+..
+]
+"54
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.h: 54: uint8_t ID_10_Data[8];
+[v _ID_10_Data `uc ~T0 @X0 -> 8 `i e ]
+"55
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.h: 55: uint8_t ID_01_Data[8];
+[v _ID_01_Data `uc ~T0 @X0 -> 8 `i e ]
+"56
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.h: 56: uint8_t ID_18_Data[8];
+[v _ID_18_Data `uc ~T0 @X0 -> 8 `i e ]
+"58
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers/lin_app.h: 58: lin_cmd_packet_t scheduleTable[] = {
+[v _scheduleTable `S1 ~T0 @X0 -> 4 `i e ]
+[i _scheduleTable
+:U ..
+:U ..
+-> . `E123 0 `uc
+. `E42 0
+-> -> 8 `i `uc
+-> -> 10 `i `uc
+-> -> 20 `i `uc
+&U _ID_00_Data
+..
+:U ..
+-> . `E123 1 `uc
+. `E42 1
+-> -> 8 `i `uc
+-> -> 15 `i `uc
+-> -> 20 `i `uc
+&U _ID_10_Data
+..
+:U ..
+-> . `E123 2 `uc
+. `E42 0
+-> -> 8 `i `uc
+-> -> 10 `i `uc
+-> -> 20 `i `uc
+&U _ID_01_Data
+..
+:U ..
+-> . `E123 3 `uc
+. `E42 1
+-> -> 8 `i `uc
+-> -> 15 `i `uc
+-> -> 20 `i `uc
+&U _ID_18_Data
+..
+..
+]
+"46 D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 46: void LIN_Master_Initialize(void) {
+[v _LIN_Master_Initialize `(v ~T0 @X0 1 ef ]
+{
+[e :U _LIN_Master_Initialize ]
+[f ]
+"48
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 48:   LIN_init((sizeof(scheduleTable) / sizeof(lin_cmd_packet_t)), scheduleTable, processLIN);
+[e ( _LIN_init (3 , , -> / -> # _scheduleTable `ui -> # `S1 `ui `uc -> &U _scheduleTable `*CS1 &U _processLIN ]
+"49
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 49: }
+[e :UE 8 ]
+}
+"51
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 51: void processLIN(void) {
+[v _processLIN `(v ~T0 @X0 1 ef ]
+{
+[e :U _processLIN ]
+[f ]
+"52
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 52:   uint8_t tempRxData[8];
+[v _tempRxData `uc ~T0 @X0 -> 8 `i a ]
+"53
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 53:   uint8_t cmd;
+[v _cmd `uc ~T0 @X0 1 a ]
+"55
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 55:   cmd = LIN_getPacket(tempRxData);
+[e = _cmd ( _LIN_getPacket (1 &U _tempRxData ]
+"56
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 56:   switch (cmd) {
+[e $U 11  ]
+{
+"57
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 57:   case ID_00:
+[e :U 12 ]
+"58
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 58:     break;
+[e $U 10  ]
+"59
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 59:   case ID_10:
+[e :U 13 ]
+"60
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 60:     Lcount = 4000U;
+[e = _Lcount -> -> 4000 `ui `us ]
+"61
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 61:     break;
+[e $U 10  ]
+"62
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 62:   case ID_01:
+[e :U 14 ]
+"63
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 63:     break;
+[e $U 10  ]
+"64
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 64:   case ID_18:
+[e :U 15 ]
+"65
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 65:     Rcount = 4000U;
+[e = _Rcount -> -> 4000 `ui `us ]
+"66
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 66:     break;
+[e $U 10  ]
+"67
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 67:   default:
+[e :U 16 ]
+"68
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 68:     break;
+[e $U 10  ]
+"69
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 69:   }
+}
+[e $U 10  ]
+[e :U 11 ]
+[e [\ _cmd , $ . `E123 0 12
+ , $ . `E123 1 13
+ , $ . `E123 2 14
+ , $ . `E123 3 15
+ 16 ]
+[e :U 10 ]
+"70
+[; ;D:\yiming\00work\FR685_TX_V02.X\mcc_generated_files\LINDrivers\lin_app.c: 70: }
+[e :UE 9 ]
+}

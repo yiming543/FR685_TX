@@ -1,0 +1,4 @@
+D:/yiming/00work/FR685_TX_V02.X/_build/FR685_TX_V02/default.production/CMakeFiles/FR685_TX_V02_default_default_XC8_compile.dir
+D:/yiming/00work/FR685_TX_V02.X/_build/FR685_TX_V02/default.production/CMakeFiles/FR685_TX_V02_default_image_ivk88gPH.dir
+D:/yiming/00work/FR685_TX_V02.X/_build/FR685_TX_V02/default.production/CMakeFiles/edit_cache.dir
+D:/yiming/00work/FR685_TX_V02.X/_build/FR685_TX_V02/default.production/CMakeFiles/rebuild_cache.dir

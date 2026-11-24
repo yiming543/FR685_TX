@@ -1,0 +1,151 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[v F39 `(v ~T0 @X0 0 tf1`uc ]
+[v F38 `*F39 ~T0 @X0 1 t ]
+[v F43 `(uc ~T0 @X0 0 tf ]
+[v F42 `*F43 ~T0 @X0 1 t ]
+"15 D:\yiming\00work\FR685_TX_V03.X/timer.h
+[; ;D:\yiming\00work\FR685_TX_V03.X/timer.h: 15: typedef struct {
+[s S1 `C*F39 1 `C*F43 1 ]
+[n S1 . set get ]
+"25
+[; ;D:\yiming\00work\FR685_TX_V03.X/timer.h: 25: typedef struct{
+[s S3 `S1 1 `S1 1 ]
+[n S3 . R_CNT L_CNT ]
+[v F71 `(v ~T0 @X0 0 tf ]
+"326 D:\yiming\00work\FR685_TX_V03.X/mcc_generated_files/tmr2.h
+[; ;D:\yiming\00work\FR685_TX_V03.X/mcc_generated_files/tmr2.h: 326:  void TMR2_SetInterruptHandler(void (* InterruptHandler)(void));
+[v _TMR2_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F71 ]
+"11 D:\yiming\00work\FR685_TX_V03.X\timer.c
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 11: static volatile uint8_t R_Cnt = 0U;
+[v _R_Cnt `Vuc ~T0 @X0 1 s ]
+[i _R_Cnt
+-> -> 0 `ui `uc
+]
+"12
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 12: static volatile uint8_t L_Cnt = 0U;
+[v _L_Cnt `Vuc ~T0 @X0 1 s ]
+[i _L_Cnt
+-> -> 0 `ui `uc
+]
+"15
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 15: static void R_CNT_SET(uint8_t data) {
+[v _R_CNT_SET `(v ~T0 @X0 1 sf1`uc ]
+{
+[e :U _R_CNT_SET ]
+[v _data `uc ~T0 @X0 1 r1 ]
+[f ]
+"16
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 16:   R_Cnt = data;
+[e = _R_Cnt _data ]
+"17
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 17: }
+[e :UE 4 ]
+}
+"19
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 19: static uint8_t R_CNT_GET(void) {
+[v _R_CNT_GET `(uc ~T0 @X0 1 sf ]
+{
+[e :U _R_CNT_GET ]
+[f ]
+"20
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 20:   return R_Cnt;
+[e ) _R_Cnt ]
+[e $UE 5  ]
+"21
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 21: }
+[e :UE 5 ]
+}
+"23
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 23: static void L_CNT_SET(uint8_t data) {
+[v _L_CNT_SET `(v ~T0 @X0 1 sf1`uc ]
+{
+[e :U _L_CNT_SET ]
+[v _data `uc ~T0 @X0 1 r1 ]
+[f ]
+"24
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 24:   L_Cnt = data;
+[e = _L_Cnt _data ]
+"25
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 25: }
+[e :UE 6 ]
+}
+"27
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 27: static uint8_t L_CNT_GET(void) {
+[v _L_CNT_GET `(uc ~T0 @X0 1 sf ]
+{
+[e :U _L_CNT_GET ]
+[f ]
+"28
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 28:   return L_Cnt;
+[e ) _L_Cnt ]
+[e $UE 7  ]
+"29
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 29: }
+[e :UE 7 ]
+}
+"32
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 32: TMR2_t const tmr2 = {
+[v _tmr2 `CS3 ~T0 @X0 1 e ]
+[i _tmr2
+:U ..
+:U ..
+:U ..
+:U ..
+&U _R_CNT_SET
+&U _R_CNT_GET
+..
+..
+:U ..
+:U ..
+&U _L_CNT_SET
+&U _L_CNT_GET
+..
+..
+..
+..
+]
+"37
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 37: void TMR2_EvenHandler(void) {
+[v _TMR2_EvenHandler `(v ~T0 @X0 1 ef ]
+{
+[e :U _TMR2_EvenHandler ]
+[f ]
+"38
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 38:   if (R_Cnt > 0U) {
+[e $ ! > -> _R_Cnt `ui -> 0 `ui 9  ]
+{
+"39
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 39:     R_Cnt--;
+[e -- _R_Cnt -> -> 1 `i `Vuc ]
+"40
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 40:   }
+}
+[e :U 9 ]
+"42
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 42:   if (L_Cnt > 0U) {
+[e $ ! > -> _L_Cnt `ui -> 0 `ui 10  ]
+{
+"43
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 43:     L_Cnt--;
+[e -- _L_Cnt -> -> 1 `i `Vuc ]
+"44
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 44:   }
+}
+[e :U 10 ]
+"45
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 45: }
+[e :UE 8 ]
+}
+"47
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 47: void TMR2_init(void) {
+[v _TMR2_init `(v ~T0 @X0 1 ef ]
+{
+[e :U _TMR2_init ]
+[f ]
+"48
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 48:   TMR2_SetInterruptHandler(TMR2_EvenHandler);
+[e ( _TMR2_SetInterruptHandler (1 &U _TMR2_EvenHandler ]
+"49
+[; ;D:\yiming\00work\FR685_TX_V03.X\timer.c: 49: }
+[e :UE 11 ]
+}

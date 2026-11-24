@@ -1,0 +1,22 @@
+# ninja log v7
+1083	10013	8171942693305650	CMakeFiles/FR685_TX_V03_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V03.X/mcc_generated_files/device_config.c.p1	d195aacf20e782e4
+51	10453	8171942682642076	CMakeFiles/FR685_TX_V03_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V03.X/BOARD.c.p1	8e090fe2ca7c54af
+171	10832	8171942683884191	CMakeFiles/FR685_TX_V03_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V03.X/SWITCH.c.p1	fbd2e2d2c72a0455
+101	10588	8171942683140810	CMakeFiles/FR685_TX_V03_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V03.X/LED.c.p1	6b5f3f11baa9f668
+696	12517	8171942689153119	CMakeFiles/FR685_TX_V03_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V03.X/mcc_generated_files/LINDrivers/lin_app.c.p1	e72637dad2d4b569
+256	12593	8171942684786325	CMakeFiles/FR685_TX_V03_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V03.X/Warning_ignored.c.p1	b933704fbb782e4e
+1365	13477	8171942695864768	CMakeFiles/FR685_TX_V03_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V03.X/mcc_generated_files/eusart.c.p1	82abfcc2015d4f8
+486	12734	8171942686992348	CMakeFiles/FR685_TX_V03_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V03.X/main.c.p1	3614fa728031c770
+878	13720	8171942690972148	CMakeFiles/FR685_TX_V03_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V03.X/mcc_generated_files/LINDrivers/lin_master.c.p1	dcef8ea5783ce38a
+1991	13784	8171942702181297	CMakeFiles/FR685_TX_V03_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V03.X/mcc_generated_files/pin_manager.c.p1	9031423751e51fd2
+1602	13847	8171942698264663	CMakeFiles/FR685_TX_V03_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V03.X/mcc_generated_files/interrupt_manager.c.p1	8a6d2e5da700912a
+2468	13948	8171942706849934	CMakeFiles/FR685_TX_V03_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V03.X/mcc_generated_files/tmr2.c.p1	f7338ee6d528adf9
+2211	13472	8171942704250334	CMakeFiles/FR685_TX_V03_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V03.X/mcc_generated_files/tmr0.c.p1	7685fe8316eb75ed
+1795	13740	8171942700283315	CMakeFiles/FR685_TX_V03_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V03.X/mcc_generated_files/mcc.c.p1	f489177a565ca0de
+10055	17563	8171942782908429	CMakeFiles/FR685_TX_V03_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V03.X/timer.c.p1	642e4eaf899da518
+17563	26492	8171942857788224	D:/yiming/00work/FR685_TX_V03.X/out/FR685_TX_V03/default.elf	df06b3c6f91ec814
+36	2933	8171952732533213	CMakeFiles/FR685_TX_V03_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V03.X/BOARD.c.p1	8e090fe2ca7c54af
+123	3150	8171952733399077	CMakeFiles/FR685_TX_V03_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V03.X/main.c.p1	3614fa728031c770
+3150	11682	8171952763630125	D:/yiming/00work/FR685_TX_V03.X/out/FR685_TX_V03/default.elf	b1d7a5da34de3723
+18	2822	8171954186770539	CMakeFiles/FR685_TX_V03_default_default_XC8_compile.dir/D_/yiming/00work/FR685_TX_V03.X/BOARD.c.p1	8e090fe2ca7c54af
+2832	11850	8171954214913966	D:/yiming/00work/FR685_TX_V03.X/out/FR685_TX_V03/default.elf	b1d7a5da34de3723
